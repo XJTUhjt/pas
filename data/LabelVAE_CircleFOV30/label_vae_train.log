@@ -1,0 +1,333 @@
+2023-12-04 %M:18, INFO: (config) encodertype:vae,beta: 0.000250, seq_length: 4, 
+2023-12-04 %M:18, INFO: Learning rate:0.001000
+2023-12-04 %M:23, INFO: Phase : train, sequential data : 46046
+2023-12-04 %M:23, INFO: Phase : val, sequential data : 4835
+2023-12-04 %M:50, INFO: (config) encodertype:vae,beta: 0.000250, seq_length: 4, 
+2023-12-04 %M:50, INFO: Learning rate:0.001000
+2023-12-04 %M:56, INFO: Phase : train, sequential data : 46046
+2023-12-04 %M:57, INFO: Phase : val, sequential data : 4835
+2023-12-04 %M:23, INFO: (config) encodertype:vae,beta: 0.000250, seq_length: 4, 
+2023-12-04 %M:23, INFO: Learning rate:0.001000
+2023-12-04 %M:29, INFO: Phase : train, sequential data : 46046
+2023-12-04 %M:30, INFO: Phase : val, sequential data : 4835
+2023-12-04 %M:27, INFO: (config) encodertype:vae,beta: 0.000250, seq_length: 4, 
+2023-12-04 %M:27, INFO: Learning rate:0.001000
+2023-12-04 %M:33, INFO: Phase : train, sequential data : 46046
+2023-12-04 %M:34, INFO: Phase : val, sequential data : 4835
+2023-12-04 %M:46, INFO: (Epoch 1) recon_loss: 478.0328, k_loss: 2545.3025
+2023-12-04 %M:55, INFO: (Epoch 2) recon_loss: 186.8530, k_loss: 3608.1470
+2023-12-04 %M:04, INFO: (Epoch 3) recon_loss: 167.7814, k_loss: 3260.8425
+2023-12-04 %M:12, INFO: (Epoch 4) recon_loss: 158.0397, k_loss: 2353.5458
+2023-12-04 %M:19, INFO: (Epoch 5) recon_loss: 144.8512, k_loss: 1316.7329
+2023-12-04 %M:28, INFO: (Epoch 6) recon_loss: 127.6401, k_loss: 1227.6075
+2023-12-04 %M:38, INFO: (Epoch 7) recon_loss: 109.3837, k_loss: 1105.1091
+2023-12-04 %M:47, INFO: (Epoch 8) recon_loss: 97.8838, k_loss: 1380.5202
+2023-12-04 %M:57, INFO: (Epoch 9) recon_loss: 88.2993, k_loss: 1188.1772
+2023-12-04 %M:06, INFO: (Epoch 10) recon_loss: 83.0601, k_loss: 1364.9968
+2023-12-04 %M:16, INFO: (Epoch 11) recon_loss: 84.1376, k_loss: 1766.9371
+2023-12-04 %M:25, INFO: (Epoch 12) recon_loss: 78.5143, k_loss: 2105.4240
+2023-12-04 %M:35, INFO: (Epoch 13) recon_loss: 74.2592, k_loss: 2335.8078
+2023-12-04 %M:45, INFO: (Epoch 14) recon_loss: 69.9950, k_loss: 1949.7605
+2023-12-04 %M:54, INFO: (Epoch 15) recon_loss: 68.2909, k_loss: 1734.1390
+2023-12-04 %M:04, INFO: (Epoch 16) recon_loss: 65.0489, k_loss: 1354.0914
+2023-12-04 %M:14, INFO: (Epoch 17) recon_loss: 64.1638, k_loss: 1340.0648
+2023-12-04 %M:24, INFO: (Epoch 18) recon_loss: 67.1295, k_loss: 2648.4079
+2023-12-04 %M:33, INFO: (Epoch 19) recon_loss: 61.4243, k_loss: 1641.4382
+2023-12-04 %M:34, INFO: (Eval Epoch 20) recon_loss: 68.1592, k_loss: 1444.9394
+2023-12-04 %M:17, INFO: (Epoch 20) recon_loss: 59.0933, k_loss: 1418.3758
+2023-12-04 %M:26, INFO: (Epoch 21) recon_loss: 62.9589, k_loss: 2487.9216
+2023-12-04 %M:36, INFO: (Epoch 22) recon_loss: 58.0790, k_loss: 1810.8301
+2023-12-04 %M:46, INFO: (Epoch 23) recon_loss: 56.5295, k_loss: 1628.7400
+2023-12-04 %M:56, INFO: (Epoch 24) recon_loss: 55.0556, k_loss: 1510.5562
+2023-12-04 %M:06, INFO: (Epoch 25) recon_loss: 54.6249, k_loss: 1466.4394
+2023-12-04 %M:15, INFO: (Epoch 26) recon_loss: 54.5601, k_loss: 1553.1256
+2023-12-04 %M:25, INFO: (Epoch 27) recon_loss: 52.8756, k_loss: 1536.4560
+2023-12-04 %M:35, INFO: (Epoch 28) recon_loss: 51.5917, k_loss: 1468.0716
+2023-12-04 %M:45, INFO: (Epoch 29) recon_loss: 50.8275, k_loss: 1418.6685
+2023-12-04 %M:54, INFO: (Epoch 30) recon_loss: 50.0327, k_loss: 1417.5311
+2023-12-04 %M:04, INFO: (Epoch 31) recon_loss: 49.8935, k_loss: 1487.3687
+2023-12-04 %M:14, INFO: (Epoch 32) recon_loss: 49.3634, k_loss: 1471.5592
+2023-12-04 %M:23, INFO: (Epoch 33) recon_loss: 49.0368, k_loss: 1501.9967
+2023-12-04 %M:33, INFO: (Epoch 34) recon_loss: 48.0375, k_loss: 1545.0473
+2023-12-04 %M:42, INFO: (Epoch 35) recon_loss: 47.6286, k_loss: 1477.8353
+2023-12-04 %M:52, INFO: (Epoch 36) recon_loss: 47.2449, k_loss: 1472.2874
+2023-12-04 %M:02, INFO: (Epoch 37) recon_loss: 46.1778, k_loss: 1470.4537
+2023-12-04 %M:11, INFO: (Epoch 38) recon_loss: 46.6853, k_loss: 1684.9933
+2023-12-04 %M:21, INFO: (Epoch 39) recon_loss: 45.7331, k_loss: 1551.5835
+2023-12-04 %M:22, INFO: (Eval Epoch 40) recon_loss: 60.9436, k_loss: 1549.1526
+2023-12-04 %M:05, INFO: (Epoch 40) recon_loss: 44.9861, k_loss: 1535.9493
+2023-12-04 %M:15, INFO: (Epoch 41) recon_loss: 44.4399, k_loss: 1535.3322
+2023-12-04 %M:24, INFO: (Epoch 42) recon_loss: 44.0647, k_loss: 1544.0640
+2023-12-04 %M:34, INFO: (Epoch 43) recon_loss: 43.6909, k_loss: 1550.2277
+2023-12-04 %M:44, INFO: (Epoch 44) recon_loss: 43.4938, k_loss: 1563.8164
+2023-12-04 %M:53, INFO: (Epoch 45) recon_loss: 42.8447, k_loss: 1567.9965
+2023-12-04 %M:03, INFO: (Epoch 46) recon_loss: 42.8796, k_loss: 1584.3002
+2023-12-04 %M:13, INFO: (Epoch 47) recon_loss: 42.1439, k_loss: 1584.7100
+2023-12-04 %M:23, INFO: (Epoch 48) recon_loss: 41.7451, k_loss: 1592.9623
+2023-12-04 %M:32, INFO: (Epoch 49) recon_loss: 41.7542, k_loss: 1600.5841
+2023-12-04 %M:42, INFO: (Epoch 50) recon_loss: 41.5957, k_loss: 1622.5883
+2023-12-04 %M:51, INFO: (Epoch 51) recon_loss: 40.7806, k_loss: 1638.0766
+2023-12-04 %M:01, INFO: (Epoch 52) recon_loss: 40.9348, k_loss: 1638.7066
+2023-12-04 %M:11, INFO: (Epoch 53) recon_loss: 40.2063, k_loss: 1648.5404
+2023-12-04 %M:21, INFO: (Epoch 54) recon_loss: 40.1914, k_loss: 1645.6006
+2023-12-04 %M:30, INFO: (Epoch 55) recon_loss: 39.7541, k_loss: 1653.2360
+2023-12-04 %M:40, INFO: (Epoch 56) recon_loss: 39.6066, k_loss: 1673.1557
+2023-12-04 %M:49, INFO: (Epoch 57) recon_loss: 39.3797, k_loss: 1676.5296
+2023-12-04 %M:59, INFO: (Epoch 58) recon_loss: 39.1139, k_loss: 1678.6962
+2023-12-04 %M:09, INFO: (Epoch 59) recon_loss: 38.9394, k_loss: 1683.9915
+2023-12-04 %M:10, INFO: (Eval Epoch 60) recon_loss: 59.4126, k_loss: 1700.7454
+2023-12-04 %M:52, INFO: (Epoch 60) recon_loss: 38.5713, k_loss: 1701.1187
+2023-12-04 %M:01, INFO: (Epoch 61) recon_loss: 38.2106, k_loss: 1698.5048
+2023-12-04 %M:11, INFO: (Epoch 62) recon_loss: 37.9481, k_loss: 1705.2472
+2023-12-04 %M:21, INFO: (Epoch 63) recon_loss: 37.9556, k_loss: 1704.6919
+2023-12-04 %M:30, INFO: (Epoch 64) recon_loss: 37.5117, k_loss: 1702.5198
+2023-12-04 %M:40, INFO: (Epoch 65) recon_loss: 37.2984, k_loss: 1711.1387
+2023-12-04 %M:49, INFO: (Epoch 66) recon_loss: 37.3052, k_loss: 1705.6400
+2023-12-04 %M:58, INFO: (Epoch 67) recon_loss: 37.1756, k_loss: 1714.7654
+2023-12-04 %M:08, INFO: (Epoch 68) recon_loss: 37.1900, k_loss: 1735.5350
+2023-12-04 %M:18, INFO: (Epoch 69) recon_loss: 36.6246, k_loss: 1735.0928
+2023-12-04 %M:28, INFO: (Epoch 70) recon_loss: 36.6952, k_loss: 1742.0653
+2023-12-04 %M:38, INFO: (Epoch 71) recon_loss: 36.3868, k_loss: 1743.6124
+2023-12-04 %M:47, INFO: (Epoch 72) recon_loss: 36.3416, k_loss: 1750.1290
+2023-12-04 %M:57, INFO: (Epoch 73) recon_loss: 35.8704, k_loss: 1751.8935
+2023-12-04 %M:06, INFO: (Epoch 74) recon_loss: 35.7584, k_loss: 1751.7611
+2023-12-04 %M:16, INFO: (Epoch 75) recon_loss: 35.5015, k_loss: 1750.3903
+2023-12-04 %M:26, INFO: (Epoch 76) recon_loss: 35.4438, k_loss: 1760.0510
+2023-12-04 %M:36, INFO: (Epoch 77) recon_loss: 35.2496, k_loss: 1766.4717
+2023-12-04 %M:45, INFO: (Epoch 78) recon_loss: 35.1386, k_loss: 1762.0345
+2023-12-04 %M:55, INFO: (Epoch 79) recon_loss: 34.8586, k_loss: 1763.4330
+2023-12-04 %M:56, INFO: (Eval Epoch 80) recon_loss: 59.1396, k_loss: 1721.6366
+2023-12-04 %M:38, INFO: (Epoch 80) recon_loss: 34.8384, k_loss: 1758.5908
+2023-12-04 %M:48, INFO: (Epoch 81) recon_loss: 34.5694, k_loss: 1757.6458
+2023-12-04 %M:57, INFO: (Epoch 82) recon_loss: 34.5633, k_loss: 1755.4928
+2023-12-04 %M:07, INFO: (Epoch 83) recon_loss: 34.1660, k_loss: 1757.9860
+2023-12-04 %M:16, INFO: (Epoch 84) recon_loss: 34.0504, k_loss: 1752.0697
+2023-12-04 %M:26, INFO: (Epoch 85) recon_loss: 34.0590, k_loss: 1754.9204
+2023-12-04 %M:35, INFO: (Epoch 86) recon_loss: 33.8286, k_loss: 1755.0399
+2023-12-04 %M:45, INFO: (Epoch 87) recon_loss: 33.7093, k_loss: 1753.8667
+2023-12-04 %M:55, INFO: (Epoch 88) recon_loss: 33.7115, k_loss: 1747.6692
+2023-12-04 %M:05, INFO: (Epoch 89) recon_loss: 33.3505, k_loss: 1747.0980
+2023-12-04 %M:14, INFO: (Epoch 90) recon_loss: 33.3032, k_loss: 1747.6232
+2023-12-04 %M:24, INFO: (Epoch 91) recon_loss: 33.1547, k_loss: 1748.1958
+2023-12-04 %M:34, INFO: (Epoch 92) recon_loss: 33.2981, k_loss: 1748.0144
+2023-12-04 %M:43, INFO: (Epoch 93) recon_loss: 33.1721, k_loss: 1741.6397
+2023-12-04 %M:53, INFO: (Epoch 94) recon_loss: 32.8680, k_loss: 1737.6806
+2023-12-04 %M:03, INFO: (Epoch 95) recon_loss: 32.4883, k_loss: 1736.8199
+2023-12-04 %M:12, INFO: (Epoch 96) recon_loss: 32.4319, k_loss: 1734.1485
+2023-12-04 %M:22, INFO: (Epoch 97) recon_loss: 32.5772, k_loss: 1735.6075
+2023-12-04 %M:32, INFO: (Epoch 98) recon_loss: 32.3889, k_loss: 1734.0766
+2023-12-04 %M:41, INFO: (Epoch 99) recon_loss: 32.2815, k_loss: 1733.3063
+2023-12-04 %M:43, INFO: (Eval Epoch 100) recon_loss: 58.9492, k_loss: 1705.0500
+2023-12-04 %M:25, INFO: (Epoch 100) recon_loss: 32.0206, k_loss: 1731.3868
+2023-12-04 %M:26, INFO: (Epoch 101) recon_loss: 31.9616, k_loss: 1726.1576
+2023-12-04 %M:23, INFO: (Epoch 102) recon_loss: 31.7675, k_loss: 1720.4987
+2023-12-04 %M:26, INFO: (Epoch 103) recon_loss: 31.8916, k_loss: 1720.3141
+2023-12-04 %M:22, INFO: (Epoch 104) recon_loss: 31.6819, k_loss: 1721.5167
+2023-12-04 %M:25, INFO: (Epoch 105) recon_loss: 31.5634, k_loss: 1717.7042
+2023-12-04 %M:22, INFO: (Epoch 106) recon_loss: 31.4658, k_loss: 1713.6468
+2023-12-04 %M:25, INFO: (Epoch 107) recon_loss: 31.1230, k_loss: 1710.9238
+2023-12-04 %M:22, INFO: (Epoch 108) recon_loss: 31.5584, k_loss: 1708.7620
+2023-12-04 %M:24, INFO: (Epoch 109) recon_loss: 30.9848, k_loss: 1708.0343
+2023-12-04 %M:27, INFO: (Epoch 110) recon_loss: 31.0130, k_loss: 1704.6687
+2023-12-04 %M:24, INFO: (Epoch 111) recon_loss: 31.0829, k_loss: 1702.5929
+2023-12-04 %M:27, INFO: (Epoch 112) recon_loss: 31.1421, k_loss: 1703.4070
+2023-12-04 %M:15, INFO: (Epoch 113) recon_loss: 30.7638, k_loss: 1694.5175
+2023-12-04 %M:25, INFO: (Epoch 114) recon_loss: 30.6832, k_loss: 1693.0621
+2023-12-04 %M:35, INFO: (Epoch 115) recon_loss: 30.6605, k_loss: 1695.7469
+2023-12-04 %M:45, INFO: (Epoch 116) recon_loss: 30.6870, k_loss: 1691.4146
+2023-12-04 %M:54, INFO: (Epoch 117) recon_loss: 30.5559, k_loss: 1689.8876
+2023-12-04 %M:04, INFO: (Epoch 118) recon_loss: 30.2557, k_loss: 1686.2318
+2023-12-04 %M:13, INFO: (Epoch 119) recon_loss: 30.0673, k_loss: 1681.7948
+2023-12-04 %M:14, INFO: (Eval Epoch 120) recon_loss: 59.9480, k_loss: 1659.0429
+2023-12-04 %M:56, INFO: (Epoch 120) recon_loss: 30.2654, k_loss: 1678.5864
+2023-12-04 %M:06, INFO: (Epoch 121) recon_loss: 29.9465, k_loss: 1682.3461
+2023-12-04 %M:15, INFO: (Epoch 122) recon_loss: 29.9135, k_loss: 1673.8732
+2023-12-04 %M:25, INFO: (Epoch 123) recon_loss: 29.8344, k_loss: 1673.6763
+2023-12-04 %M:34, INFO: (Epoch 124) recon_loss: 29.8183, k_loss: 1664.7392
+2023-12-04 %M:44, INFO: (Epoch 125) recon_loss: 29.6954, k_loss: 1664.4895
+2023-12-04 %M:54, INFO: (Epoch 126) recon_loss: 29.7469, k_loss: 1660.9625
+2023-12-04 %M:03, INFO: (Epoch 127) recon_loss: 29.6600, k_loss: 1661.0076
+2023-12-04 %M:13, INFO: (Epoch 128) recon_loss: 29.5544, k_loss: 1660.8729
+2023-12-04 %M:23, INFO: (Epoch 129) recon_loss: 29.4519, k_loss: 1654.3233
+2023-12-04 %M:33, INFO: (Epoch 130) recon_loss: 29.3292, k_loss: 1653.6359
+2023-12-04 %M:42, INFO: (Epoch 131) recon_loss: 29.3032, k_loss: 1647.5478
+2023-12-04 %M:52, INFO: (Epoch 132) recon_loss: 29.1443, k_loss: 1643.4820
+2023-12-04 %M:02, INFO: (Epoch 133) recon_loss: 29.0572, k_loss: 1637.1771
+2023-12-04 %M:12, INFO: (Epoch 134) recon_loss: 29.1264, k_loss: 1630.3836
+2023-12-04 %M:22, INFO: (Epoch 135) recon_loss: 28.9895, k_loss: 1629.0574
+2023-12-04 %M:31, INFO: (Epoch 136) recon_loss: 28.9081, k_loss: 1626.2403
+2023-12-04 %M:41, INFO: (Epoch 137) recon_loss: 28.6843, k_loss: 1621.4819
+2023-12-04 %M:51, INFO: (Epoch 138) recon_loss: 28.8513, k_loss: 1621.9202
+2023-12-04 %M:01, INFO: (Epoch 139) recon_loss: 28.5846, k_loss: 1620.1076
+2023-12-04 %M:02, INFO: (Eval Epoch 140) recon_loss: 59.5648, k_loss: 1603.6560
+2023-12-04 %M:23, INFO: (Epoch 140) recon_loss: 28.4707, k_loss: 1619.0368
+2023-12-04 %M:26, INFO: (Epoch 141) recon_loss: 28.4812, k_loss: 1615.6670
+2023-12-04 %M:22, INFO: (Epoch 142) recon_loss: 28.3048, k_loss: 1609.6717
+2023-12-04 %M:25, INFO: (Epoch 143) recon_loss: 28.2610, k_loss: 1607.1608
+2023-12-04 %M:22, INFO: (Epoch 144) recon_loss: 28.4119, k_loss: 1597.2742
+2023-12-04 %M:25, INFO: (Epoch 145) recon_loss: 28.4304, k_loss: 1595.5562
+2023-12-04 %M:47, INFO: (Epoch 146) recon_loss: 27.9367, k_loss: 1592.9579
+2023-12-04 %M:57, INFO: (Epoch 147) recon_loss: 28.3003, k_loss: 1591.3940
+2023-12-04 %M:07, INFO: (Epoch 148) recon_loss: 27.8875, k_loss: 1590.3019
+2023-12-04 %M:17, INFO: (Epoch 149) recon_loss: 28.1751, k_loss: 1586.5133
+2023-12-04 %M:27, INFO: (Epoch 150) recon_loss: 27.7488, k_loss: 1582.5464
+2023-12-04 %M:36, INFO: (Epoch 151) recon_loss: 27.7480, k_loss: 1579.3858
+2023-12-04 %M:46, INFO: (Epoch 152) recon_loss: 27.6178, k_loss: 1571.6858
+2023-12-04 %M:56, INFO: (Epoch 153) recon_loss: 27.4458, k_loss: 1566.6166
+2023-12-04 %M:05, INFO: (Epoch 154) recon_loss: 27.7083, k_loss: 1566.3069
+2023-12-04 %M:15, INFO: (Epoch 155) recon_loss: 27.3484, k_loss: 1556.9689
+2023-12-04 %M:25, INFO: (Epoch 156) recon_loss: 27.4480, k_loss: 1553.8693
+2023-12-04 %M:35, INFO: (Epoch 157) recon_loss: 27.5267, k_loss: 1551.9997
+2023-12-04 %M:45, INFO: (Epoch 158) recon_loss: 27.4515, k_loss: 1548.5725
+2023-12-04 %M:55, INFO: (Epoch 159) recon_loss: 27.3132, k_loss: 1548.5878
+2023-12-04 %M:56, INFO: (Eval Epoch 160) recon_loss: 59.4911, k_loss: 1522.1683
+2023-12-04 %M:38, INFO: (Epoch 160) recon_loss: 27.2885, k_loss: 1546.5568
+2023-12-04 %M:47, INFO: (Epoch 161) recon_loss: 27.2193, k_loss: 1542.5317
+2023-12-04 %M:57, INFO: (Epoch 162) recon_loss: 27.1636, k_loss: 1538.2869
+2023-12-04 %M:07, INFO: (Epoch 163) recon_loss: 27.2414, k_loss: 1529.8595
+2023-12-04 %M:16, INFO: (Epoch 164) recon_loss: 26.9849, k_loss: 1531.5358
+2023-12-04 %M:26, INFO: (Epoch 165) recon_loss: 27.1054, k_loss: 1529.1702
+2023-12-04 %M:36, INFO: (Epoch 166) recon_loss: 26.9271, k_loss: 1522.6993
+2023-12-04 %M:46, INFO: (Epoch 167) recon_loss: 26.8605, k_loss: 1520.3659
+2023-12-04 %M:55, INFO: (Epoch 168) recon_loss: 26.8914, k_loss: 1514.6608
+2023-12-04 %M:05, INFO: (Epoch 169) recon_loss: 26.7010, k_loss: 1511.6571
+2023-12-04 %M:14, INFO: (Epoch 170) recon_loss: 26.6779, k_loss: 1507.9150
+2023-12-04 %M:24, INFO: (Epoch 171) recon_loss: 26.8581, k_loss: 1503.3314
+2023-12-04 %M:34, INFO: (Epoch 172) recon_loss: 26.5845, k_loss: 1502.6893
+2023-12-04 %M:44, INFO: (Epoch 173) recon_loss: 26.6484, k_loss: 1499.1963
+2023-12-04 %M:54, INFO: (Epoch 174) recon_loss: 26.6149, k_loss: 1497.9306
+2023-12-04 %M:03, INFO: (Epoch 175) recon_loss: 26.4668, k_loss: 1494.6890
+2023-12-04 %M:13, INFO: (Epoch 176) recon_loss: 26.5478, k_loss: 1495.9380
+2023-12-04 %M:22, INFO: (Epoch 177) recon_loss: 26.4537, k_loss: 1492.2052
+2023-12-04 %M:24, INFO: (Epoch 178) recon_loss: 26.3693, k_loss: 1488.9414
+2023-12-04 %M:27, INFO: (Epoch 179) recon_loss: 26.1147, k_loss: 1482.4756
+2023-12-04 %M:28, INFO: (Eval Epoch 180) recon_loss: 60.0245, k_loss: 1465.7239
+2023-12-04 %M:23, INFO: (Epoch 180) recon_loss: 26.1068, k_loss: 1477.5474
+2023-12-04 %M:26, INFO: (Epoch 181) recon_loss: 26.2515, k_loss: 1472.6922
+2023-12-04 %M:23, INFO: (Epoch 182) recon_loss: 26.2880, k_loss: 1467.4861
+2023-12-04 %M:26, INFO: (Epoch 183) recon_loss: 26.1826, k_loss: 1466.2035
+2023-12-04 %M:23, INFO: (Epoch 184) recon_loss: 25.9431, k_loss: 1463.1080
+2023-12-04 %M:26, INFO: (Epoch 185) recon_loss: 26.0821, k_loss: 1460.3571
+2023-12-04 %M:22, INFO: (Epoch 186) recon_loss: 25.6773, k_loss: 1459.2997
+2023-12-04 %M:25, INFO: (Epoch 187) recon_loss: 25.9634, k_loss: 1458.4469
+2023-12-04 %M:22, INFO: (Epoch 188) recon_loss: 25.8509, k_loss: 1453.9886
+2023-12-04 %M:25, INFO: (Epoch 189) recon_loss: 25.9686, k_loss: 1445.8431
+2023-12-04 %M:28, INFO: (Epoch 190) recon_loss: 25.7589, k_loss: 1445.0064
+2023-12-04 %M:37, INFO: (Epoch 191) recon_loss: 25.4025, k_loss: 1443.4633
+2023-12-04 %M:47, INFO: (Epoch 192) recon_loss: 25.5515, k_loss: 1439.2021
+2023-12-04 %M:57, INFO: (Epoch 193) recon_loss: 25.5691, k_loss: 1436.2581
+2023-12-04 %M:07, INFO: (Epoch 194) recon_loss: 25.6906, k_loss: 1432.6677
+2023-12-04 %M:17, INFO: (Epoch 195) recon_loss: 25.4821, k_loss: 1431.6435
+2023-12-04 %M:27, INFO: (Epoch 196) recon_loss: 25.2830, k_loss: 1427.5298
+2023-12-04 %M:36, INFO: (Epoch 197) recon_loss: 25.3643, k_loss: 1424.4191
+2023-12-04 %M:46, INFO: (Epoch 198) recon_loss: 25.5088, k_loss: 1425.3623
+2023-12-04 %M:56, INFO: (Epoch 199) recon_loss: 25.2873, k_loss: 1417.2569
+2023-12-04 %M:57, INFO: (Eval Epoch 200) recon_loss: 60.8039, k_loss: 1400.0492
+2023-12-04 %M:39, INFO: (Epoch 200) recon_loss: 25.5256, k_loss: 1416.2020
+2023-12-04 %M:48, INFO: (Epoch 201) recon_loss: 24.9518, k_loss: 1411.0222
+2023-12-04 %M:58, INFO: (Epoch 202) recon_loss: 25.2867, k_loss: 1410.4081
+2023-12-04 %M:08, INFO: (Epoch 203) recon_loss: 25.2343, k_loss: 1409.5222
+2023-12-04 %M:18, INFO: (Epoch 204) recon_loss: 25.0848, k_loss: 1407.8330
+2023-12-04 %M:28, INFO: (Epoch 205) recon_loss: 25.0023, k_loss: 1402.3692
+2023-12-04 %M:38, INFO: (Epoch 206) recon_loss: 24.9024, k_loss: 1400.9763
+2023-12-04 %M:48, INFO: (Epoch 207) recon_loss: 25.1864, k_loss: 1393.9386
+2023-12-04 %M:57, INFO: (Epoch 208) recon_loss: 24.9622, k_loss: 1390.7554
+2023-12-04 %M:07, INFO: (Epoch 209) recon_loss: 24.9169, k_loss: 1389.9317
+2023-12-04 %M:17, INFO: (Epoch 210) recon_loss: 24.8757, k_loss: 1384.7427
+2023-12-04 %M:27, INFO: (Epoch 211) recon_loss: 25.0214, k_loss: 1385.5000
+2023-12-04 %M:36, INFO: (Epoch 212) recon_loss: 24.7479, k_loss: 1384.3117
+2023-12-04 %M:46, INFO: (Epoch 213) recon_loss: 24.7131, k_loss: 1377.4286
+2023-12-04 %M:56, INFO: (Epoch 214) recon_loss: 24.7364, k_loss: 1374.9482
+2023-12-04 %M:05, INFO: (Epoch 215) recon_loss: 24.5679, k_loss: 1374.6077
+2023-12-04 %M:59, INFO: (Epoch 216) recon_loss: 24.6552, k_loss: 1370.3300
+2023-12-04 %M:53, INFO: (Epoch 217) recon_loss: 24.4669, k_loss: 1365.5003
+2023-12-04 %M:56, INFO: (Epoch 218) recon_loss: 24.5589, k_loss: 1361.3732
+2023-12-04 %M:52, INFO: (Epoch 219) recon_loss: 24.4690, k_loss: 1363.2273
+2023-12-04 %M:54, INFO: (Eval Epoch 220) recon_loss: 60.6727, k_loss: 1331.1661
+2023-12-04 %M:55, INFO: (Epoch 220) recon_loss: 24.5749, k_loss: 1359.7177
+2023-12-04 %M:58, INFO: (Epoch 221) recon_loss: 24.4052, k_loss: 1357.9494
+2023-12-04 %M:55, INFO: (Epoch 222) recon_loss: 24.3940, k_loss: 1354.0859
+2023-12-04 %M:58, INFO: (Epoch 223) recon_loss: 24.4665, k_loss: 1353.5710
+2023-12-04 %M:54, INFO: (Epoch 224) recon_loss: 24.2842, k_loss: 1354.0423
+2023-12-04 %M:57, INFO: (Epoch 225) recon_loss: 24.2051, k_loss: 1350.4115
+2023-12-04 %M:54, INFO: (Epoch 226) recon_loss: 24.2167, k_loss: 1344.5232
+2023-12-04 %M:57, INFO: (Epoch 227) recon_loss: 24.3068, k_loss: 1342.6280
+2023-12-04 %M:53, INFO: (Epoch 228) recon_loss: 24.1725, k_loss: 1336.1293
+2023-12-04 %M:56, INFO: (Epoch 229) recon_loss: 24.2662, k_loss: 1335.1285
+2023-12-04 %M:53, INFO: (Epoch 230) recon_loss: 24.3910, k_loss: 1338.1600
+2023-12-04 %M:56, INFO: (Epoch 231) recon_loss: 24.1017, k_loss: 1334.8523
+2023-12-04 %M:53, INFO: (Epoch 232) recon_loss: 24.2167, k_loss: 1330.5482
+2023-12-04 %M:55, INFO: (Epoch 233) recon_loss: 23.9583, k_loss: 1328.8739
+2023-12-04 %M:52, INFO: (Epoch 234) recon_loss: 24.1713, k_loss: 1325.0666
+2023-12-04 %M:55, INFO: (Epoch 235) recon_loss: 24.1450, k_loss: 1318.0771
+2023-12-04 %M:58, INFO: (Epoch 236) recon_loss: 24.0422, k_loss: 1319.5922
+2023-12-04 %M:55, INFO: (Epoch 237) recon_loss: 23.8214, k_loss: 1317.5759
+2023-12-04 %M:58, INFO: (Epoch 238) recon_loss: 23.8108, k_loss: 1311.1029
+2023-12-04 %M:54, INFO: (Epoch 239) recon_loss: 23.8609, k_loss: 1309.1175
+2023-12-04 %M:55, INFO: (Eval Epoch 240) recon_loss: 61.0621, k_loss: 1278.9706
+2023-12-04 %M:57, INFO: (Epoch 240) recon_loss: 23.7732, k_loss: 1310.0960
+2023-12-04 %M:54, INFO: (Epoch 241) recon_loss: 23.7297, k_loss: 1309.2992
+2023-12-04 %M:57, INFO: (Epoch 242) recon_loss: 23.6632, k_loss: 1306.0040
+2023-12-04 %M:53, INFO: (Epoch 243) recon_loss: 23.7092, k_loss: 1304.4684
+2023-12-04 %M:56, INFO: (Epoch 244) recon_loss: 23.7540, k_loss: 1303.0102
+2023-12-04 %M:53, INFO: (Epoch 245) recon_loss: 23.5257, k_loss: 1299.8882
+2023-12-04 %M:56, INFO: (Epoch 246) recon_loss: 23.6713, k_loss: 1296.7580
+2023-12-04 %M:53, INFO: (Epoch 247) recon_loss: 23.5736, k_loss: 1295.2265
+2023-12-04 %M:55, INFO: (Epoch 248) recon_loss: 23.5638, k_loss: 1293.8504
+2023-12-04 %M:58, INFO: (Epoch 249) recon_loss: 23.3740, k_loss: 1291.1456
+2023-12-04 %M:55, INFO: (Epoch 250) recon_loss: 23.5828, k_loss: 1290.2243
+2023-12-04 %M:58, INFO: (Epoch 251) recon_loss: 23.3903, k_loss: 1287.4394
+2023-12-04 %M:55, INFO: (Epoch 252) recon_loss: 23.3753, k_loss: 1286.4545
+2023-12-04 %M:57, INFO: (Epoch 253) recon_loss: 23.3012, k_loss: 1286.9656
+2023-12-04 %M:54, INFO: (Epoch 254) recon_loss: 23.3977, k_loss: 1279.6852
+2023-12-04 %M:57, INFO: (Epoch 255) recon_loss: 23.2693, k_loss: 1276.5253
+2023-12-04 %M:54, INFO: (Epoch 256) recon_loss: 23.5603, k_loss: 1272.7310
+2023-12-04 %M:57, INFO: (Epoch 257) recon_loss: 23.4030, k_loss: 1273.4087
+2023-12-04 %M:53, INFO: (Epoch 258) recon_loss: 23.0152, k_loss: 1272.0240
+2023-12-04 %M:56, INFO: (Epoch 259) recon_loss: 23.0041, k_loss: 1270.7995
+2023-12-04 %M:58, INFO: (Eval Epoch 260) recon_loss: 61.0814, k_loss: 1257.7705
+2023-12-04 %M:53, INFO: (Epoch 260) recon_loss: 23.0548, k_loss: 1266.0867
+2023-12-04 %M:56, INFO: (Epoch 261) recon_loss: 23.0827, k_loss: 1261.6170
+2023-12-04 %M:53, INFO: (Epoch 262) recon_loss: 23.0917, k_loss: 1262.0852
+2023-12-04 %M:55, INFO: (Epoch 263) recon_loss: 23.0035, k_loss: 1259.2380
+2023-12-04 %M:58, INFO: (Epoch 264) recon_loss: 22.9792, k_loss: 1256.3619
+2023-12-04 %M:55, INFO: (Epoch 265) recon_loss: 23.1766, k_loss: 1257.7670
+2023-12-04 %M:58, INFO: (Epoch 266) recon_loss: 22.9379, k_loss: 1254.5238
+2023-12-04 %M:55, INFO: (Epoch 267) recon_loss: 22.8080, k_loss: 1250.3783
+2023-12-04 %M:57, INFO: (Epoch 268) recon_loss: 23.0063, k_loss: 1248.4683
+2023-12-04 %M:54, INFO: (Epoch 269) recon_loss: 22.8980, k_loss: 1247.8961
+2023-12-04 %M:57, INFO: (Epoch 270) recon_loss: 22.8559, k_loss: 1243.6874
+2023-12-04 %M:54, INFO: (Epoch 271) recon_loss: 22.8944, k_loss: 1244.8073
+2023-12-04 %M:57, INFO: (Epoch 272) recon_loss: 22.8879, k_loss: 1242.2994
+2023-12-04 %M:54, INFO: (Epoch 273) recon_loss: 22.8022, k_loss: 1237.4421
+2023-12-04 %M:57, INFO: (Epoch 274) recon_loss: 22.8992, k_loss: 1236.5039
+2023-12-04 %M:53, INFO: (Epoch 275) recon_loss: 22.7688, k_loss: 1236.9084
+2023-12-04 %M:56, INFO: (Epoch 276) recon_loss: 22.8254, k_loss: 1234.6733
+2023-12-04 %M:53, INFO: (Epoch 277) recon_loss: 22.4890, k_loss: 1233.4468
+2023-12-04 %M:56, INFO: (Epoch 278) recon_loss: 22.5889, k_loss: 1232.2203
+2023-12-04 %M:52, INFO: (Epoch 279) recon_loss: 22.6165, k_loss: 1231.6809
+2023-12-04 %M:54, INFO: (Eval Epoch 280) recon_loss: 61.7895, k_loss: 1199.0491
+2023-12-04 %M:55, INFO: (Epoch 280) recon_loss: 22.5160, k_loss: 1226.9028
+2023-12-04 %M:58, INFO: (Epoch 281) recon_loss: 22.6463, k_loss: 1225.6415
+2023-12-04 %M:55, INFO: (Epoch 282) recon_loss: 22.5639, k_loss: 1224.0981
+2023-12-04 %M:58, INFO: (Epoch 283) recon_loss: 22.6441, k_loss: 1223.2199
+2023-12-04 %M:54, INFO: (Epoch 284) recon_loss: 22.4595, k_loss: 1219.0601
+2023-12-04 %M:57, INFO: (Epoch 285) recon_loss: 22.3610, k_loss: 1218.7058
+2023-12-04 %M:54, INFO: (Epoch 286) recon_loss: 22.2865, k_loss: 1219.0280
+2023-12-04 %M:57, INFO: (Epoch 287) recon_loss: 22.4285, k_loss: 1216.8942
+2023-12-04 %M:54, INFO: (Epoch 288) recon_loss: 22.4515, k_loss: 1214.3708
+2023-12-04 %M:56, INFO: (Epoch 289) recon_loss: 22.1616, k_loss: 1212.6294
+2023-12-04 %M:53, INFO: (Epoch 290) recon_loss: 22.4768, k_loss: 1207.9141
+2023-12-04 %M:56, INFO: (Epoch 291) recon_loss: 22.2600, k_loss: 1208.6366
+2023-12-04 %M:53, INFO: (Epoch 292) recon_loss: 22.2826, k_loss: 1204.8469
+2023-12-04 %M:56, INFO: (Epoch 293) recon_loss: 21.9833, k_loss: 1203.7232
+2023-12-04 %M:53, INFO: (Epoch 294) recon_loss: 22.3505, k_loss: 1202.8621
+2023-12-04 %M:55, INFO: (Epoch 295) recon_loss: 22.2158, k_loss: 1203.0036
+2023-12-04 %M:58, INFO: (Epoch 296) recon_loss: 22.3631, k_loss: 1200.5887
+2023-12-04 %M:55, INFO: (Epoch 297) recon_loss: 22.1217, k_loss: 1201.8945
+2023-12-04 %M:58, INFO: (Epoch 298) recon_loss: 22.2526, k_loss: 1200.7463
+2023-12-04 %M:55, INFO: (Epoch 299) recon_loss: 21.9642, k_loss: 1202.0632
+2023-12-04 %M:56, INFO: (Eval Epoch 300) recon_loss: 62.0704, k_loss: 1192.1658
+2023-12-04 %M:58, INFO: (Epoch 300) recon_loss: 21.8795, k_loss: 1198.6241
+2023-12-04 %M:59, INFO: Phase : test, sequential data : 8945
+2023-12-04 %M:01, INFO: (Test) recon_loss: 62.9522, k_loss: 1192.8450

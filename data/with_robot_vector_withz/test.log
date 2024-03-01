@@ -1,0 +1,19 @@
+2023-12-15 15:40:29, INFO: ----------------------------------------
+2023-12-15 15:40:29, INFO: test seed 0.000000
+2023-12-15 15:40:29, INFO: Val success rate : 0.95
+2023-12-15 15:40:29, INFO: Restored from checkpoint : 00400.pt
+2023-12-15 15:40:32, INFO: finding looplift candidates
+2023-12-15 15:42:25, INFO: ----------------------------------------
+2023-12-15 15:42:25, INFO: test seed 0.000000
+2023-12-15 15:42:25, INFO: Val success rate : 0.95
+2023-12-15 15:42:25, INFO: Restored from checkpoint : 00400.pt
+2023-12-15 17:30:27, INFO: ----------------------------------------
+2023-12-15 17:30:27, INFO: test seed 0.000000
+2023-12-15 17:30:27, INFO: Val success rate : 0.95
+2023-12-15 17:30:27, INFO: Restored from checkpoint : 01600.pt
+2023-12-15 17:30:29, INFO: finding looplift candidates
+2023-12-15 17:30:41, INFO: ----------------------------------------
+2023-12-15 17:30:41, INFO: test seed 0.000000
+2023-12-15 17:30:41, INFO: Val success rate : 0.95
+2023-12-15 17:30:41, INFO: Restored from checkpoint : 01600.pt
+2023-12-15 17:30:43, INFO: finding looplift candidates

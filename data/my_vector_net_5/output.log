@@ -1,0 +1,2160 @@
+2023-12-14 11:07:15, INFO: finding looplift candidates
+2023-12-14 11:07:15, INFO: finding looplift candidates
+2023-12-14 11:07:15, INFO: finding looplift candidates
+2023-12-14 11:07:15, INFO: finding looplift candidates
+2023-12-14 11:07:15, INFO: finding looplift candidates
+2023-12-14 11:07:15, INFO: finding looplift candidates
+2023-12-14 11:07:15, INFO: finding looplift candidates
+2023-12-14 11:07:15, INFO: finding looplift candidates
+2023-12-14 11:07:15, INFO: finding looplift candidates
+2023-12-14 11:07:15, INFO: finding looplift candidates
+2023-12-14 11:07:15, INFO: finding looplift candidates
+2023-12-14 11:07:15, INFO: finding looplift candidates
+2023-12-14 11:07:48, INFO: Updates 20, num timesteps 7560, FPS 236 
+ Last 39 training episodes: mean/median reward -13.8/-12.1, min/max reward -45.9/22.0, 
+
+2023-12-14 11:08:18, INFO: Updates 40, num timesteps 14760, FPS 237 
+ Last 83 training episodes: mean/median reward -10.8/-8.3, min/max reward -45.9/22.0, 
+
+2023-12-14 11:08:48, INFO: Updates 60, num timesteps 21960, FPS 238 
+ Last 100 training episodes: mean/median reward -5.9/-2.6, min/max reward -30.9/22.2, 
+
+2023-12-14 11:09:18, INFO: Updates 80, num timesteps 29160, FPS 238 
+ Last 100 training episodes: mean/median reward -5.3/-1.7, min/max reward -34.1/22.2, 
+
+2023-12-14 11:09:49, INFO: Updates 100, num timesteps 36360, FPS 237 
+ Last 100 training episodes: mean/median reward -6.6/-2.2, min/max reward -34.1/6.0, 
+
+2023-12-14 11:10:17, INFO: Updates 120, num timesteps 43560, FPS 240 
+ Last 100 training episodes: mean/median reward -5.7/-2.1, min/max reward -28.8/6.0, 
+
+2023-12-14 11:10:46, INFO: Updates 140, num timesteps 50760, FPS 240 
+ Last 100 training episodes: mean/median reward -4.3/-1.4, min/max reward -25.2/7.4, 
+
+2023-12-14 11:11:17, INFO: Updates 160, num timesteps 57960, FPS 240 
+ Last 100 training episodes: mean/median reward -2.7/-1.0, min/max reward -21.6/10.9, 
+
+2023-12-14 11:11:47, INFO: Updates 180, num timesteps 65160, FPS 240 
+ Last 100 training episodes: mean/median reward -1.8/-0.7, min/max reward -24.5/21.7, 
+
+2023-12-14 11:12:16, INFO: Updates 200, num timesteps 72360, FPS 240 
+ Last 100 training episodes: mean/median reward -2.4/-0.9, min/max reward -24.5/21.7, 
+
+2023-12-14 11:12:46, INFO: Updates 220, num timesteps 79560, FPS 240 
+ Last 100 training episodes: mean/median reward -1.9/-1.1, min/max reward -22.8/22.4, 
+
+2023-12-14 11:13:16, INFO: Updates 240, num timesteps 86760, FPS 241 
+ Last 100 training episodes: mean/median reward -1.4/-0.8, min/max reward -21.3/22.4, 
+
+2023-12-14 11:13:45, INFO: Updates 260, num timesteps 93960, FPS 241 
+ Last 100 training episodes: mean/median reward -1.0/-0.5, min/max reward -21.3/21.2, 
+
+2023-12-14 11:14:12, INFO: Updates 280, num timesteps 101160, FPS 243 
+ Last 100 training episodes: mean/median reward -2.0/-0.8, min/max reward -29.2/21.2, 
+
+2023-12-14 11:14:39, INFO: Updates 300, num timesteps 108360, FPS 244 
+ Last 100 training episodes: mean/median reward -2.3/-0.8, min/max reward -29.2/7.5, 
+
+2023-12-14 11:15:05, INFO: Updates 320, num timesteps 115560, FPS 246 
+ Last 100 training episodes: mean/median reward -0.9/-0.1, min/max reward -27.8/22.1, 
+
+2023-12-14 11:15:32, INFO: Updates 340, num timesteps 122760, FPS 247 
+ Last 100 training episodes: mean/median reward -2.0/-0.5, min/max reward -27.8/22.1, 
+
+2023-12-14 11:16:00, INFO: Updates 360, num timesteps 129960, FPS 247 
+ Last 100 training episodes: mean/median reward -1.7/-0.6, min/max reward -21.1/21.0, 
+
+2023-12-14 11:16:30, INFO: Updates 380, num timesteps 137160, FPS 247 
+ Last 100 training episodes: mean/median reward 0.2/0.6, min/max reward -11.9/21.9, 
+
+2023-12-14 11:17:02, INFO: Updates 400, num timesteps 144360, FPS 246 
+ Last 100 training episodes: mean/median reward 0.4/0.7, min/max reward -21.3/21.9, 
+
+2023-12-14 11:17:32, INFO: Updates 420, num timesteps 151560, FPS 245 
+ Last 100 training episodes: mean/median reward 0.5/0.1, min/max reward -17.4/21.7, 
+
+2023-12-14 11:18:04, INFO: Updates 440, num timesteps 158760, FPS 245 
+ Last 100 training episodes: mean/median reward 0.5/0.5, min/max reward -17.4/21.8, 
+
+2023-12-14 11:18:35, INFO: Updates 460, num timesteps 165960, FPS 244 
+ Last 100 training episodes: mean/median reward 0.9/0.9, min/max reward -10.3/22.1, 
+
+2023-12-14 11:19:05, INFO: Updates 480, num timesteps 173160, FPS 244 
+ Last 100 training episodes: mean/median reward 1.0/0.9, min/max reward -5.6/10.2, 
+
+2023-12-14 11:19:35, INFO: Updates 500, num timesteps 180360, FPS 243 
+ Last 100 training episodes: mean/median reward 1.4/0.9, min/max reward -5.6/9.6, 
+
+2023-12-14 11:20:05, INFO: Updates 520, num timesteps 187560, FPS 243 
+ Last 100 training episodes: mean/median reward 1.6/0.9, min/max reward -8.4/22.0, 
+
+2023-12-14 11:20:35, INFO: Updates 540, num timesteps 194760, FPS 243 
+ Last 100 training episodes: mean/median reward 1.7/1.1, min/max reward -7.3/22.1, 
+
+2023-12-14 11:21:04, INFO: Updates 560, num timesteps 201960, FPS 243 
+ Last 100 training episodes: mean/median reward 0.9/0.3, min/max reward -5.7/21.7, 
+
+2023-12-14 11:21:34, INFO: Updates 580, num timesteps 209160, FPS 243 
+ Last 100 training episodes: mean/median reward 1.8/1.7, min/max reward -10.0/22.4, 
+
+2023-12-14 11:22:04, INFO: Updates 600, num timesteps 216360, FPS 243 
+ Last 100 training episodes: mean/median reward 2.5/1.5, min/max reward -8.4/22.4, 
+
+2023-12-14 11:22:34, INFO: Updates 620, num timesteps 223560, FPS 243 
+ Last 100 training episodes: mean/median reward 2.4/1.2, min/max reward -3.9/21.4, 
+
+2023-12-14 11:23:05, INFO: Updates 640, num timesteps 230760, FPS 243 
+ Last 100 training episodes: mean/median reward 2.1/1.4, min/max reward -4.1/21.6, 
+
+2023-12-14 11:23:35, INFO: Updates 660, num timesteps 237960, FPS 242 
+ Last 100 training episodes: mean/median reward 3.0/1.6, min/max reward -9.3/22.2, 
+
+2023-12-14 11:24:05, INFO: Updates 680, num timesteps 245160, FPS 242 
+ Last 100 training episodes: mean/median reward 2.4/1.7, min/max reward -2.9/22.2, 
+
+2023-12-14 11:24:34, INFO: Updates 700, num timesteps 252360, FPS 242 
+ Last 100 training episodes: mean/median reward 2.4/1.5, min/max reward -2.7/22.8, 
+
+2023-12-14 11:25:01, INFO: Updates 720, num timesteps 259560, FPS 243 
+ Last 100 training episodes: mean/median reward 2.0/1.3, min/max reward -4.0/22.8, 
+
+2023-12-14 11:25:28, INFO: Updates 740, num timesteps 266760, FPS 244 
+ Last 100 training episodes: mean/median reward 1.6/1.1, min/max reward -6.7/22.9, 
+
+2023-12-14 11:25:58, INFO: Updates 760, num timesteps 273960, FPS 244 
+ Last 100 training episodes: mean/median reward 2.9/1.4, min/max reward -6.7/22.8, 
+
+2023-12-14 11:26:28, INFO: Updates 780, num timesteps 281160, FPS 244 
+ Last 100 training episodes: mean/median reward 2.8/1.9, min/max reward -6.9/22.4, 
+
+2023-12-14 11:26:55, INFO: Updates 800, num timesteps 288360, FPS 244 
+ Last 100 training episodes: mean/median reward 2.8/1.3, min/max reward -4.1/22.9, 
+
+2023-12-14 11:27:23, INFO: Updates 820, num timesteps 295560, FPS 244 
+ Last 100 training episodes: mean/median reward 2.8/1.5, min/max reward -3.2/22.8, 
+
+2023-12-14 11:27:51, INFO: Updates 840, num timesteps 302760, FPS 245 
+ Last 100 training episodes: mean/median reward 3.5/2.0, min/max reward -3.4/22.7, 
+
+2023-12-14 11:28:19, INFO: Updates 860, num timesteps 309960, FPS 245 
+ Last 100 training episodes: mean/median reward 3.1/1.7, min/max reward -4.0/21.5, 
+
+2023-12-14 11:28:48, INFO: Updates 880, num timesteps 317160, FPS 245 
+ Last 100 training episodes: mean/median reward 2.3/1.1, min/max reward -4.0/22.6, 
+
+2023-12-14 11:29:19, INFO: Updates 900, num timesteps 324360, FPS 245 
+ Last 100 training episodes: mean/median reward 2.7/1.5, min/max reward -2.9/22.2, 
+
+2023-12-14 11:29:50, INFO: Updates 920, num timesteps 331560, FPS 244 
+ Last 100 training episodes: mean/median reward 3.8/2.1, min/max reward -3.4/22.9, 
+
+2023-12-14 11:30:20, INFO: Updates 940, num timesteps 338760, FPS 244 
+ Last 100 training episodes: mean/median reward 2.6/1.6, min/max reward -3.5/22.4, 
+
+2023-12-14 11:30:51, INFO: Updates 960, num timesteps 345960, FPS 244 
+ Last 100 training episodes: mean/median reward 2.8/2.1, min/max reward -3.0/22.3, 
+
+2023-12-14 11:31:21, INFO: Updates 980, num timesteps 353160, FPS 244 
+ Last 100 training episodes: mean/median reward 3.3/1.9, min/max reward -2.9/22.4, 
+
+2023-12-14 11:31:52, INFO: Updates 1000, num timesteps 360360, FPS 244 
+ Last 100 training episodes: mean/median reward 2.7/2.2, min/max reward -3.4/22.7, 
+
+2023-12-14 11:32:22, INFO: Updates 1020, num timesteps 367560, FPS 244 
+ Last 100 training episodes: mean/median reward 3.3/1.9, min/max reward -2.4/21.9, 
+
+2023-12-14 11:32:52, INFO: Updates 1040, num timesteps 374760, FPS 243 
+ Last 100 training episodes: mean/median reward 2.6/1.8, min/max reward -3.6/21.8, 
+
+2023-12-14 11:33:23, INFO: Updates 1060, num timesteps 381960, FPS 243 
+ Last 100 training episodes: mean/median reward 3.2/2.1, min/max reward -5.5/22.7, 
+
+2023-12-14 11:33:54, INFO: Updates 1080, num timesteps 389160, FPS 243 
+ Last 100 training episodes: mean/median reward 3.4/2.3, min/max reward -3.0/23.2, 
+
+2023-12-14 11:34:25, INFO: Updates 1100, num timesteps 396360, FPS 243 
+ Last 100 training episodes: mean/median reward 3.4/2.2, min/max reward -2.9/23.2, 
+
+2023-12-14 11:34:57, INFO: Updates 1120, num timesteps 403560, FPS 242 
+ Last 100 training episodes: mean/median reward 3.4/2.4, min/max reward -3.5/23.0, 
+
+2023-12-14 11:35:28, INFO: Updates 1140, num timesteps 410760, FPS 242 
+ Last 100 training episodes: mean/median reward 2.8/1.8, min/max reward -4.4/22.0, 
+
+2023-12-14 11:35:59, INFO: Updates 1160, num timesteps 417960, FPS 242 
+ Last 100 training episodes: mean/median reward 3.7/2.2, min/max reward -4.6/22.7, 
+
+2023-12-14 11:36:29, INFO: Updates 1180, num timesteps 425160, FPS 242 
+ Last 100 training episodes: mean/median reward 2.3/1.6, min/max reward -3.3/22.0, 
+
+2023-12-14 11:37:00, INFO: Updates 1200, num timesteps 432360, FPS 242 
+ Last 100 training episodes: mean/median reward 3.6/2.5, min/max reward -2.7/22.8, 
+
+2023-12-14 11:37:31, INFO: Updates 1220, num timesteps 439560, FPS 242 
+ Last 100 training episodes: mean/median reward 3.6/2.4, min/max reward -2.8/22.8, 
+
+2023-12-14 11:38:02, INFO: Updates 1240, num timesteps 446760, FPS 241 
+ Last 100 training episodes: mean/median reward 2.4/1.6, min/max reward -3.4/22.3, 
+
+2023-12-14 11:38:32, INFO: Updates 1260, num timesteps 453960, FPS 241 
+ Last 100 training episodes: mean/median reward 4.5/2.2, min/max reward -2.1/22.0, 
+
+2023-12-14 11:39:02, INFO: Updates 1280, num timesteps 461160, FPS 241 
+ Last 100 training episodes: mean/median reward 3.2/2.1, min/max reward -3.8/22.7, 
+
+2023-12-14 11:39:32, INFO: Updates 1300, num timesteps 468360, FPS 241 
+ Last 100 training episodes: mean/median reward 2.7/1.7, min/max reward -2.7/22.3, 
+
+2023-12-14 11:40:00, INFO: Updates 1320, num timesteps 475560, FPS 242 
+ Last 100 training episodes: mean/median reward 3.1/1.9, min/max reward -3.5/22.7, 
+
+2023-12-14 11:40:28, INFO: Updates 1340, num timesteps 482760, FPS 242 
+ Last 100 training episodes: mean/median reward 2.5/1.4, min/max reward -4.4/22.3, 
+
+2023-12-14 11:40:56, INFO: Updates 1360, num timesteps 489960, FPS 242 
+ Last 100 training episodes: mean/median reward 2.3/2.0, min/max reward -2.2/22.8, 
+
+2023-12-14 11:41:24, INFO: Updates 1380, num timesteps 497160, FPS 242 
+ Last 100 training episodes: mean/median reward 4.1/2.7, min/max reward -2.5/22.6, 
+
+2023-12-14 11:41:53, INFO: Updates 1400, num timesteps 504360, FPS 242 
+ Last 100 training episodes: mean/median reward 3.3/2.4, min/max reward -3.2/22.4, 
+
+2023-12-14 11:42:25, INFO: Updates 1420, num timesteps 511560, FPS 242 
+ Last 100 training episodes: mean/median reward 2.8/2.1, min/max reward -6.9/22.1, 
+
+2023-12-14 11:42:57, INFO: Updates 1440, num timesteps 518760, FPS 242 
+ Last 100 training episodes: mean/median reward 3.3/1.8, min/max reward -4.2/22.6, 
+
+2023-12-14 11:43:28, INFO: Updates 1460, num timesteps 525960, FPS 242 
+ Last 100 training episodes: mean/median reward 2.8/2.0, min/max reward -2.8/22.6, 
+
+2023-12-14 11:44:01, INFO: Updates 1480, num timesteps 533160, FPS 241 
+ Last 100 training episodes: mean/median reward 2.6/1.9, min/max reward -4.0/22.8, 
+
+2023-12-14 11:44:32, INFO: Updates 1500, num timesteps 540360, FPS 241 
+ Last 100 training episodes: mean/median reward 2.4/1.8, min/max reward -3.7/21.6, 
+
+2023-12-14 11:45:04, INFO: Updates 1520, num timesteps 547560, FPS 241 
+ Last 100 training episodes: mean/median reward 4.5/2.5, min/max reward -2.7/23.1, 
+
+2023-12-14 11:45:35, INFO: Updates 1540, num timesteps 554760, FPS 241 
+ Last 100 training episodes: mean/median reward 2.9/2.2, min/max reward -3.4/21.9, 
+
+2023-12-14 11:46:05, INFO: Updates 1560, num timesteps 561960, FPS 241 
+ Last 100 training episodes: mean/median reward 3.6/2.5, min/max reward -2.9/22.8, 
+
+2023-12-14 11:46:37, INFO: Updates 1580, num timesteps 569160, FPS 241 
+ Last 100 training episodes: mean/median reward 3.4/2.2, min/max reward -1.4/23.2, 
+
+2023-12-14 11:47:09, INFO: Updates 1600, num timesteps 576360, FPS 240 
+ Last 100 training episodes: mean/median reward 4.9/2.7, min/max reward -3.6/23.2, 
+
+2023-12-14 11:47:41, INFO: Updates 1620, num timesteps 583560, FPS 240 
+ Last 100 training episodes: mean/median reward 3.5/1.9, min/max reward -4.6/23.1, 
+
+2023-12-14 11:48:14, INFO: Updates 1640, num timesteps 590760, FPS 240 
+ Last 100 training episodes: mean/median reward 2.7/2.1, min/max reward -2.6/22.5, 
+
+2023-12-14 11:48:46, INFO: Updates 1660, num timesteps 597960, FPS 240 
+ Last 100 training episodes: mean/median reward 3.2/2.5, min/max reward -5.1/21.9, 
+
+2023-12-14 11:49:19, INFO: Updates 1680, num timesteps 605160, FPS 239 
+ Last 100 training episodes: mean/median reward 3.9/2.4, min/max reward -3.8/23.0, 
+
+2023-12-14 11:49:51, INFO: Updates 1700, num timesteps 612360, FPS 239 
+ Last 100 training episodes: mean/median reward 1.9/1.6, min/max reward -3.1/22.0, 
+
+2023-12-14 11:50:23, INFO: Updates 1720, num timesteps 619560, FPS 239 
+ Last 100 training episodes: mean/median reward 2.9/2.1, min/max reward -1.7/22.5, 
+
+2023-12-14 11:50:55, INFO: Updates 1740, num timesteps 626760, FPS 239 
+ Last 100 training episodes: mean/median reward 2.8/2.2, min/max reward -1.4/22.9, 
+
+2023-12-14 11:51:27, INFO: Updates 1760, num timesteps 633960, FPS 239 
+ Last 100 training episodes: mean/median reward 2.7/2.5, min/max reward -2.4/22.4, 
+
+2023-12-14 11:51:59, INFO: Updates 1780, num timesteps 641160, FPS 238 
+ Last 100 training episodes: mean/median reward 4.3/2.7, min/max reward -4.0/23.0, 
+
+2023-12-14 11:52:31, INFO: Updates 1800, num timesteps 648360, FPS 238 
+ Last 100 training episodes: mean/median reward 4.5/2.5, min/max reward -2.5/23.1, 
+
+2023-12-14 11:53:02, INFO: Updates 1820, num timesteps 655560, FPS 238 
+ Last 100 training episodes: mean/median reward 4.4/2.5, min/max reward -5.4/23.0, 
+
+2023-12-14 11:53:34, INFO: Updates 1840, num timesteps 662760, FPS 238 
+ Last 100 training episodes: mean/median reward 3.6/2.2, min/max reward -2.6/22.2, 
+
+2023-12-14 11:54:05, INFO: Updates 1860, num timesteps 669960, FPS 238 
+ Last 100 training episodes: mean/median reward 3.6/2.7, min/max reward -1.3/22.1, 
+
+2023-12-14 11:54:37, INFO: Updates 1880, num timesteps 677160, FPS 238 
+ Last 100 training episodes: mean/median reward 3.0/2.1, min/max reward -2.1/22.4, 
+
+2023-12-14 11:55:09, INFO: Updates 1900, num timesteps 684360, FPS 238 
+ Last 100 training episodes: mean/median reward 3.6/2.3, min/max reward -4.2/22.8, 
+
+2023-12-14 11:55:41, INFO: Updates 1920, num timesteps 691560, FPS 238 
+ Last 100 training episodes: mean/median reward 3.7/2.5, min/max reward -2.7/23.1, 
+
+2023-12-14 11:56:14, INFO: Updates 1940, num timesteps 698760, FPS 237 
+ Last 100 training episodes: mean/median reward 3.6/2.6, min/max reward -3.4/22.0, 
+
+2023-12-14 11:56:48, INFO: Updates 1960, num timesteps 705960, FPS 237 
+ Last 100 training episodes: mean/median reward 4.1/2.4, min/max reward -4.1/22.7, 
+
+2023-12-14 11:57:16, INFO: Updates 1980, num timesteps 713160, FPS 237 
+ Last 100 training episodes: mean/median reward 3.3/2.0, min/max reward -4.1/23.3, 
+
+2023-12-14 11:57:44, INFO: Updates 2000, num timesteps 720360, FPS 237 
+ Last 100 training episodes: mean/median reward 2.5/2.0, min/max reward -3.4/22.2, 
+
+2023-12-14 11:58:16, INFO: Updates 2020, num timesteps 727560, FPS 237 
+ Last 100 training episodes: mean/median reward 3.7/2.4, min/max reward -2.4/22.8, 
+
+2023-12-14 11:58:47, INFO: Updates 2040, num timesteps 734760, FPS 237 
+ Last 100 training episodes: mean/median reward 3.0/2.3, min/max reward -3.0/23.0, 
+
+2023-12-14 11:59:18, INFO: Updates 2060, num timesteps 741960, FPS 237 
+ Last 100 training episodes: mean/median reward 3.3/2.1, min/max reward -2.6/22.9, 
+
+2023-12-14 11:59:51, INFO: Updates 2080, num timesteps 749160, FPS 237 
+ Last 100 training episodes: mean/median reward 2.4/1.8, min/max reward -2.8/22.8, 
+
+2023-12-14 12:00:23, INFO: Updates 2100, num timesteps 756360, FPS 237 
+ Last 100 training episodes: mean/median reward 4.0/2.4, min/max reward -3.1/22.4, 
+
+2023-12-14 12:00:55, INFO: Updates 2120, num timesteps 763560, FPS 237 
+ Last 100 training episodes: mean/median reward 3.8/2.8, min/max reward -5.8/23.2, 
+
+2023-12-14 12:01:26, INFO: Updates 2140, num timesteps 770760, FPS 237 
+ Last 100 training episodes: mean/median reward 3.3/2.6, min/max reward -4.0/22.2, 
+
+2023-12-14 12:01:58, INFO: Updates 2160, num timesteps 777960, FPS 236 
+ Last 100 training episodes: mean/median reward 3.1/2.2, min/max reward -3.0/22.8, 
+
+2023-12-14 12:02:31, INFO: Updates 2180, num timesteps 785160, FPS 236 
+ Last 100 training episodes: mean/median reward 3.3/1.9, min/max reward -2.2/22.4, 
+
+2023-12-14 12:03:02, INFO: Updates 2200, num timesteps 792360, FPS 236 
+ Last 100 training episodes: mean/median reward 2.7/2.6, min/max reward -4.0/22.3, 
+
+2023-12-14 12:03:35, INFO: Updates 2220, num timesteps 799560, FPS 236 
+ Last 100 training episodes: mean/median reward 3.7/2.3, min/max reward -4.2/23.0, 
+
+2023-12-14 12:04:06, INFO: Updates 2240, num timesteps 806760, FPS 236 
+ Last 100 training episodes: mean/median reward 3.7/2.6, min/max reward -2.6/22.0, 
+
+2023-12-14 12:04:39, INFO: Updates 2260, num timesteps 813960, FPS 236 
+ Last 100 training episodes: mean/median reward 3.9/2.6, min/max reward -3.8/22.5, 
+
+2023-12-14 12:05:11, INFO: Updates 2280, num timesteps 821160, FPS 236 
+ Last 100 training episodes: mean/median reward 4.1/2.7, min/max reward -3.1/22.9, 
+
+2023-12-14 12:05:43, INFO: Updates 2300, num timesteps 828360, FPS 236 
+ Last 100 training episodes: mean/median reward 5.3/2.7, min/max reward -3.2/23.2, 
+
+2023-12-14 12:06:15, INFO: Updates 2320, num timesteps 835560, FPS 236 
+ Last 100 training episodes: mean/median reward 3.5/2.1, min/max reward -2.9/22.7, 
+
+2023-12-14 12:06:47, INFO: Updates 2340, num timesteps 842760, FPS 236 
+ Last 100 training episodes: mean/median reward 4.8/2.7, min/max reward -3.1/22.5, 
+
+2023-12-14 12:07:18, INFO: Updates 2360, num timesteps 849960, FPS 235 
+ Last 100 training episodes: mean/median reward 3.4/1.9, min/max reward -2.0/22.5, 
+
+2023-12-14 12:07:48, INFO: Updates 2380, num timesteps 857160, FPS 235 
+ Last 100 training episodes: mean/median reward 3.8/2.3, min/max reward -1.6/22.1, 
+
+2023-12-14 12:08:18, INFO: Updates 2400, num timesteps 864360, FPS 236 
+ Last 100 training episodes: mean/median reward 4.3/2.7, min/max reward -5.3/22.9, 
+
+2023-12-14 12:08:50, INFO: Updates 2420, num timesteps 871560, FPS 235 
+ Last 100 training episodes: mean/median reward 4.6/2.6, min/max reward -2.5/22.4, 
+
+2023-12-14 12:09:22, INFO: Updates 2440, num timesteps 878760, FPS 235 
+ Last 100 training episodes: mean/median reward 3.8/2.4, min/max reward -2.8/22.3, 
+
+2023-12-14 12:09:53, INFO: Updates 2460, num timesteps 885960, FPS 235 
+ Last 100 training episodes: mean/median reward 4.4/2.5, min/max reward -4.0/22.6, 
+
+2023-12-14 12:10:25, INFO: Updates 2480, num timesteps 893160, FPS 235 
+ Last 100 training episodes: mean/median reward 3.0/2.3, min/max reward -3.1/22.3, 
+
+2023-12-14 12:10:57, INFO: Updates 2500, num timesteps 900360, FPS 235 
+ Last 100 training episodes: mean/median reward 3.5/2.4, min/max reward -2.4/22.3, 
+
+2023-12-14 12:11:29, INFO: Updates 2520, num timesteps 907560, FPS 235 
+ Last 100 training episodes: mean/median reward 4.3/2.5, min/max reward -3.9/23.1, 
+
+2023-12-14 12:12:01, INFO: Updates 2540, num timesteps 914760, FPS 235 
+ Last 100 training episodes: mean/median reward 4.3/2.9, min/max reward -2.0/22.7, 
+
+2023-12-14 12:12:33, INFO: Updates 2560, num timesteps 921960, FPS 235 
+ Last 100 training episodes: mean/median reward 3.7/2.3, min/max reward -1.9/22.8, 
+
+2023-12-14 12:13:05, INFO: Updates 2580, num timesteps 929160, FPS 235 
+ Last 100 training episodes: mean/median reward 3.6/2.6, min/max reward -2.9/23.1, 
+
+2023-12-14 12:13:36, INFO: Updates 2600, num timesteps 936360, FPS 235 
+ Last 100 training episodes: mean/median reward 3.8/2.5, min/max reward -3.4/22.3, 
+
+2023-12-14 12:14:07, INFO: Updates 2620, num timesteps 943560, FPS 235 
+ Last 100 training episodes: mean/median reward 4.6/2.7, min/max reward -2.7/22.6, 
+
+2023-12-14 12:14:38, INFO: Updates 2640, num timesteps 950760, FPS 235 
+ Last 100 training episodes: mean/median reward 4.4/2.5, min/max reward -2.5/21.9, 
+
+2023-12-14 12:15:10, INFO: Updates 2660, num timesteps 957960, FPS 235 
+ Last 100 training episodes: mean/median reward 3.8/2.9, min/max reward -3.1/22.8, 
+
+2023-12-14 12:15:41, INFO: Updates 2680, num timesteps 965160, FPS 235 
+ Last 100 training episodes: mean/median reward 4.2/3.0, min/max reward -3.2/22.8, 
+
+2023-12-14 12:16:13, INFO: Updates 2700, num timesteps 972360, FPS 235 
+ Last 100 training episodes: mean/median reward 4.5/2.7, min/max reward -2.1/22.1, 
+
+2023-12-14 12:16:45, INFO: Updates 2720, num timesteps 979560, FPS 234 
+ Last 100 training episodes: mean/median reward 3.4/2.3, min/max reward -4.4/22.7, 
+
+2023-12-14 12:17:16, INFO: Updates 2740, num timesteps 986760, FPS 234 
+ Last 100 training episodes: mean/median reward 3.6/2.8, min/max reward -3.0/22.6, 
+
+2023-12-14 12:17:48, INFO: Updates 2760, num timesteps 993960, FPS 234 
+ Last 100 training episodes: mean/median reward 4.4/2.7, min/max reward -5.2/22.7, 
+
+2023-12-14 12:18:22, INFO: Updates 2780, num timesteps 1001160, FPS 234 
+ Last 100 training episodes: mean/median reward 3.6/2.4, min/max reward -1.8/22.0, 
+
+2023-12-14 12:18:51, INFO: Updates 2800, num timesteps 1008360, FPS 234 
+ Last 100 training episodes: mean/median reward 3.5/2.2, min/max reward -3.3/22.4, 
+
+2023-12-14 12:19:19, INFO: Updates 2820, num timesteps 1015560, FPS 234 
+ Last 100 training episodes: mean/median reward 3.6/2.6, min/max reward -5.4/22.0, 
+
+2023-12-14 12:19:47, INFO: Updates 2840, num timesteps 1022760, FPS 235 
+ Last 100 training episodes: mean/median reward 3.8/2.6, min/max reward -3.1/22.1, 
+
+2023-12-14 12:20:17, INFO: Updates 2860, num timesteps 1029960, FPS 235 
+ Last 100 training episodes: mean/median reward 5.1/3.0, min/max reward -2.6/22.5, 
+
+2023-12-14 12:20:50, INFO: Updates 2880, num timesteps 1037160, FPS 234 
+ Last 100 training episodes: mean/median reward 6.0/3.1, min/max reward -1.4/22.5, 
+
+2023-12-14 12:21:23, INFO: Updates 2900, num timesteps 1044360, FPS 234 
+ Last 100 training episodes: mean/median reward 4.5/2.8, min/max reward -4.1/23.1, 
+
+2023-12-14 12:21:55, INFO: Updates 2920, num timesteps 1051560, FPS 234 
+ Last 100 training episodes: mean/median reward 3.9/2.7, min/max reward -4.5/22.5, 
+
+2023-12-14 12:22:27, INFO: Updates 2940, num timesteps 1058760, FPS 234 
+ Last 100 training episodes: mean/median reward 3.1/2.9, min/max reward -1.8/22.4, 
+
+2023-12-14 12:22:59, INFO: Updates 2960, num timesteps 1065960, FPS 234 
+ Last 100 training episodes: mean/median reward 4.7/3.0, min/max reward -2.5/22.6, 
+
+2023-12-14 12:23:32, INFO: Updates 2980, num timesteps 1073160, FPS 234 
+ Last 100 training episodes: mean/median reward 4.8/3.2, min/max reward -2.0/22.4, 
+
+2023-12-14 12:24:03, INFO: Updates 3000, num timesteps 1080360, FPS 234 
+ Last 100 training episodes: mean/median reward 4.6/2.5, min/max reward -1.9/22.3, 
+
+2023-12-14 12:24:33, INFO: Updates 3020, num timesteps 1087560, FPS 234 
+ Last 100 training episodes: mean/median reward 3.1/2.8, min/max reward -2.1/22.4, 
+
+2023-12-14 12:25:05, INFO: Updates 3040, num timesteps 1094760, FPS 234 
+ Last 100 training episodes: mean/median reward 5.4/2.9, min/max reward -2.6/22.8, 
+
+2023-12-14 12:25:37, INFO: Updates 3060, num timesteps 1101960, FPS 234 
+ Last 100 training episodes: mean/median reward 3.9/2.6, min/max reward -3.1/22.3, 
+
+2023-12-14 12:26:10, INFO: Updates 3080, num timesteps 1109160, FPS 234 
+ Last 100 training episodes: mean/median reward 4.0/2.4, min/max reward -1.7/21.9, 
+
+2023-12-14 12:26:42, INFO: Updates 3100, num timesteps 1116360, FPS 234 
+ Last 100 training episodes: mean/median reward 4.5/3.1, min/max reward -3.6/22.6, 
+
+2023-12-14 12:27:14, INFO: Updates 3120, num timesteps 1123560, FPS 234 
+ Last 100 training episodes: mean/median reward 4.7/2.8, min/max reward -1.9/22.3, 
+
+2023-12-14 12:27:47, INFO: Updates 3140, num timesteps 1130760, FPS 234 
+ Last 100 training episodes: mean/median reward 4.4/3.1, min/max reward -2.3/22.8, 
+
+2023-12-14 12:28:20, INFO: Updates 3160, num timesteps 1137960, FPS 233 
+ Last 100 training episodes: mean/median reward 4.0/2.8, min/max reward -2.6/23.0, 
+
+2023-12-14 12:28:51, INFO: Updates 3180, num timesteps 1145160, FPS 233 
+ Last 100 training episodes: mean/median reward 4.3/2.9, min/max reward -2.0/22.0, 
+
+2023-12-14 12:29:24, INFO: Updates 3200, num timesteps 1152360, FPS 233 
+ Last 100 training episodes: mean/median reward 3.8/2.1, min/max reward -3.5/22.4, 
+
+2023-12-14 12:29:56, INFO: Updates 3220, num timesteps 1159560, FPS 233 
+ Last 100 training episodes: mean/median reward 4.8/2.4, min/max reward -2.5/23.3, 
+
+2023-12-14 12:30:26, INFO: Updates 3240, num timesteps 1166760, FPS 233 
+ Last 100 training episodes: mean/median reward 4.2/2.6, min/max reward -3.2/23.0, 
+
+2023-12-14 12:30:57, INFO: Updates 3260, num timesteps 1173960, FPS 233 
+ Last 100 training episodes: mean/median reward 4.0/2.6, min/max reward -4.8/22.5, 
+
+2023-12-14 12:31:30, INFO: Updates 3280, num timesteps 1181160, FPS 233 
+ Last 100 training episodes: mean/median reward 3.6/2.7, min/max reward -3.1/23.1, 
+
+2023-12-14 12:31:58, INFO: Updates 3300, num timesteps 1188360, FPS 233 
+ Last 100 training episodes: mean/median reward 4.5/2.8, min/max reward -1.7/23.0, 
+
+2023-12-14 12:32:27, INFO: Updates 3320, num timesteps 1195560, FPS 233 
+ Last 100 training episodes: mean/median reward 3.5/2.8, min/max reward -2.8/22.3, 
+
+2023-12-14 12:32:55, INFO: Updates 3340, num timesteps 1202760, FPS 234 
+ Last 100 training episodes: mean/median reward 4.4/3.0, min/max reward -3.0/22.8, 
+
+2023-12-14 12:33:24, INFO: Updates 3360, num timesteps 1209960, FPS 234 
+ Last 100 training episodes: mean/median reward 3.4/2.6, min/max reward -3.8/22.4, 
+
+2023-12-14 12:33:54, INFO: Updates 3380, num timesteps 1217160, FPS 234 
+ Last 100 training episodes: mean/median reward 4.3/2.9, min/max reward -0.7/22.9, 
+
+2023-12-14 12:34:25, INFO: Updates 3400, num timesteps 1224360, FPS 234 
+ Last 100 training episodes: mean/median reward 3.8/2.7, min/max reward -2.9/22.4, 
+
+2023-12-14 12:34:56, INFO: Updates 3420, num timesteps 1231560, FPS 234 
+ Last 100 training episodes: mean/median reward 4.2/2.7, min/max reward -2.4/23.4, 
+
+2023-12-14 12:35:27, INFO: Updates 3440, num timesteps 1238760, FPS 234 
+ Last 100 training episodes: mean/median reward 5.8/3.5, min/max reward -5.9/22.3, 
+
+2023-12-14 12:35:58, INFO: Updates 3460, num timesteps 1245960, FPS 234 
+ Last 100 training episodes: mean/median reward 3.6/2.4, min/max reward -4.5/22.6, 
+
+2023-12-14 12:36:29, INFO: Updates 3480, num timesteps 1253160, FPS 234 
+ Last 100 training episodes: mean/median reward 5.1/3.0, min/max reward -3.9/23.0, 
+
+2023-12-14 12:37:00, INFO: Updates 3500, num timesteps 1260360, FPS 234 
+ Last 100 training episodes: mean/median reward 5.0/3.4, min/max reward -4.3/22.8, 
+
+2023-12-14 12:37:31, INFO: Updates 3520, num timesteps 1267560, FPS 234 
+ Last 100 training episodes: mean/median reward 4.7/2.9, min/max reward -2.6/22.1, 
+
+2023-12-14 12:38:02, INFO: Updates 3540, num timesteps 1274760, FPS 234 
+ Last 100 training episodes: mean/median reward 4.0/2.7, min/max reward -2.4/22.9, 
+
+2023-12-14 12:38:33, INFO: Updates 3560, num timesteps 1281960, FPS 234 
+ Last 100 training episodes: mean/median reward 5.3/2.9, min/max reward -2.8/22.4, 
+
+2023-12-14 12:39:01, INFO: Updates 3580, num timesteps 1289160, FPS 234 
+ Last 100 training episodes: mean/median reward 4.2/2.9, min/max reward -1.9/22.6, 
+
+2023-12-14 12:39:28, INFO: Updates 3600, num timesteps 1296360, FPS 234 
+ Last 100 training episodes: mean/median reward 4.0/2.8, min/max reward -3.4/21.4, 
+
+2023-12-14 12:39:59, INFO: Updates 3620, num timesteps 1303560, FPS 234 
+ Last 100 training episodes: mean/median reward 3.8/2.7, min/max reward -3.4/22.1, 
+
+2023-12-14 12:40:30, INFO: Updates 3640, num timesteps 1310760, FPS 234 
+ Last 100 training episodes: mean/median reward 4.5/3.4, min/max reward -1.7/22.0, 
+
+2023-12-14 12:41:00, INFO: Updates 3660, num timesteps 1317960, FPS 234 
+ Last 100 training episodes: mean/median reward 4.6/3.0, min/max reward -4.3/23.4, 
+
+2023-12-14 12:41:31, INFO: Updates 3680, num timesteps 1325160, FPS 234 
+ Last 100 training episodes: mean/median reward 4.1/2.9, min/max reward -2.8/23.2, 
+
+2023-12-14 12:42:04, INFO: Updates 3700, num timesteps 1332360, FPS 234 
+ Last 100 training episodes: mean/median reward 5.4/2.9, min/max reward -1.6/22.1, 
+
+2023-12-14 12:42:38, INFO: Updates 3720, num timesteps 1339560, FPS 234 
+ Last 100 training episodes: mean/median reward 3.4/2.6, min/max reward -3.5/22.2, 
+
+2023-12-14 12:43:14, INFO: Updates 3740, num timesteps 1346760, FPS 233 
+ Last 100 training episodes: mean/median reward 4.2/3.5, min/max reward -2.9/22.2, 
+
+2023-12-14 12:43:51, INFO: Updates 3760, num timesteps 1353960, FPS 233 
+ Last 100 training episodes: mean/median reward 3.6/2.8, min/max reward -2.0/22.7, 
+
+2023-12-14 12:44:28, INFO: Updates 3780, num timesteps 1361160, FPS 233 
+ Last 100 training episodes: mean/median reward 4.6/3.6, min/max reward -2.4/23.1, 
+
+2023-12-14 12:44:58, INFO: Updates 3800, num timesteps 1368360, FPS 233 
+ Last 100 training episodes: mean/median reward 4.6/2.9, min/max reward -4.5/23.2, 
+
+2023-12-14 12:45:32, INFO: Updates 3820, num timesteps 1375560, FPS 233 
+ Last 100 training episodes: mean/median reward 4.3/2.5, min/max reward -4.6/22.6, 
+
+2023-12-14 12:46:07, INFO: Updates 3840, num timesteps 1382760, FPS 233 
+ Last 100 training episodes: mean/median reward 4.0/2.9, min/max reward -3.6/22.6, 
+
+2023-12-14 12:46:42, INFO: Updates 3860, num timesteps 1389960, FPS 232 
+ Last 100 training episodes: mean/median reward 5.1/3.3, min/max reward -2.8/23.0, 
+
+2023-12-14 12:47:18, INFO: Updates 3880, num timesteps 1397160, FPS 232 
+ Last 100 training episodes: mean/median reward 3.8/3.2, min/max reward -2.3/22.8, 
+
+2023-12-14 12:47:56, INFO: Updates 3900, num timesteps 1404360, FPS 232 
+ Last 100 training episodes: mean/median reward 5.7/3.4, min/max reward -2.8/22.9, 
+
+2023-12-14 12:48:35, INFO: Updates 3920, num timesteps 1411560, FPS 232 
+ Last 100 training episodes: mean/median reward 4.4/2.9, min/max reward -2.6/22.5, 
+
+2023-12-14 12:49:13, INFO: Updates 3940, num timesteps 1418760, FPS 231 
+ Last 100 training episodes: mean/median reward 4.6/2.9, min/max reward -6.1/22.8, 
+
+2023-12-14 12:49:50, INFO: Updates 3960, num timesteps 1425960, FPS 231 
+ Last 100 training episodes: mean/median reward 5.2/3.1, min/max reward -3.9/22.8, 
+
+2023-12-14 12:50:28, INFO: Updates 3980, num timesteps 1433160, FPS 231 
+ Last 100 training episodes: mean/median reward 4.7/2.9, min/max reward -4.3/23.1, 
+
+2023-12-14 12:51:06, INFO: Updates 4000, num timesteps 1440360, FPS 231 
+ Last 100 training episodes: mean/median reward 3.8/2.7, min/max reward -4.1/23.0, 
+
+2023-12-14 12:51:45, INFO: Updates 4020, num timesteps 1447560, FPS 230 
+ Last 100 training episodes: mean/median reward 4.4/3.4, min/max reward -4.0/23.0, 
+
+2023-12-14 12:52:22, INFO: Updates 4040, num timesteps 1454760, FPS 230 
+ Last 100 training episodes: mean/median reward 4.7/3.2, min/max reward -5.3/23.1, 
+
+2023-12-14 12:53:00, INFO: Updates 4060, num timesteps 1461960, FPS 230 
+ Last 100 training episodes: mean/median reward 3.6/2.9, min/max reward -1.9/23.0, 
+
+2023-12-14 12:53:38, INFO: Updates 4080, num timesteps 1469160, FPS 230 
+ Last 100 training episodes: mean/median reward 4.5/2.5, min/max reward -2.4/22.5, 
+
+2023-12-14 12:54:16, INFO: Updates 4100, num timesteps 1476360, FPS 229 
+ Last 100 training episodes: mean/median reward 4.3/2.9, min/max reward -4.5/23.1, 
+
+2023-12-14 12:54:53, INFO: Updates 4120, num timesteps 1483560, FPS 229 
+ Last 100 training episodes: mean/median reward 4.4/2.8, min/max reward -3.5/22.9, 
+
+2023-12-14 12:55:31, INFO: Updates 4140, num timesteps 1490760, FPS 229 
+ Last 100 training episodes: mean/median reward 4.0/2.8, min/max reward -3.2/22.8, 
+
+2023-12-14 12:56:09, INFO: Updates 4160, num timesteps 1497960, FPS 229 
+ Last 100 training episodes: mean/median reward 3.9/2.7, min/max reward -2.5/22.5, 
+
+2023-12-14 12:56:46, INFO: Updates 4180, num timesteps 1505160, FPS 229 
+ Last 100 training episodes: mean/median reward 4.6/2.9, min/max reward -2.0/22.7, 
+
+2023-12-14 12:57:24, INFO: Updates 4200, num timesteps 1512360, FPS 228 
+ Last 100 training episodes: mean/median reward 4.3/2.9, min/max reward -3.4/22.7, 
+
+2023-12-14 12:58:01, INFO: Updates 4220, num timesteps 1519560, FPS 228 
+ Last 100 training episodes: mean/median reward 5.3/2.8, min/max reward -2.5/23.0, 
+
+2023-12-14 12:58:38, INFO: Updates 4240, num timesteps 1526760, FPS 228 
+ Last 100 training episodes: mean/median reward 5.5/3.6, min/max reward -3.6/23.0, 
+
+2023-12-14 12:59:12, INFO: Updates 4260, num timesteps 1533960, FPS 228 
+ Last 100 training episodes: mean/median reward 5.8/3.5, min/max reward -4.2/23.2, 
+
+2023-12-14 12:59:47, INFO: Updates 4280, num timesteps 1541160, FPS 228 
+ Last 100 training episodes: mean/median reward 4.4/2.7, min/max reward -5.0/22.8, 
+
+2023-12-14 13:00:21, INFO: Updates 4300, num timesteps 1548360, FPS 228 
+ Last 100 training episodes: mean/median reward 3.7/2.7, min/max reward -1.3/21.5, 
+
+2023-12-14 13:00:56, INFO: Updates 4320, num timesteps 1555560, FPS 228 
+ Last 100 training episodes: mean/median reward 4.3/2.8, min/max reward -1.4/22.7, 
+
+2023-12-14 13:01:33, INFO: Updates 4340, num timesteps 1562760, FPS 227 
+ Last 100 training episodes: mean/median reward 5.1/3.2, min/max reward -3.2/23.0, 
+
+2023-12-14 13:02:11, INFO: Updates 4360, num timesteps 1569960, FPS 227 
+ Last 100 training episodes: mean/median reward 5.2/3.4, min/max reward -2.6/22.8, 
+
+2023-12-14 13:02:48, INFO: Updates 4380, num timesteps 1577160, FPS 227 
+ Last 100 training episodes: mean/median reward 4.8/3.4, min/max reward -1.2/23.2, 
+
+2023-12-14 13:03:26, INFO: Updates 4400, num timesteps 1584360, FPS 227 
+ Last 100 training episodes: mean/median reward 3.4/2.8, min/max reward -2.4/22.2, 
+
+2023-12-14 13:04:02, INFO: Updates 4420, num timesteps 1591560, FPS 227 
+ Last 100 training episodes: mean/median reward 5.1/3.2, min/max reward -1.3/23.0, 
+
+2023-12-14 13:04:39, INFO: Updates 4440, num timesteps 1598760, FPS 226 
+ Last 100 training episodes: mean/median reward 4.6/3.1, min/max reward -2.5/22.5, 
+
+2023-12-14 13:05:17, INFO: Updates 4460, num timesteps 1605960, FPS 226 
+ Last 100 training episodes: mean/median reward 4.3/3.0, min/max reward -3.4/22.8, 
+
+2023-12-14 13:05:54, INFO: Updates 4480, num timesteps 1613160, FPS 226 
+ Last 100 training episodes: mean/median reward 5.3/3.2, min/max reward -2.2/22.5, 
+
+2023-12-14 13:06:32, INFO: Updates 4500, num timesteps 1620360, FPS 226 
+ Last 100 training episodes: mean/median reward 4.3/2.7, min/max reward -1.8/22.2, 
+
+2023-12-14 13:07:10, INFO: Updates 4520, num timesteps 1627560, FPS 226 
+ Last 100 training episodes: mean/median reward 4.6/2.8, min/max reward -4.3/22.8, 
+
+2023-12-14 13:07:47, INFO: Updates 4540, num timesteps 1634760, FPS 226 
+ Last 100 training episodes: mean/median reward 3.2/2.5, min/max reward -2.1/22.5, 
+
+2023-12-14 13:08:24, INFO: Updates 4560, num timesteps 1641960, FPS 225 
+ Last 100 training episodes: mean/median reward 4.2/2.8, min/max reward -2.1/22.0, 
+
+2023-12-14 13:09:03, INFO: Updates 4580, num timesteps 1649160, FPS 225 
+ Last 100 training episodes: mean/median reward 4.9/2.6, min/max reward -3.4/22.9, 
+
+2023-12-14 13:09:41, INFO: Updates 4600, num timesteps 1656360, FPS 225 
+ Last 100 training episodes: mean/median reward 5.4/3.0, min/max reward -3.1/22.4, 
+
+2023-12-14 13:10:18, INFO: Updates 4620, num timesteps 1663560, FPS 225 
+ Last 100 training episodes: mean/median reward 5.4/3.3, min/max reward -1.7/23.1, 
+
+2023-12-14 13:10:56, INFO: Updates 4640, num timesteps 1670760, FPS 225 
+ Last 100 training episodes: mean/median reward 5.9/3.2, min/max reward -3.3/22.9, 
+
+2023-12-14 13:11:34, INFO: Updates 4660, num timesteps 1677960, FPS 224 
+ Last 100 training episodes: mean/median reward 4.7/2.9, min/max reward -3.8/22.3, 
+
+2023-12-14 13:12:10, INFO: Updates 4680, num timesteps 1685160, FPS 224 
+ Last 100 training episodes: mean/median reward 4.1/2.9, min/max reward -2.5/22.1, 
+
+2023-12-14 13:12:48, INFO: Updates 4700, num timesteps 1692360, FPS 224 
+ Last 100 training episodes: mean/median reward 5.1/2.7, min/max reward -1.9/22.8, 
+
+2023-12-14 13:13:22, INFO: Updates 4720, num timesteps 1699560, FPS 224 
+ Last 100 training episodes: mean/median reward 3.8/2.6, min/max reward -4.4/22.8, 
+
+2023-12-14 13:13:56, INFO: Updates 4740, num timesteps 1706760, FPS 224 
+ Last 100 training episodes: mean/median reward 4.9/3.0, min/max reward -1.2/22.4, 
+
+2023-12-14 13:14:31, INFO: Updates 4760, num timesteps 1713960, FPS 224 
+ Last 100 training episodes: mean/median reward 5.9/3.4, min/max reward -1.8/22.5, 
+
+2023-12-14 13:15:08, INFO: Updates 4780, num timesteps 1721160, FPS 224 
+ Last 100 training episodes: mean/median reward 5.0/3.3, min/max reward -1.7/22.8, 
+
+2023-12-14 13:15:46, INFO: Updates 4800, num timesteps 1728360, FPS 224 
+ Last 100 training episodes: mean/median reward 4.9/3.3, min/max reward -2.0/22.8, 
+
+2023-12-14 13:16:24, INFO: Updates 4820, num timesteps 1735560, FPS 224 
+ Last 100 training episodes: mean/median reward 5.4/3.4, min/max reward -1.6/22.9, 
+
+2023-12-14 13:17:00, INFO: Updates 4840, num timesteps 1742760, FPS 223 
+ Last 100 training episodes: mean/median reward 4.8/3.5, min/max reward -2.6/21.8, 
+
+2023-12-14 13:17:38, INFO: Updates 4860, num timesteps 1749960, FPS 223 
+ Last 100 training episodes: mean/median reward 4.6/2.8, min/max reward -2.5/22.5, 
+
+2023-12-14 13:18:15, INFO: Updates 4880, num timesteps 1757160, FPS 223 
+ Last 100 training episodes: mean/median reward 4.2/3.0, min/max reward -2.7/22.1, 
+
+2023-12-14 13:18:52, INFO: Updates 4900, num timesteps 1764360, FPS 223 
+ Last 100 training episodes: mean/median reward 4.7/3.1, min/max reward -3.7/22.3, 
+
+2023-12-14 13:19:29, INFO: Updates 4920, num timesteps 1771560, FPS 223 
+ Last 100 training episodes: mean/median reward 4.3/2.9, min/max reward -1.6/23.0, 
+
+2023-12-14 13:20:07, INFO: Updates 4940, num timesteps 1778760, FPS 223 
+ Last 100 training episodes: mean/median reward 4.7/3.2, min/max reward -3.6/22.2, 
+
+2023-12-14 13:20:43, INFO: Updates 4960, num timesteps 1785960, FPS 223 
+ Last 100 training episodes: mean/median reward 4.6/3.0, min/max reward -2.3/22.6, 
+
+2023-12-14 13:21:21, INFO: Updates 4980, num timesteps 1793160, FPS 222 
+ Last 100 training episodes: mean/median reward 5.9/3.2, min/max reward -1.6/22.5, 
+
+2023-12-14 13:21:59, INFO: Updates 5000, num timesteps 1800360, FPS 222 
+ Last 100 training episodes: mean/median reward 5.1/3.0, min/max reward -3.2/22.4, 
+
+2023-12-14 13:22:37, INFO: Updates 5020, num timesteps 1807560, FPS 222 
+ Last 100 training episodes: mean/median reward 4.3/2.7, min/max reward -2.4/22.7, 
+
+2023-12-14 13:23:15, INFO: Updates 5040, num timesteps 1814760, FPS 222 
+ Last 100 training episodes: mean/median reward 5.0/3.3, min/max reward -2.6/22.8, 
+
+2023-12-14 13:23:52, INFO: Updates 5060, num timesteps 1821960, FPS 222 
+ Last 100 training episodes: mean/median reward 4.8/2.7, min/max reward -2.5/22.6, 
+
+2023-12-14 13:24:29, INFO: Updates 5080, num timesteps 1829160, FPS 222 
+ Last 100 training episodes: mean/median reward 4.7/3.0, min/max reward -1.2/22.5, 
+
+2023-12-14 13:25:07, INFO: Updates 5100, num timesteps 1836360, FPS 222 
+ Last 100 training episodes: mean/median reward 5.5/3.5, min/max reward -4.8/22.6, 
+
+2023-12-14 13:25:44, INFO: Updates 5120, num timesteps 1843560, FPS 221 
+ Last 100 training episodes: mean/median reward 5.5/3.2, min/max reward -0.9/23.0, 
+
+2023-12-14 13:26:21, INFO: Updates 5140, num timesteps 1850760, FPS 221 
+ Last 100 training episodes: mean/median reward 4.2/2.9, min/max reward -3.9/22.8, 
+
+2023-12-14 13:26:57, INFO: Updates 5160, num timesteps 1857960, FPS 221 
+ Last 100 training episodes: mean/median reward 4.0/2.5, min/max reward -2.0/22.6, 
+
+2023-12-14 13:27:31, INFO: Updates 5180, num timesteps 1865160, FPS 221 
+ Last 100 training episodes: mean/median reward 4.2/2.8, min/max reward -2.9/22.6, 
+
+2023-12-14 13:28:05, INFO: Updates 5200, num timesteps 1872360, FPS 221 
+ Last 100 training episodes: mean/median reward 4.8/3.0, min/max reward -2.1/22.6, 
+
+2023-12-14 13:28:39, INFO: Updates 5220, num timesteps 1879560, FPS 221 
+ Last 100 training episodes: mean/median reward 5.0/2.7, min/max reward -3.1/23.0, 
+
+2023-12-14 13:29:18, INFO: Updates 5240, num timesteps 1886760, FPS 221 
+ Last 100 training episodes: mean/median reward 3.9/2.8, min/max reward -1.9/22.8, 
+
+2023-12-14 13:29:55, INFO: Updates 5260, num timesteps 1893960, FPS 221 
+ Last 100 training episodes: mean/median reward 4.6/3.4, min/max reward -5.1/22.7, 
+
+2023-12-14 13:30:31, INFO: Updates 5280, num timesteps 1901160, FPS 221 
+ Last 100 training episodes: mean/median reward 5.4/3.2, min/max reward -2.0/22.6, 
+
+2023-12-14 13:31:09, INFO: Updates 5300, num timesteps 1908360, FPS 221 
+ Last 100 training episodes: mean/median reward 4.3/3.1, min/max reward -3.5/22.2, 
+
+2023-12-14 13:31:47, INFO: Updates 5320, num timesteps 1915560, FPS 220 
+ Last 100 training episodes: mean/median reward 4.6/2.8, min/max reward -2.0/21.7, 
+
+2023-12-14 13:32:25, INFO: Updates 5340, num timesteps 1922760, FPS 220 
+ Last 100 training episodes: mean/median reward 5.2/3.1, min/max reward -1.8/22.6, 
+
+2023-12-14 13:33:03, INFO: Updates 5360, num timesteps 1929960, FPS 220 
+ Last 100 training episodes: mean/median reward 4.2/3.0, min/max reward -1.9/22.7, 
+
+2023-12-14 13:33:41, INFO: Updates 5380, num timesteps 1937160, FPS 220 
+ Last 100 training episodes: mean/median reward 3.6/2.9, min/max reward -1.4/22.3, 
+
+2023-12-14 13:34:18, INFO: Updates 5400, num timesteps 1944360, FPS 220 
+ Last 100 training episodes: mean/median reward 4.7/2.8, min/max reward -3.1/23.0, 
+
+2023-12-14 13:34:56, INFO: Updates 5420, num timesteps 1951560, FPS 220 
+ Last 100 training episodes: mean/median reward 5.4/3.2, min/max reward -0.7/22.8, 
+
+2023-12-14 13:35:34, INFO: Updates 5440, num timesteps 1958760, FPS 220 
+ Last 100 training episodes: mean/median reward 4.5/3.2, min/max reward -1.8/22.9, 
+
+2023-12-14 13:36:13, INFO: Updates 5460, num timesteps 1965960, FPS 219 
+ Last 100 training episodes: mean/median reward 3.7/2.7, min/max reward -4.0/22.9, 
+
+2023-12-14 13:36:50, INFO: Updates 5480, num timesteps 1973160, FPS 219 
+ Last 100 training episodes: mean/median reward 4.6/3.3, min/max reward -1.7/23.1, 
+
+2023-12-14 13:37:29, INFO: Updates 5500, num timesteps 1980360, FPS 219 
+ Last 100 training episodes: mean/median reward 4.4/3.0, min/max reward -2.5/22.3, 
+
+2023-12-14 13:38:07, INFO: Updates 5520, num timesteps 1987560, FPS 219 
+ Last 100 training episodes: mean/median reward 4.9/3.1, min/max reward -3.6/22.7, 
+
+2023-12-14 13:38:43, INFO: Updates 5540, num timesteps 1994760, FPS 219 
+ Last 100 training episodes: mean/median reward 4.8/2.7, min/max reward -2.6/22.7, 
+
+2023-12-14 13:39:21, INFO: Updates 5560, num timesteps 2001960, FPS 219 
+ Last 100 training episodes: mean/median reward 4.4/3.0, min/max reward -4.6/22.5, 
+
+2023-12-14 13:39:58, INFO: Updates 5580, num timesteps 2009160, FPS 219 
+ Last 100 training episodes: mean/median reward 5.2/2.8, min/max reward -1.5/22.7, 
+
+2023-12-14 13:40:34, INFO: Updates 5600, num timesteps 2016360, FPS 219 
+ Last 100 training episodes: mean/median reward 4.6/3.1, min/max reward -4.9/22.6, 
+
+2023-12-14 13:41:09, INFO: Updates 5620, num timesteps 2023560, FPS 219 
+ Last 100 training episodes: mean/median reward 4.6/3.1, min/max reward -1.7/22.5, 
+
+2023-12-14 13:41:44, INFO: Updates 5640, num timesteps 2030760, FPS 219 
+ Last 100 training episodes: mean/median reward 3.8/2.8, min/max reward -2.9/22.0, 
+
+2023-12-14 13:42:20, INFO: Updates 5660, num timesteps 2037960, FPS 219 
+ Last 100 training episodes: mean/median reward 5.4/3.8, min/max reward -2.9/23.0, 
+
+2023-12-14 13:42:58, INFO: Updates 5680, num timesteps 2045160, FPS 218 
+ Last 100 training episodes: mean/median reward 4.8/3.1, min/max reward -4.4/22.6, 
+
+2023-12-14 13:43:36, INFO: Updates 5700, num timesteps 2052360, FPS 218 
+ Last 100 training episodes: mean/median reward 4.6/3.5, min/max reward -2.2/22.4, 
+
+2023-12-14 13:44:14, INFO: Updates 5720, num timesteps 2059560, FPS 218 
+ Last 100 training episodes: mean/median reward 5.0/3.0, min/max reward -3.4/22.6, 
+
+2023-12-14 13:44:51, INFO: Updates 5740, num timesteps 2066760, FPS 218 
+ Last 100 training episodes: mean/median reward 5.3/3.2, min/max reward -3.8/22.3, 
+
+2023-12-14 13:45:30, INFO: Updates 5760, num timesteps 2073960, FPS 218 
+ Last 100 training episodes: mean/median reward 4.5/2.9, min/max reward -2.9/23.0, 
+
+2023-12-14 13:46:07, INFO: Updates 5780, num timesteps 2081160, FPS 218 
+ Last 100 training episodes: mean/median reward 4.9/3.1, min/max reward -3.7/22.5, 
+
+2023-12-14 13:46:45, INFO: Updates 5800, num timesteps 2088360, FPS 218 
+ Last 100 training episodes: mean/median reward 5.6/3.6, min/max reward -1.8/22.6, 
+
+2023-12-14 13:47:22, INFO: Updates 5820, num timesteps 2095560, FPS 218 
+ Last 100 training episodes: mean/median reward 5.4/3.5, min/max reward -3.4/22.7, 
+
+2023-12-14 13:47:59, INFO: Updates 5840, num timesteps 2102760, FPS 218 
+ Last 100 training episodes: mean/median reward 5.6/3.5, min/max reward -3.7/22.8, 
+
+2023-12-14 13:48:36, INFO: Updates 5860, num timesteps 2109960, FPS 217 
+ Last 100 training episodes: mean/median reward 4.3/3.2, min/max reward -2.2/22.4, 
+
+2023-12-14 13:49:14, INFO: Updates 5880, num timesteps 2117160, FPS 217 
+ Last 100 training episodes: mean/median reward 4.4/2.8, min/max reward -2.2/22.3, 
+
+2023-12-14 13:49:51, INFO: Updates 5900, num timesteps 2124360, FPS 217 
+ Last 100 training episodes: mean/median reward 5.3/2.8, min/max reward -2.7/23.0, 
+
+2023-12-14 13:50:28, INFO: Updates 5920, num timesteps 2131560, FPS 217 
+ Last 100 training episodes: mean/median reward 4.6/2.9, min/max reward -4.3/23.0, 
+
+2023-12-14 13:51:05, INFO: Updates 5940, num timesteps 2138760, FPS 217 
+ Last 100 training episodes: mean/median reward 4.5/3.0, min/max reward -1.4/22.8, 
+
+2023-12-14 13:51:43, INFO: Updates 5960, num timesteps 2145960, FPS 217 
+ Last 100 training episodes: mean/median reward 5.0/2.9, min/max reward -2.6/22.1, 
+
+2023-12-14 13:52:21, INFO: Updates 5980, num timesteps 2153160, FPS 217 
+ Last 100 training episodes: mean/median reward 4.0/2.8, min/max reward -2.5/22.3, 
+
+2023-12-14 13:52:58, INFO: Updates 6000, num timesteps 2160360, FPS 217 
+ Last 100 training episodes: mean/median reward 5.0/3.2, min/max reward -3.5/22.3, 
+
+2023-12-14 13:53:35, INFO: Updates 6020, num timesteps 2167560, FPS 217 
+ Last 100 training episodes: mean/median reward 4.1/2.7, min/max reward -3.2/22.8, 
+
+2023-12-14 13:54:10, INFO: Updates 6040, num timesteps 2174760, FPS 217 
+ Last 100 training episodes: mean/median reward 4.9/3.2, min/max reward -3.7/22.9, 
+
+2023-12-14 13:54:44, INFO: Updates 6060, num timesteps 2181960, FPS 217 
+ Last 100 training episodes: mean/median reward 4.4/3.0, min/max reward -2.2/22.6, 
+
+2023-12-14 13:55:19, INFO: Updates 6080, num timesteps 2189160, FPS 217 
+ Last 100 training episodes: mean/median reward 5.0/3.5, min/max reward -3.2/22.5, 
+
+2023-12-14 13:55:54, INFO: Updates 6100, num timesteps 2196360, FPS 217 
+ Last 100 training episodes: mean/median reward 3.9/2.7, min/max reward -4.2/22.6, 
+
+2023-12-14 13:56:31, INFO: Updates 6120, num timesteps 2203560, FPS 216 
+ Last 100 training episodes: mean/median reward 2.9/2.8, min/max reward -2.3/21.8, 
+
+2023-12-14 13:57:09, INFO: Updates 6140, num timesteps 2210760, FPS 216 
+ Last 100 training episodes: mean/median reward 5.6/2.9, min/max reward -2.3/23.0, 
+
+2023-12-14 13:57:47, INFO: Updates 6160, num timesteps 2217960, FPS 216 
+ Last 100 training episodes: mean/median reward 5.1/2.8, min/max reward -2.7/22.2, 
+
+2023-12-14 13:58:24, INFO: Updates 6180, num timesteps 2225160, FPS 216 
+ Last 100 training episodes: mean/median reward 3.9/2.8, min/max reward -3.6/22.4, 
+
+2023-12-14 13:59:02, INFO: Updates 6200, num timesteps 2232360, FPS 216 
+ Last 100 training episodes: mean/median reward 4.7/3.3, min/max reward -1.2/23.0, 
+
+2023-12-14 13:59:40, INFO: Updates 6220, num timesteps 2239560, FPS 216 
+ Last 100 training episodes: mean/median reward 5.3/3.6, min/max reward -3.9/23.2, 
+
+2023-12-14 14:00:16, INFO: Updates 6240, num timesteps 2246760, FPS 216 
+ Last 100 training episodes: mean/median reward 3.9/2.7, min/max reward -4.0/22.8, 
+
+2023-12-14 14:00:54, INFO: Updates 6260, num timesteps 2253960, FPS 216 
+ Last 100 training episodes: mean/median reward 5.7/3.2, min/max reward -1.0/22.7, 
+
+2023-12-14 14:01:31, INFO: Updates 6280, num timesteps 2261160, FPS 216 
+ Last 100 training episodes: mean/median reward 5.3/3.0, min/max reward -2.6/22.2, 
+
+2023-12-14 14:02:09, INFO: Updates 6300, num timesteps 2268360, FPS 216 
+ Last 100 training episodes: mean/median reward 4.4/2.9, min/max reward -1.3/22.1, 
+
+2023-12-14 14:02:47, INFO: Updates 6320, num timesteps 2275560, FPS 216 
+ Last 100 training episodes: mean/median reward 4.2/3.2, min/max reward -1.8/22.5, 
+
+2023-12-14 14:03:24, INFO: Updates 6340, num timesteps 2282760, FPS 215 
+ Last 100 training episodes: mean/median reward 5.8/3.3, min/max reward -1.2/22.6, 
+
+2023-12-14 14:04:02, INFO: Updates 6360, num timesteps 2289960, FPS 215 
+ Last 100 training episodes: mean/median reward 6.2/3.4, min/max reward -2.5/22.7, 
+
+2023-12-14 14:04:40, INFO: Updates 6380, num timesteps 2297160, FPS 215 
+ Last 100 training episodes: mean/median reward 4.0/3.0, min/max reward -3.8/22.3, 
+
+2023-12-14 14:05:18, INFO: Updates 6400, num timesteps 2304360, FPS 215 
+ Last 100 training episodes: mean/median reward 4.1/2.9, min/max reward -3.5/22.5, 
+
+2023-12-14 14:05:57, INFO: Updates 6420, num timesteps 2311560, FPS 215 
+ Last 100 training episodes: mean/median reward 5.5/3.6, min/max reward -0.7/22.7, 
+
+2023-12-14 14:06:35, INFO: Updates 6440, num timesteps 2318760, FPS 215 
+ Last 100 training episodes: mean/median reward 5.5/3.5, min/max reward -4.6/23.0, 
+
+2023-12-14 14:07:13, INFO: Updates 6460, num timesteps 2325960, FPS 215 
+ Last 100 training episodes: mean/median reward 5.1/3.4, min/max reward -1.6/22.3, 
+
+2023-12-14 14:07:51, INFO: Updates 6480, num timesteps 2333160, FPS 215 
+ Last 100 training episodes: mean/median reward 4.2/2.9, min/max reward -2.2/22.4, 
+
+2023-12-14 14:08:25, INFO: Updates 6500, num timesteps 2340360, FPS 215 
+ Last 100 training episodes: mean/median reward 5.6/3.1, min/max reward -2.3/22.7, 
+
+2023-12-14 14:09:00, INFO: Updates 6520, num timesteps 2347560, FPS 215 
+ Last 100 training episodes: mean/median reward 3.7/2.1, min/max reward -2.1/22.6, 
+
+2023-12-14 14:09:34, INFO: Updates 6540, num timesteps 2354760, FPS 215 
+ Last 100 training episodes: mean/median reward 4.4/3.1, min/max reward -3.3/22.1, 
+
+2023-12-14 14:10:09, INFO: Updates 6560, num timesteps 2361960, FPS 215 
+ Last 100 training episodes: mean/median reward 4.7/2.7, min/max reward -3.5/22.9, 
+
+2023-12-14 14:10:46, INFO: Updates 6580, num timesteps 2369160, FPS 215 
+ Last 100 training episodes: mean/median reward 4.9/3.1, min/max reward -1.4/22.7, 
+
+2023-12-14 14:11:24, INFO: Updates 6600, num timesteps 2376360, FPS 215 
+ Last 100 training episodes: mean/median reward 5.1/2.9, min/max reward -1.4/22.1, 
+
+2023-12-14 14:12:01, INFO: Updates 6620, num timesteps 2383560, FPS 215 
+ Last 100 training episodes: mean/median reward 3.9/3.3, min/max reward -2.9/22.2, 
+
+2023-12-14 14:12:39, INFO: Updates 6640, num timesteps 2390760, FPS 214 
+ Last 100 training episodes: mean/median reward 5.5/3.4, min/max reward -2.6/22.6, 
+
+2023-12-14 14:13:17, INFO: Updates 6660, num timesteps 2397960, FPS 214 
+ Last 100 training episodes: mean/median reward 4.3/3.4, min/max reward -1.5/22.5, 
+
+2023-12-14 14:13:55, INFO: Updates 6680, num timesteps 2405160, FPS 214 
+ Last 100 training episodes: mean/median reward 4.4/3.4, min/max reward -3.2/22.0, 
+
+2023-12-14 14:14:32, INFO: Updates 6700, num timesteps 2412360, FPS 214 
+ Last 100 training episodes: mean/median reward 4.7/3.4, min/max reward -2.2/22.0, 
+
+2023-12-14 14:15:09, INFO: Updates 6720, num timesteps 2419560, FPS 214 
+ Last 100 training episodes: mean/median reward 5.0/3.2, min/max reward -2.9/22.8, 
+
+2023-12-14 14:15:47, INFO: Updates 6740, num timesteps 2426760, FPS 214 
+ Last 100 training episodes: mean/median reward 4.7/3.2, min/max reward -2.3/22.9, 
+
+2023-12-14 14:16:25, INFO: Updates 6760, num timesteps 2433960, FPS 214 
+ Last 100 training episodes: mean/median reward 4.7/2.9, min/max reward -2.1/22.5, 
+
+2023-12-14 14:17:02, INFO: Updates 6780, num timesteps 2441160, FPS 214 
+ Last 100 training episodes: mean/median reward 5.2/3.2, min/max reward -1.3/22.8, 
+
+2023-12-14 14:17:40, INFO: Updates 6800, num timesteps 2448360, FPS 214 
+ Last 100 training episodes: mean/median reward 6.3/3.5, min/max reward -1.9/22.9, 
+
+2023-12-14 14:18:17, INFO: Updates 6820, num timesteps 2455560, FPS 214 
+ Last 100 training episodes: mean/median reward 5.4/3.3, min/max reward -1.4/22.6, 
+
+2023-12-14 14:18:54, INFO: Updates 6840, num timesteps 2462760, FPS 214 
+ Last 100 training episodes: mean/median reward 5.1/3.3, min/max reward -3.5/22.7, 
+
+2023-12-14 14:19:32, INFO: Updates 6860, num timesteps 2469960, FPS 214 
+ Last 100 training episodes: mean/median reward 3.6/2.9, min/max reward -2.4/22.9, 
+
+2023-12-14 14:20:10, INFO: Updates 6880, num timesteps 2477160, FPS 214 
+ Last 100 training episodes: mean/median reward 4.7/3.1, min/max reward -3.0/22.3, 
+
+2023-12-14 14:20:48, INFO: Updates 6900, num timesteps 2484360, FPS 213 
+ Last 100 training episodes: mean/median reward 4.9/3.3, min/max reward -2.2/23.0, 
+
+2023-12-14 14:21:24, INFO: Updates 6920, num timesteps 2491560, FPS 213 
+ Last 100 training episodes: mean/median reward 5.6/3.4, min/max reward -1.1/22.7, 
+
+2023-12-14 14:22:01, INFO: Updates 6940, num timesteps 2498760, FPS 213 
+ Last 100 training episodes: mean/median reward 5.1/3.5, min/max reward -1.3/23.0, 
+
+2023-12-14 14:22:36, INFO: Updates 6960, num timesteps 2505960, FPS 213 
+ Last 100 training episodes: mean/median reward 5.1/3.3, min/max reward -2.7/23.3, 
+
+2023-12-14 14:23:12, INFO: Updates 6980, num timesteps 2513160, FPS 213 
+ Last 100 training episodes: mean/median reward 4.9/3.0, min/max reward -2.0/22.8, 
+
+2023-12-14 14:23:47, INFO: Updates 7000, num timesteps 2520360, FPS 213 
+ Last 100 training episodes: mean/median reward 5.2/3.1, min/max reward -2.4/22.6, 
+
+2023-12-14 14:24:25, INFO: Updates 7020, num timesteps 2527560, FPS 213 
+ Last 100 training episodes: mean/median reward 5.2/3.3, min/max reward -2.5/22.6, 
+
+2023-12-14 14:25:02, INFO: Updates 7040, num timesteps 2534760, FPS 213 
+ Last 100 training episodes: mean/median reward 5.8/3.4, min/max reward -2.3/22.6, 
+
+2023-12-14 14:25:39, INFO: Updates 7060, num timesteps 2541960, FPS 213 
+ Last 100 training episodes: mean/median reward 5.4/3.4, min/max reward -2.4/22.9, 
+
+2023-12-14 14:26:14, INFO: Updates 7080, num timesteps 2549160, FPS 213 
+ Last 100 training episodes: mean/median reward 5.8/3.6, min/max reward -2.7/23.3, 
+
+2023-12-14 14:26:49, INFO: Updates 7100, num timesteps 2556360, FPS 213 
+ Last 100 training episodes: mean/median reward 5.8/3.4, min/max reward -2.1/23.3, 
+
+2023-12-14 14:27:25, INFO: Updates 7120, num timesteps 2563560, FPS 213 
+ Last 100 training episodes: mean/median reward 6.1/3.5, min/max reward -5.3/22.6, 
+
+2023-12-14 14:28:00, INFO: Updates 7140, num timesteps 2570760, FPS 213 
+ Last 100 training episodes: mean/median reward 6.7/3.8, min/max reward -0.9/22.7, 
+
+2023-12-14 14:28:36, INFO: Updates 7160, num timesteps 2577960, FPS 213 
+ Last 100 training episodes: mean/median reward 4.4/3.0, min/max reward -3.7/22.6, 
+
+2023-12-14 14:29:09, INFO: Updates 7180, num timesteps 2585160, FPS 213 
+ Last 100 training episodes: mean/median reward 4.1/2.8, min/max reward -2.1/22.4, 
+
+2023-12-14 14:29:44, INFO: Updates 7200, num timesteps 2592360, FPS 213 
+ Last 100 training episodes: mean/median reward 4.4/3.2, min/max reward -2.0/23.0, 
+
+2023-12-14 14:30:18, INFO: Updates 7220, num timesteps 2599560, FPS 213 
+ Last 100 training episodes: mean/median reward 4.9/3.4, min/max reward -1.0/22.7, 
+
+2023-12-14 14:30:51, INFO: Updates 7240, num timesteps 2606760, FPS 213 
+ Last 100 training episodes: mean/median reward 5.0/3.4, min/max reward -1.7/22.7, 
+
+2023-12-14 14:31:24, INFO: Updates 7260, num timesteps 2613960, FPS 213 
+ Last 100 training episodes: mean/median reward 5.4/3.5, min/max reward -0.7/22.6, 
+
+2023-12-14 14:31:57, INFO: Updates 7280, num timesteps 2621160, FPS 213 
+ Last 100 training episodes: mean/median reward 4.2/3.2, min/max reward -1.7/22.6, 
+
+2023-12-14 14:32:30, INFO: Updates 7300, num timesteps 2628360, FPS 213 
+ Last 100 training episodes: mean/median reward 5.8/3.3, min/max reward -2.7/23.1, 
+
+2023-12-14 14:33:04, INFO: Updates 7320, num timesteps 2635560, FPS 213 
+ Last 100 training episodes: mean/median reward 5.4/3.5, min/max reward -3.4/23.2, 
+
+2023-12-14 14:33:36, INFO: Updates 7340, num timesteps 2642760, FPS 213 
+ Last 100 training episodes: mean/median reward 4.7/2.8, min/max reward -3.7/23.0, 
+
+2023-12-14 14:34:08, INFO: Updates 7360, num timesteps 2649960, FPS 213 
+ Last 100 training episodes: mean/median reward 6.1/3.7, min/max reward -1.4/22.5, 
+
+2023-12-14 14:34:41, INFO: Updates 7380, num timesteps 2657160, FPS 213 
+ Last 100 training episodes: mean/median reward 4.7/3.0, min/max reward -2.0/22.2, 
+
+2023-12-14 14:35:13, INFO: Updates 7400, num timesteps 2664360, FPS 213 
+ Last 100 training episodes: mean/median reward 5.6/3.5, min/max reward -2.0/23.1, 
+
+2023-12-14 14:35:47, INFO: Updates 7420, num timesteps 2671560, FPS 213 
+ Last 100 training episodes: mean/median reward 4.4/3.2, min/max reward -2.5/22.9, 
+
+2023-12-14 14:36:21, INFO: Updates 7440, num timesteps 2678760, FPS 213 
+ Last 100 training episodes: mean/median reward 5.0/3.4, min/max reward -2.2/22.8, 
+
+2023-12-14 14:36:55, INFO: Updates 7460, num timesteps 2685960, FPS 213 
+ Last 100 training episodes: mean/median reward 5.7/3.4, min/max reward -3.5/22.7, 
+
+2023-12-14 14:37:29, INFO: Updates 7480, num timesteps 2693160, FPS 213 
+ Last 100 training episodes: mean/median reward 3.8/2.8, min/max reward -1.7/22.0, 
+
+2023-12-14 14:38:03, INFO: Updates 7500, num timesteps 2700360, FPS 213 
+ Last 100 training episodes: mean/median reward 5.1/3.2, min/max reward -2.1/23.2, 
+
+2023-12-14 14:38:38, INFO: Updates 7520, num timesteps 2707560, FPS 213 
+ Last 100 training episodes: mean/median reward 5.1/3.2, min/max reward -4.3/23.0, 
+
+2023-12-14 14:39:11, INFO: Updates 7540, num timesteps 2714760, FPS 213 
+ Last 100 training episodes: mean/median reward 4.1/3.1, min/max reward -2.2/22.5, 
+
+2023-12-14 14:39:45, INFO: Updates 7560, num timesteps 2721960, FPS 213 
+ Last 100 training episodes: mean/median reward 6.2/3.5, min/max reward -2.1/23.0, 
+
+2023-12-14 14:40:18, INFO: Updates 7580, num timesteps 2729160, FPS 213 
+ Last 100 training episodes: mean/median reward 5.6/3.5, min/max reward -3.6/22.5, 
+
+2023-12-14 14:40:50, INFO: Updates 7600, num timesteps 2736360, FPS 213 
+ Last 100 training episodes: mean/median reward 5.2/2.9, min/max reward -2.3/23.0, 
+
+2023-12-14 14:41:22, INFO: Updates 7620, num timesteps 2743560, FPS 213 
+ Last 100 training episodes: mean/median reward 4.9/3.4, min/max reward -4.4/23.0, 
+
+2023-12-14 14:41:56, INFO: Updates 7640, num timesteps 2750760, FPS 213 
+ Last 100 training episodes: mean/median reward 4.9/3.1, min/max reward -1.8/22.4, 
+
+2023-12-14 14:42:30, INFO: Updates 7660, num timesteps 2757960, FPS 213 
+ Last 100 training episodes: mean/median reward 5.6/3.2, min/max reward -1.3/23.3, 
+
+2023-12-14 14:43:03, INFO: Updates 7680, num timesteps 2765160, FPS 213 
+ Last 100 training episodes: mean/median reward 5.4/3.5, min/max reward -3.1/23.1, 
+
+2023-12-14 14:43:36, INFO: Updates 7700, num timesteps 2772360, FPS 213 
+ Last 100 training episodes: mean/median reward 5.2/3.3, min/max reward -3.5/22.5, 
+
+2023-12-14 14:44:09, INFO: Updates 7720, num timesteps 2779560, FPS 213 
+ Last 100 training episodes: mean/median reward 5.2/3.3, min/max reward -2.8/22.5, 
+
+2023-12-14 14:44:42, INFO: Updates 7740, num timesteps 2786760, FPS 213 
+ Last 100 training episodes: mean/median reward 4.9/2.9, min/max reward -2.6/23.0, 
+
+2023-12-14 14:45:16, INFO: Updates 7760, num timesteps 2793960, FPS 213 
+ Last 100 training episodes: mean/median reward 4.6/3.2, min/max reward -2.1/22.8, 
+
+2023-12-14 14:45:50, INFO: Updates 7780, num timesteps 2801160, FPS 213 
+ Last 100 training episodes: mean/median reward 6.2/3.2, min/max reward -2.6/22.9, 
+
+2023-12-14 14:46:24, INFO: Updates 7800, num timesteps 2808360, FPS 213 
+ Last 100 training episodes: mean/median reward 5.3/3.2, min/max reward -3.4/22.4, 
+
+2023-12-14 14:46:58, INFO: Updates 7820, num timesteps 2815560, FPS 213 
+ Last 100 training episodes: mean/median reward 5.8/3.1, min/max reward -1.9/23.2, 
+
+2023-12-14 14:47:33, INFO: Updates 7840, num timesteps 2822760, FPS 213 
+ Last 100 training episodes: mean/median reward 5.1/3.2, min/max reward -1.8/22.2, 
+
+2023-12-14 14:48:08, INFO: Updates 7860, num timesteps 2829960, FPS 213 
+ Last 100 training episodes: mean/median reward 5.9/3.4, min/max reward -1.8/22.9, 
+
+2023-12-14 14:48:42, INFO: Updates 7880, num timesteps 2837160, FPS 213 
+ Last 100 training episodes: mean/median reward 5.6/3.3, min/max reward -2.1/22.9, 
+
+2023-12-14 14:49:15, INFO: Updates 7900, num timesteps 2844360, FPS 213 
+ Last 100 training episodes: mean/median reward 5.6/3.5, min/max reward -2.7/22.8, 
+
+2023-12-14 14:49:48, INFO: Updates 7920, num timesteps 2851560, FPS 213 
+ Last 100 training episodes: mean/median reward 4.6/2.8, min/max reward -1.9/22.8, 
+
+2023-12-14 14:50:20, INFO: Updates 7940, num timesteps 2858760, FPS 213 
+ Last 100 training episodes: mean/median reward 5.6/3.6, min/max reward -1.7/22.7, 
+
+2023-12-14 14:50:53, INFO: Updates 7960, num timesteps 2865960, FPS 213 
+ Last 100 training episodes: mean/median reward 5.7/3.6, min/max reward -3.3/23.1, 
+
+2023-12-14 14:51:26, INFO: Updates 7980, num timesteps 2873160, FPS 213 
+ Last 100 training episodes: mean/median reward 7.1/3.8, min/max reward -1.6/22.7, 
+
+2023-12-14 14:52:00, INFO: Updates 8000, num timesteps 2880360, FPS 213 
+ Last 100 training episodes: mean/median reward 6.1/3.2, min/max reward -2.4/23.3, 
+
+2023-12-14 14:52:34, INFO: Updates 8020, num timesteps 2887560, FPS 213 
+ Last 100 training episodes: mean/median reward 5.0/3.4, min/max reward -2.1/21.9, 
+
+2023-12-14 14:53:08, INFO: Updates 8040, num timesteps 2894760, FPS 213 
+ Last 100 training episodes: mean/median reward 6.7/4.0, min/max reward -3.1/22.7, 
+
+2023-12-14 14:53:42, INFO: Updates 8060, num timesteps 2901960, FPS 213 
+ Last 100 training episodes: mean/median reward 5.4/3.5, min/max reward -2.9/22.6, 
+
+2023-12-14 14:54:17, INFO: Updates 8080, num timesteps 2909160, FPS 213 
+ Last 100 training episodes: mean/median reward 5.8/3.9, min/max reward -2.1/23.2, 
+
+2023-12-14 14:54:50, INFO: Updates 8100, num timesteps 2916360, FPS 213 
+ Last 100 training episodes: mean/median reward 5.7/3.6, min/max reward -1.9/21.9, 
+
+2023-12-14 14:55:24, INFO: Updates 8120, num timesteps 2923560, FPS 213 
+ Last 100 training episodes: mean/median reward 6.9/3.6, min/max reward -1.8/22.9, 
+
+2023-12-14 14:55:58, INFO: Updates 8140, num timesteps 2930760, FPS 213 
+ Last 100 training episodes: mean/median reward 5.5/3.3, min/max reward -2.8/22.6, 
+
+2023-12-14 14:56:32, INFO: Updates 8160, num timesteps 2937960, FPS 213 
+ Last 100 training episodes: mean/median reward 5.1/3.3, min/max reward -2.5/22.8, 
+
+2023-12-14 14:57:05, INFO: Updates 8180, num timesteps 2945160, FPS 213 
+ Last 100 training episodes: mean/median reward 4.4/3.2, min/max reward -0.8/22.8, 
+
+2023-12-14 14:57:39, INFO: Updates 8200, num timesteps 2952360, FPS 213 
+ Last 100 training episodes: mean/median reward 5.1/3.3, min/max reward -3.6/22.4, 
+
+2023-12-14 14:58:09, INFO: Updates 8220, num timesteps 2959560, FPS 213 
+ Last 100 training episodes: mean/median reward 5.1/3.1, min/max reward -3.8/23.0, 
+
+2023-12-14 14:58:41, INFO: Updates 8240, num timesteps 2966760, FPS 213 
+ Last 100 training episodes: mean/median reward 5.2/3.2, min/max reward -1.8/22.8, 
+
+2023-12-14 14:59:14, INFO: Updates 8260, num timesteps 2973960, FPS 213 
+ Last 100 training episodes: mean/median reward 5.8/3.6, min/max reward -2.2/22.9, 
+
+2023-12-14 14:59:46, INFO: Updates 8280, num timesteps 2981160, FPS 213 
+ Last 100 training episodes: mean/median reward 4.0/3.3, min/max reward -2.0/22.3, 
+
+2023-12-14 15:00:19, INFO: Updates 8300, num timesteps 2988360, FPS 213 
+ Last 100 training episodes: mean/median reward 5.6/3.2, min/max reward -3.8/23.1, 
+
+2023-12-14 15:00:52, INFO: Updates 8320, num timesteps 2995560, FPS 213 
+ Last 100 training episodes: mean/median reward 5.2/3.1, min/max reward -2.0/22.9, 
+
+2023-12-14 15:01:26, INFO: Updates 8340, num timesteps 3002760, FPS 213 
+ Last 100 training episodes: mean/median reward 5.6/3.7, min/max reward -2.0/22.2, 
+
+2023-12-14 15:01:59, INFO: Updates 8360, num timesteps 3009960, FPS 213 
+ Last 100 training episodes: mean/median reward 5.3/3.3, min/max reward -3.5/22.8, 
+
+2023-12-14 15:02:32, INFO: Updates 8380, num timesteps 3017160, FPS 213 
+ Last 100 training episodes: mean/median reward 5.4/3.2, min/max reward -3.0/22.6, 
+
+2023-12-14 15:03:04, INFO: Updates 8400, num timesteps 3024360, FPS 213 
+ Last 100 training episodes: mean/median reward 4.8/3.2, min/max reward -2.9/22.8, 
+
+2023-12-14 15:03:36, INFO: Updates 8420, num timesteps 3031560, FPS 213 
+ Last 100 training episodes: mean/median reward 5.6/3.2, min/max reward -1.5/22.9, 
+
+2023-12-14 15:04:09, INFO: Updates 8440, num timesteps 3038760, FPS 213 
+ Last 100 training episodes: mean/median reward 5.2/3.6, min/max reward -2.7/22.8, 
+
+2023-12-14 15:04:42, INFO: Updates 8460, num timesteps 3045960, FPS 213 
+ Last 100 training episodes: mean/median reward 5.4/3.5, min/max reward -5.9/22.1, 
+
+2023-12-14 15:05:16, INFO: Updates 8480, num timesteps 3053160, FPS 213 
+ Last 100 training episodes: mean/median reward 5.0/3.4, min/max reward -2.7/22.3, 
+
+2023-12-14 15:05:50, INFO: Updates 8500, num timesteps 3060360, FPS 213 
+ Last 100 training episodes: mean/median reward 5.1/3.1, min/max reward -2.3/22.5, 
+
+2023-12-14 15:06:24, INFO: Updates 8520, num timesteps 3067560, FPS 213 
+ Last 100 training episodes: mean/median reward 4.9/3.3, min/max reward -6.5/22.3, 
+
+2023-12-14 15:06:56, INFO: Updates 8540, num timesteps 3074760, FPS 213 
+ Last 100 training episodes: mean/median reward 5.2/3.0, min/max reward -3.9/22.9, 
+
+2023-12-14 15:07:29, INFO: Updates 8560, num timesteps 3081960, FPS 213 
+ Last 100 training episodes: mean/median reward 4.6/3.1, min/max reward -3.2/22.9, 
+
+2023-12-14 15:08:01, INFO: Updates 8580, num timesteps 3089160, FPS 213 
+ Last 100 training episodes: mean/median reward 4.6/3.6, min/max reward -2.9/23.0, 
+
+2023-12-14 15:08:33, INFO: Updates 8600, num timesteps 3096360, FPS 213 
+ Last 100 training episodes: mean/median reward 6.1/3.7, min/max reward -2.0/23.4, 
+
+2023-12-14 15:09:05, INFO: Updates 8620, num timesteps 3103560, FPS 213 
+ Last 100 training episodes: mean/median reward 5.7/3.3, min/max reward -3.6/22.6, 
+
+2023-12-14 15:09:37, INFO: Updates 8640, num timesteps 3110760, FPS 213 
+ Last 100 training episodes: mean/median reward 4.5/3.2, min/max reward -2.1/22.7, 
+
+2023-12-14 15:10:10, INFO: Updates 8660, num timesteps 3117960, FPS 213 
+ Last 100 training episodes: mean/median reward 4.9/3.5, min/max reward -2.4/22.5, 
+
+2023-12-14 15:10:42, INFO: Updates 8680, num timesteps 3125160, FPS 213 
+ Last 100 training episodes: mean/median reward 5.5/3.5, min/max reward -3.8/22.8, 
+
+2023-12-14 15:11:14, INFO: Updates 8700, num timesteps 3132360, FPS 213 
+ Last 100 training episodes: mean/median reward 4.3/3.2, min/max reward -4.6/23.1, 
+
+2023-12-14 15:11:47, INFO: Updates 8720, num timesteps 3139560, FPS 214 
+ Last 100 training episodes: mean/median reward 5.7/3.1, min/max reward -3.2/23.1, 
+
+2023-12-14 15:12:19, INFO: Updates 8740, num timesteps 3146760, FPS 214 
+ Last 100 training episodes: mean/median reward 4.0/2.6, min/max reward -3.0/22.6, 
+
+2023-12-14 15:12:52, INFO: Updates 8760, num timesteps 3153960, FPS 214 
+ Last 100 training episodes: mean/median reward 4.0/3.3, min/max reward -2.6/22.0, 
+
+2023-12-14 15:13:25, INFO: Updates 8780, num timesteps 3161160, FPS 214 
+ Last 100 training episodes: mean/median reward 4.7/3.4, min/max reward -3.5/22.2, 
+
+2023-12-14 15:13:57, INFO: Updates 8800, num timesteps 3168360, FPS 214 
+ Last 100 training episodes: mean/median reward 5.2/3.6, min/max reward -2.1/22.4, 
+
+2023-12-14 15:14:30, INFO: Updates 8820, num timesteps 3175560, FPS 214 
+ Last 100 training episodes: mean/median reward 6.0/3.5, min/max reward -0.9/23.2, 
+
+2023-12-14 15:15:04, INFO: Updates 8840, num timesteps 3182760, FPS 214 
+ Last 100 training episodes: mean/median reward 5.2/3.7, min/max reward -4.4/22.6, 
+
+2023-12-14 15:15:37, INFO: Updates 8860, num timesteps 3189960, FPS 214 
+ Last 100 training episodes: mean/median reward 5.7/3.5, min/max reward -4.7/23.1, 
+
+2023-12-14 15:16:10, INFO: Updates 8880, num timesteps 3197160, FPS 214 
+ Last 100 training episodes: mean/median reward 4.7/3.5, min/max reward -1.8/22.2, 
+
+2023-12-14 15:16:42, INFO: Updates 8900, num timesteps 3204360, FPS 214 
+ Last 100 training episodes: mean/median reward 4.9/3.6, min/max reward -2.2/23.0, 
+
+2023-12-14 15:17:14, INFO: Updates 8920, num timesteps 3211560, FPS 214 
+ Last 100 training episodes: mean/median reward 6.6/3.2, min/max reward -2.6/22.9, 
+
+2023-12-14 15:17:46, INFO: Updates 8940, num timesteps 3218760, FPS 214 
+ Last 100 training episodes: mean/median reward 6.7/3.5, min/max reward -2.2/22.9, 
+
+2023-12-14 15:18:18, INFO: Updates 8960, num timesteps 3225960, FPS 214 
+ Last 100 training episodes: mean/median reward 5.0/3.1, min/max reward -4.7/23.1, 
+
+2023-12-14 15:18:50, INFO: Updates 8980, num timesteps 3233160, FPS 214 
+ Last 100 training episodes: mean/median reward 6.3/3.3, min/max reward -3.6/23.1, 
+
+2023-12-14 15:19:22, INFO: Updates 9000, num timesteps 3240360, FPS 214 
+ Last 100 training episodes: mean/median reward 5.9/3.3, min/max reward -2.3/23.0, 
+
+2023-12-14 15:19:53, INFO: Updates 9020, num timesteps 3247560, FPS 214 
+ Last 100 training episodes: mean/median reward 5.5/3.3, min/max reward -1.1/22.4, 
+
+2023-12-14 15:20:25, INFO: Updates 9040, num timesteps 3254760, FPS 214 
+ Last 100 training episodes: mean/median reward 5.2/3.3, min/max reward -2.5/22.9, 
+
+2023-12-14 15:20:58, INFO: Updates 9060, num timesteps 3261960, FPS 214 
+ Last 100 training episodes: mean/median reward 5.2/3.4, min/max reward -3.0/22.9, 
+
+2023-12-14 15:21:31, INFO: Updates 9080, num timesteps 3269160, FPS 214 
+ Last 100 training episodes: mean/median reward 4.3/3.0, min/max reward -1.7/22.4, 
+
+2023-12-14 15:22:05, INFO: Updates 9100, num timesteps 3276360, FPS 214 
+ Last 100 training episodes: mean/median reward 5.5/3.1, min/max reward -2.3/23.1, 
+
+2023-12-14 15:22:39, INFO: Updates 9120, num timesteps 3283560, FPS 214 
+ Last 100 training episodes: mean/median reward 6.7/3.3, min/max reward -3.7/22.7, 
+
+2023-12-14 15:23:13, INFO: Updates 9140, num timesteps 3290760, FPS 214 
+ Last 100 training episodes: mean/median reward 4.8/3.3, min/max reward -2.1/23.2, 
+
+2023-12-14 15:23:47, INFO: Updates 9160, num timesteps 3297960, FPS 214 
+ Last 100 training episodes: mean/median reward 5.2/3.3, min/max reward -2.1/22.7, 
+
+2023-12-14 15:24:21, INFO: Updates 9180, num timesteps 3305160, FPS 214 
+ Last 100 training episodes: mean/median reward 4.5/2.9, min/max reward -3.3/22.9, 
+
+2023-12-14 15:24:54, INFO: Updates 9200, num timesteps 3312360, FPS 214 
+ Last 100 training episodes: mean/median reward 5.1/3.6, min/max reward -1.0/22.6, 
+
+2023-12-14 15:25:28, INFO: Updates 9220, num timesteps 3319560, FPS 214 
+ Last 100 training episodes: mean/median reward 6.5/3.4, min/max reward -1.0/23.1, 
+
+2023-12-14 15:26:01, INFO: Updates 9240, num timesteps 3326760, FPS 214 
+ Last 100 training episodes: mean/median reward 6.8/3.7, min/max reward -2.2/22.8, 
+
+2023-12-14 15:26:35, INFO: Updates 9260, num timesteps 3333960, FPS 214 
+ Last 100 training episodes: mean/median reward 4.5/3.0, min/max reward -2.7/23.0, 
+
+2023-12-14 15:27:08, INFO: Updates 9280, num timesteps 3341160, FPS 214 
+ Last 100 training episodes: mean/median reward 6.9/3.9, min/max reward -2.2/22.7, 
+
+2023-12-14 15:27:43, INFO: Updates 9300, num timesteps 3348360, FPS 214 
+ Last 100 training episodes: mean/median reward 5.2/3.3, min/max reward -2.5/22.8, 
+
+2023-12-14 15:28:17, INFO: Updates 9320, num timesteps 3355560, FPS 214 
+ Last 100 training episodes: mean/median reward 4.9/2.7, min/max reward -4.1/22.6, 
+
+2023-12-14 15:28:51, INFO: Updates 9340, num timesteps 3362760, FPS 214 
+ Last 100 training episodes: mean/median reward 6.2/3.2, min/max reward -2.4/22.6, 
+
+2023-12-14 15:29:25, INFO: Updates 9360, num timesteps 3369960, FPS 214 
+ Last 100 training episodes: mean/median reward 4.9/3.1, min/max reward -3.6/22.7, 
+
+2023-12-14 15:29:59, INFO: Updates 9380, num timesteps 3377160, FPS 214 
+ Last 100 training episodes: mean/median reward 6.5/3.2, min/max reward -3.4/23.0, 
+
+2023-12-14 15:30:33, INFO: Updates 9400, num timesteps 3384360, FPS 214 
+ Last 100 training episodes: mean/median reward 6.1/3.2, min/max reward -3.2/23.1, 
+
+2023-12-14 15:31:06, INFO: Updates 9420, num timesteps 3391560, FPS 214 
+ Last 100 training episodes: mean/median reward 5.4/3.7, min/max reward -1.7/22.9, 
+
+2023-12-14 15:31:38, INFO: Updates 9440, num timesteps 3398760, FPS 214 
+ Last 100 training episodes: mean/median reward 5.5/3.5, min/max reward -2.5/22.7, 
+
+2023-12-14 15:32:11, INFO: Updates 9460, num timesteps 3405960, FPS 214 
+ Last 100 training episodes: mean/median reward 4.8/3.0, min/max reward -3.1/22.2, 
+
+2023-12-14 15:32:45, INFO: Updates 9480, num timesteps 3413160, FPS 214 
+ Last 100 training episodes: mean/median reward 5.7/3.0, min/max reward -2.7/23.2, 
+
+2023-12-14 15:33:18, INFO: Updates 9500, num timesteps 3420360, FPS 214 
+ Last 100 training episodes: mean/median reward 6.0/3.3, min/max reward -2.7/22.4, 
+
+2023-12-14 15:33:52, INFO: Updates 9520, num timesteps 3427560, FPS 214 
+ Last 100 training episodes: mean/median reward 5.2/3.6, min/max reward -1.3/22.9, 
+
+2023-12-14 15:34:26, INFO: Updates 9540, num timesteps 3434760, FPS 214 
+ Last 100 training episodes: mean/median reward 6.2/3.6, min/max reward -2.6/23.1, 
+
+2023-12-14 15:34:58, INFO: Updates 9560, num timesteps 3441960, FPS 214 
+ Last 100 training episodes: mean/median reward 4.4/3.0, min/max reward -1.4/22.8, 
+
+2023-12-14 15:35:32, INFO: Updates 9580, num timesteps 3449160, FPS 214 
+ Last 100 training episodes: mean/median reward 5.6/3.5, min/max reward -3.2/23.3, 
+
+2023-12-14 15:36:05, INFO: Updates 9600, num timesteps 3456360, FPS 214 
+ Last 100 training episodes: mean/median reward 5.3/3.0, min/max reward -3.3/23.0, 
+
+2023-12-14 15:36:40, INFO: Updates 9620, num timesteps 3463560, FPS 214 
+ Last 100 training episodes: mean/median reward 5.5/3.2, min/max reward -3.8/22.3, 
+
+2023-12-14 15:37:13, INFO: Updates 9640, num timesteps 3470760, FPS 214 
+ Last 100 training episodes: mean/median reward 4.5/3.2, min/max reward -2.9/22.2, 
+
+2023-12-14 15:37:48, INFO: Updates 9660, num timesteps 3477960, FPS 214 
+ Last 100 training episodes: mean/median reward 6.4/3.5, min/max reward -1.9/23.1, 
+
+2023-12-14 15:38:22, INFO: Updates 9680, num timesteps 3485160, FPS 214 
+ Last 100 training episodes: mean/median reward 5.0/3.4, min/max reward -3.9/23.2, 
+
+2023-12-14 15:38:56, INFO: Updates 9700, num timesteps 3492360, FPS 214 
+ Last 100 training episodes: mean/median reward 4.4/2.7, min/max reward -2.4/23.1, 
+
+2023-12-14 15:39:30, INFO: Updates 9720, num timesteps 3499560, FPS 214 
+ Last 100 training episodes: mean/median reward 5.7/3.3, min/max reward -1.9/22.7, 
+
+2023-12-14 15:40:04, INFO: Updates 9740, num timesteps 3506760, FPS 214 
+ Last 100 training episodes: mean/median reward 4.5/3.0, min/max reward -2.4/22.6, 
+
+2023-12-14 15:40:38, INFO: Updates 9760, num timesteps 3513960, FPS 214 
+ Last 100 training episodes: mean/median reward 5.7/3.2, min/max reward -1.5/22.6, 
+
+2023-12-14 15:41:13, INFO: Updates 9780, num timesteps 3521160, FPS 214 
+ Last 100 training episodes: mean/median reward 6.1/3.4, min/max reward -1.0/23.1, 
+
+2023-12-14 15:41:48, INFO: Updates 9800, num timesteps 3528360, FPS 214 
+ Last 100 training episodes: mean/median reward 6.7/3.5, min/max reward -3.5/22.8, 
+
+2023-12-14 15:42:22, INFO: Updates 9820, num timesteps 3535560, FPS 214 
+ Last 100 training episodes: mean/median reward 4.3/3.2, min/max reward -2.7/21.8, 
+
+2023-12-14 15:42:57, INFO: Updates 9840, num timesteps 3542760, FPS 214 
+ Last 100 training episodes: mean/median reward 5.3/3.6, min/max reward -3.5/22.4, 
+
+2023-12-14 15:43:30, INFO: Updates 9860, num timesteps 3549960, FPS 214 
+ Last 100 training episodes: mean/median reward 5.4/3.5, min/max reward -2.8/23.0, 
+
+2023-12-14 15:44:03, INFO: Updates 9880, num timesteps 3557160, FPS 214 
+ Last 100 training episodes: mean/median reward 5.9/3.7, min/max reward -1.4/22.8, 
+
+2023-12-14 15:44:38, INFO: Updates 9900, num timesteps 3564360, FPS 214 
+ Last 100 training episodes: mean/median reward 5.7/3.5, min/max reward -4.1/22.6, 
+
+2023-12-14 15:45:12, INFO: Updates 9920, num timesteps 3571560, FPS 214 
+ Last 100 training episodes: mean/median reward 5.3/3.6, min/max reward -3.4/23.2, 
+
+2023-12-14 15:45:46, INFO: Updates 9940, num timesteps 3578760, FPS 214 
+ Last 100 training episodes: mean/median reward 6.1/3.5, min/max reward -1.0/23.1, 
+
+2023-12-14 15:46:23, INFO: Updates 9960, num timesteps 3585960, FPS 214 
+ Last 100 training episodes: mean/median reward 6.3/3.4, min/max reward -2.6/22.9, 
+
+2023-12-14 15:47:00, INFO: Updates 9980, num timesteps 3593160, FPS 214 
+ Last 100 training episodes: mean/median reward 5.3/3.3, min/max reward -3.7/22.3, 
+
+2023-12-14 15:47:36, INFO: Updates 10000, num timesteps 3600360, FPS 214 
+ Last 100 training episodes: mean/median reward 5.6/3.2, min/max reward -1.6/22.9, 
+
+2023-12-14 15:48:14, INFO: Updates 10020, num timesteps 3607560, FPS 214 
+ Last 100 training episodes: mean/median reward 6.5/3.5, min/max reward -4.2/22.7, 
+
+2023-12-14 15:48:50, INFO: Updates 10040, num timesteps 3614760, FPS 213 
+ Last 100 training episodes: mean/median reward 6.0/3.4, min/max reward -1.0/22.4, 
+
+2023-12-14 15:49:27, INFO: Updates 10060, num timesteps 3621960, FPS 213 
+ Last 100 training episodes: mean/median reward 5.0/3.5, min/max reward -2.2/22.9, 
+
+2023-12-14 15:50:04, INFO: Updates 10080, num timesteps 3629160, FPS 213 
+ Last 100 training episodes: mean/median reward 5.9/3.2, min/max reward -1.7/23.1, 
+
+2023-12-14 15:50:42, INFO: Updates 10100, num timesteps 3636360, FPS 213 
+ Last 100 training episodes: mean/median reward 6.3/4.1, min/max reward -1.6/22.6, 
+
+2023-12-14 15:51:17, INFO: Updates 10120, num timesteps 3643560, FPS 213 
+ Last 100 training episodes: mean/median reward 6.6/3.4, min/max reward -0.7/23.1, 
+
+2023-12-14 15:51:51, INFO: Updates 10140, num timesteps 3650760, FPS 213 
+ Last 100 training episodes: mean/median reward 4.4/3.2, min/max reward -1.9/22.6, 
+
+2023-12-14 15:52:26, INFO: Updates 10160, num timesteps 3657960, FPS 213 
+ Last 100 training episodes: mean/median reward 4.5/3.1, min/max reward -4.3/22.8, 
+
+2023-12-14 15:53:03, INFO: Updates 10180, num timesteps 3665160, FPS 213 
+ Last 100 training episodes: mean/median reward 5.7/3.6, min/max reward -1.4/22.8, 
+
+2023-12-14 15:53:40, INFO: Updates 10200, num timesteps 3672360, FPS 213 
+ Last 100 training episodes: mean/median reward 6.4/3.4, min/max reward -3.7/23.1, 
+
+2023-12-14 15:54:17, INFO: Updates 10220, num timesteps 3679560, FPS 213 
+ Last 100 training episodes: mean/median reward 4.5/3.1, min/max reward -3.2/23.0, 
+
+2023-12-14 15:54:55, INFO: Updates 10240, num timesteps 3686760, FPS 213 
+ Last 100 training episodes: mean/median reward 5.5/3.6, min/max reward -1.5/22.5, 
+
+2023-12-14 15:55:32, INFO: Updates 10260, num timesteps 3693960, FPS 213 
+ Last 100 training episodes: mean/median reward 6.6/3.6, min/max reward -1.0/23.0, 
+
+2023-12-14 15:56:10, INFO: Updates 10280, num timesteps 3701160, FPS 213 
+ Last 100 training episodes: mean/median reward 5.5/3.8, min/max reward -2.3/22.6, 
+
+2023-12-14 15:56:47, INFO: Updates 10300, num timesteps 3708360, FPS 213 
+ Last 100 training episodes: mean/median reward 4.9/3.2, min/max reward -2.1/22.7, 
+
+2023-12-14 15:57:24, INFO: Updates 10320, num timesteps 3715560, FPS 213 
+ Last 100 training episodes: mean/median reward 5.0/3.0, min/max reward -1.2/22.4, 
+
+2023-12-14 15:58:02, INFO: Updates 10340, num timesteps 3722760, FPS 213 
+ Last 100 training episodes: mean/median reward 5.0/3.0, min/max reward -2.6/22.6, 
+
+2023-12-14 15:58:40, INFO: Updates 10360, num timesteps 3729960, FPS 213 
+ Last 100 training episodes: mean/median reward 7.5/3.7, min/max reward -1.5/23.1, 
+
+2023-12-14 15:59:18, INFO: Updates 10380, num timesteps 3737160, FPS 213 
+ Last 100 training episodes: mean/median reward 5.9/3.1, min/max reward -1.7/22.6, 
+
+2023-12-14 15:59:56, INFO: Updates 10400, num timesteps 3744360, FPS 213 
+ Last 100 training episodes: mean/median reward 4.7/3.1, min/max reward -3.2/22.4, 
+
+2023-12-14 16:00:34, INFO: Updates 10420, num timesteps 3751560, FPS 213 
+ Last 100 training episodes: mean/median reward 6.8/3.8, min/max reward -3.3/22.7, 
+
+2023-12-14 16:01:12, INFO: Updates 10440, num timesteps 3758760, FPS 213 
+ Last 100 training episodes: mean/median reward 4.5/3.0, min/max reward -3.5/23.2, 
+
+2023-12-14 16:01:49, INFO: Updates 10460, num timesteps 3765960, FPS 213 
+ Last 100 training episodes: mean/median reward 6.4/3.9, min/max reward -4.4/22.8, 
+
+2023-12-14 16:02:28, INFO: Updates 10480, num timesteps 3773160, FPS 213 
+ Last 100 training episodes: mean/median reward 6.0/3.6, min/max reward -1.8/23.0, 
+
+2023-12-14 16:03:05, INFO: Updates 10500, num timesteps 3780360, FPS 212 
+ Last 100 training episodes: mean/median reward 5.4/3.3, min/max reward -2.9/22.5, 
+
+2023-12-14 16:03:43, INFO: Updates 10520, num timesteps 3787560, FPS 212 
+ Last 100 training episodes: mean/median reward 7.4/3.6, min/max reward -3.5/23.2, 
+
+2023-12-14 16:04:20, INFO: Updates 10540, num timesteps 3794760, FPS 212 
+ Last 100 training episodes: mean/median reward 4.5/2.9, min/max reward -2.8/22.1, 
+
+2023-12-14 16:04:57, INFO: Updates 10560, num timesteps 3801960, FPS 212 
+ Last 100 training episodes: mean/median reward 6.0/3.5, min/max reward 0.0/22.8, 
+
+2023-12-14 16:05:35, INFO: Updates 10580, num timesteps 3809160, FPS 212 
+ Last 100 training episodes: mean/median reward 5.8/3.7, min/max reward -1.4/22.8, 
+
+2023-12-14 16:06:09, INFO: Updates 10600, num timesteps 3816360, FPS 212 
+ Last 100 training episodes: mean/median reward 5.7/3.5, min/max reward -3.0/22.6, 
+
+2023-12-14 16:06:44, INFO: Updates 10620, num timesteps 3823560, FPS 212 
+ Last 100 training episodes: mean/median reward 6.3/3.4, min/max reward -1.9/22.7, 
+
+2023-12-14 16:07:21, INFO: Updates 10640, num timesteps 3830760, FPS 212 
+ Last 100 training episodes: mean/median reward 6.7/3.4, min/max reward -2.3/22.3, 
+
+2023-12-14 16:07:57, INFO: Updates 10660, num timesteps 3837960, FPS 212 
+ Last 100 training episodes: mean/median reward 5.4/3.6, min/max reward -2.9/22.9, 
+
+2023-12-14 16:08:34, INFO: Updates 10680, num timesteps 3845160, FPS 212 
+ Last 100 training episodes: mean/median reward 5.0/3.3, min/max reward -4.9/22.8, 
+
+2023-12-14 16:09:10, INFO: Updates 10700, num timesteps 3852360, FPS 212 
+ Last 100 training episodes: mean/median reward 5.6/3.5, min/max reward -1.3/22.7, 
+
+2023-12-14 16:09:47, INFO: Updates 10720, num timesteps 3859560, FPS 212 
+ Last 100 training episodes: mean/median reward 6.3/3.8, min/max reward -2.8/22.7, 
+
+2023-12-14 16:10:23, INFO: Updates 10740, num timesteps 3866760, FPS 212 
+ Last 100 training episodes: mean/median reward 4.8/3.0, min/max reward -1.9/22.7, 
+
+2023-12-14 16:10:59, INFO: Updates 10760, num timesteps 3873960, FPS 212 
+ Last 100 training episodes: mean/median reward 5.2/3.8, min/max reward -2.6/22.3, 
+
+2023-12-14 16:11:35, INFO: Updates 10780, num timesteps 3881160, FPS 212 
+ Last 100 training episodes: mean/median reward 4.6/2.7, min/max reward -3.2/22.8, 
+
+2023-12-14 16:12:11, INFO: Updates 10800, num timesteps 3888360, FPS 212 
+ Last 100 training episodes: mean/median reward 5.4/3.3, min/max reward -2.5/22.7, 
+
+2023-12-14 16:12:47, INFO: Updates 10820, num timesteps 3895560, FPS 212 
+ Last 100 training episodes: mean/median reward 5.4/3.6, min/max reward -2.6/23.2, 
+
+2023-12-14 16:13:24, INFO: Updates 10840, num timesteps 3902760, FPS 212 
+ Last 100 training episodes: mean/median reward 6.3/3.3, min/max reward -2.7/23.1, 
+
+2023-12-14 16:14:00, INFO: Updates 10860, num timesteps 3909960, FPS 212 
+ Last 100 training episodes: mean/median reward 5.5/3.1, min/max reward -2.6/22.5, 
+
+2023-12-14 16:14:37, INFO: Updates 10880, num timesteps 3917160, FPS 212 
+ Last 100 training episodes: mean/median reward 5.6/3.5, min/max reward -3.3/22.9, 
+
+2023-12-14 16:15:13, INFO: Updates 10900, num timesteps 3924360, FPS 212 
+ Last 100 training episodes: mean/median reward 6.8/4.2, min/max reward -0.9/23.2, 
+
+2023-12-14 16:15:50, INFO: Updates 10920, num timesteps 3931560, FPS 212 
+ Last 100 training episodes: mean/median reward 6.1/3.4, min/max reward -2.3/22.6, 
+
+2023-12-14 16:16:27, INFO: Updates 10940, num timesteps 3938760, FPS 212 
+ Last 100 training episodes: mean/median reward 5.6/3.5, min/max reward -2.1/23.2, 
+
+2023-12-14 16:17:04, INFO: Updates 10960, num timesteps 3945960, FPS 212 
+ Last 100 training episodes: mean/median reward 5.7/3.4, min/max reward -3.9/22.9, 
+
+2023-12-14 16:17:40, INFO: Updates 10980, num timesteps 3953160, FPS 212 
+ Last 100 training episodes: mean/median reward 6.3/3.3, min/max reward -3.4/22.7, 
+
+2023-12-14 16:18:17, INFO: Updates 11000, num timesteps 3960360, FPS 212 
+ Last 100 training episodes: mean/median reward 4.7/3.0, min/max reward -2.9/22.6, 
+
+2023-12-14 16:18:53, INFO: Updates 11020, num timesteps 3967560, FPS 212 
+ Last 100 training episodes: mean/median reward 5.7/3.0, min/max reward -1.2/22.9, 
+
+2023-12-14 16:19:30, INFO: Updates 11040, num timesteps 3974760, FPS 212 
+ Last 100 training episodes: mean/median reward 5.8/3.1, min/max reward -4.6/23.0, 
+
+2023-12-14 16:20:07, INFO: Updates 11060, num timesteps 3981960, FPS 212 
+ Last 100 training episodes: mean/median reward 6.0/3.4, min/max reward -2.0/22.9, 
+
+2023-12-14 16:20:44, INFO: Updates 11080, num timesteps 3989160, FPS 212 
+ Last 100 training episodes: mean/median reward 6.3/3.8, min/max reward -3.0/23.1, 
+
+2023-12-14 16:21:21, INFO: Updates 11100, num timesteps 3996360, FPS 212 
+ Last 100 training episodes: mean/median reward 4.8/3.4, min/max reward -3.1/22.9, 
+
+2023-12-14 16:21:57, INFO: Updates 11120, num timesteps 4003560, FPS 212 
+ Last 100 training episodes: mean/median reward 3.7/2.9, min/max reward -1.8/22.0, 
+
+2023-12-14 16:22:34, INFO: Updates 11140, num timesteps 4010760, FPS 212 
+ Last 100 training episodes: mean/median reward 5.8/3.7, min/max reward -3.5/22.2, 
+
+2023-12-14 16:23:11, INFO: Updates 11160, num timesteps 4017960, FPS 211 
+ Last 100 training episodes: mean/median reward 6.2/3.5, min/max reward -2.9/22.9, 
+
+2023-12-14 16:23:48, INFO: Updates 11180, num timesteps 4025160, FPS 211 
+ Last 100 training episodes: mean/median reward 6.7/3.3, min/max reward -2.7/22.8, 
+
+2023-12-14 16:24:24, INFO: Updates 11200, num timesteps 4032360, FPS 211 
+ Last 100 training episodes: mean/median reward 5.2/3.2, min/max reward -1.8/22.3, 
+
+2023-12-14 16:25:01, INFO: Updates 11220, num timesteps 4039560, FPS 211 
+ Last 100 training episodes: mean/median reward 6.2/3.4, min/max reward -2.1/22.8, 
+
+2023-12-14 16:25:38, INFO: Updates 11240, num timesteps 4046760, FPS 211 
+ Last 100 training episodes: mean/median reward 6.3/3.3, min/max reward -2.2/22.6, 
+
+2023-12-14 16:26:15, INFO: Updates 11260, num timesteps 4053960, FPS 211 
+ Last 100 training episodes: mean/median reward 6.4/3.0, min/max reward -1.7/22.8, 
+
+2023-12-14 16:26:52, INFO: Updates 11280, num timesteps 4061160, FPS 211 
+ Last 100 training episodes: mean/median reward 5.1/3.1, min/max reward -2.2/22.2, 
+
+2023-12-14 16:27:28, INFO: Updates 11300, num timesteps 4068360, FPS 211 
+ Last 100 training episodes: mean/median reward 7.2/3.7, min/max reward -1.9/22.9, 
+
+2023-12-14 16:28:06, INFO: Updates 11320, num timesteps 4075560, FPS 211 
+ Last 100 training episodes: mean/median reward 4.8/3.2, min/max reward -2.4/22.9, 
+
+2023-12-14 16:28:42, INFO: Updates 11340, num timesteps 4082760, FPS 211 
+ Last 100 training episodes: mean/median reward 5.3/3.2, min/max reward -1.7/23.0, 
+
+2023-12-14 16:29:19, INFO: Updates 11360, num timesteps 4089960, FPS 211 
+ Last 100 training episodes: mean/median reward 6.0/3.5, min/max reward -2.8/22.9, 
+
+2023-12-14 16:29:56, INFO: Updates 11380, num timesteps 4097160, FPS 211 
+ Last 100 training episodes: mean/median reward 6.2/3.8, min/max reward -0.5/22.9, 
+
+2023-12-14 16:30:33, INFO: Updates 11400, num timesteps 4104360, FPS 211 
+ Last 100 training episodes: mean/median reward 7.2/3.8, min/max reward -2.6/23.2, 
+
+2023-12-14 16:31:10, INFO: Updates 11420, num timesteps 4111560, FPS 211 
+ Last 100 training episodes: mean/median reward 5.3/3.4, min/max reward -0.9/22.6, 
+
+2023-12-14 16:31:47, INFO: Updates 11440, num timesteps 4118760, FPS 211 
+ Last 100 training episodes: mean/median reward 6.5/3.7, min/max reward -1.7/22.6, 
+
+2023-12-14 16:32:23, INFO: Updates 11460, num timesteps 4125960, FPS 211 
+ Last 100 training episodes: mean/median reward 6.2/3.8, min/max reward -1.3/22.2, 
+
+2023-12-14 16:33:00, INFO: Updates 11480, num timesteps 4133160, FPS 211 
+ Last 100 training episodes: mean/median reward 6.5/3.3, min/max reward -3.7/23.0, 
+
+2023-12-14 16:33:37, INFO: Updates 11500, num timesteps 4140360, FPS 211 
+ Last 100 training episodes: mean/median reward 6.1/3.2, min/max reward -2.8/22.6, 
+
+2023-12-14 16:34:14, INFO: Updates 11520, num timesteps 4147560, FPS 211 
+ Last 100 training episodes: mean/median reward 4.9/3.1, min/max reward -1.7/22.8, 
+
+2023-12-14 16:34:51, INFO: Updates 11540, num timesteps 4154760, FPS 211 
+ Last 100 training episodes: mean/median reward 5.9/3.1, min/max reward -2.7/22.9, 
+
+2023-12-14 16:35:29, INFO: Updates 11560, num timesteps 4161960, FPS 211 
+ Last 100 training episodes: mean/median reward 6.1/3.6, min/max reward -2.8/22.5, 
+
+2023-12-14 16:36:06, INFO: Updates 11580, num timesteps 4169160, FPS 211 
+ Last 100 training episodes: mean/median reward 5.1/3.2, min/max reward -1.5/22.8, 
+
+2023-12-14 16:36:42, INFO: Updates 11600, num timesteps 4176360, FPS 211 
+ Last 100 training episodes: mean/median reward 6.7/3.6, min/max reward -3.3/22.5, 
+
+2023-12-14 16:37:19, INFO: Updates 11620, num timesteps 4183560, FPS 211 
+ Last 100 training episodes: mean/median reward 6.8/3.8, min/max reward -2.7/22.7, 
+
+2023-12-14 16:37:56, INFO: Updates 11640, num timesteps 4190760, FPS 211 
+ Last 100 training episodes: mean/median reward 5.2/3.1, min/max reward -2.4/22.7, 
+
+2023-12-14 16:38:33, INFO: Updates 11660, num timesteps 4197960, FPS 211 
+ Last 100 training episodes: mean/median reward 5.6/3.4, min/max reward -4.9/22.7, 
+
+2023-12-14 16:39:11, INFO: Updates 11680, num timesteps 4205160, FPS 211 
+ Last 100 training episodes: mean/median reward 4.9/3.1, min/max reward -3.9/23.0, 
+
+2023-12-14 16:39:48, INFO: Updates 11700, num timesteps 4212360, FPS 211 
+ Last 100 training episodes: mean/median reward 5.1/3.0, min/max reward -2.0/23.3, 
+
+2023-12-14 16:40:25, INFO: Updates 11720, num timesteps 4219560, FPS 211 
+ Last 100 training episodes: mean/median reward 5.1/3.1, min/max reward -2.1/22.5, 
+
+2023-12-14 16:41:02, INFO: Updates 11740, num timesteps 4226760, FPS 211 
+ Last 100 training episodes: mean/median reward 5.6/3.4, min/max reward -3.9/22.9, 
+
+2023-12-14 16:41:39, INFO: Updates 11760, num timesteps 4233960, FPS 211 
+ Last 100 training episodes: mean/median reward 4.3/2.5, min/max reward -2.6/21.8, 
+
+2023-12-14 16:42:16, INFO: Updates 11780, num timesteps 4241160, FPS 210 
+ Last 100 training episodes: mean/median reward 5.9/3.7, min/max reward -2.7/22.6, 
+
+2023-12-14 16:42:53, INFO: Updates 11800, num timesteps 4248360, FPS 210 
+ Last 100 training episodes: mean/median reward 5.6/3.9, min/max reward -1.9/23.0, 
+
+2023-12-14 16:43:30, INFO: Updates 11820, num timesteps 4255560, FPS 210 
+ Last 100 training episodes: mean/median reward 6.1/3.5, min/max reward -2.8/22.9, 
+
+2023-12-14 16:44:07, INFO: Updates 11840, num timesteps 4262760, FPS 210 
+ Last 100 training episodes: mean/median reward 4.6/3.3, min/max reward -3.6/23.0, 
+
+2023-12-14 16:44:44, INFO: Updates 11860, num timesteps 4269960, FPS 210 
+ Last 100 training episodes: mean/median reward 6.4/3.2, min/max reward -2.3/22.2, 
+
+2023-12-14 16:45:22, INFO: Updates 11880, num timesteps 4277160, FPS 210 
+ Last 100 training episodes: mean/median reward 5.7/3.3, min/max reward -2.6/22.9, 
+
+2023-12-14 16:45:59, INFO: Updates 11900, num timesteps 4284360, FPS 210 
+ Last 100 training episodes: mean/median reward 5.3/3.1, min/max reward -2.2/22.4, 
+
+2023-12-14 16:46:36, INFO: Updates 11920, num timesteps 4291560, FPS 210 
+ Last 100 training episodes: mean/median reward 5.7/3.1, min/max reward -1.7/23.2, 
+
+2023-12-14 16:47:13, INFO: Updates 11940, num timesteps 4298760, FPS 210 
+ Last 100 training episodes: mean/median reward 5.7/3.7, min/max reward -1.9/22.8, 
+
+2023-12-14 16:47:50, INFO: Updates 11960, num timesteps 4305960, FPS 210 
+ Last 100 training episodes: mean/median reward 6.2/3.4, min/max reward -2.5/22.9, 
+
+2023-12-14 16:48:25, INFO: Updates 11980, num timesteps 4313160, FPS 210 
+ Last 100 training episodes: mean/median reward 5.7/3.2, min/max reward -2.7/22.9, 
+
+2023-12-14 16:49:00, INFO: Updates 12000, num timesteps 4320360, FPS 210 
+ Last 100 training episodes: mean/median reward 5.8/3.3, min/max reward -1.6/22.6, 
+
+2023-12-14 16:49:35, INFO: Updates 12020, num timesteps 4327560, FPS 210 
+ Last 100 training episodes: mean/median reward 5.6/3.3, min/max reward -2.8/22.7, 
+
+2023-12-14 16:50:10, INFO: Updates 12040, num timesteps 4334760, FPS 210 
+ Last 100 training episodes: mean/median reward 5.1/3.4, min/max reward -2.9/23.0, 
+
+2023-12-14 16:50:43, INFO: Updates 12060, num timesteps 4341960, FPS 210 
+ Last 100 training episodes: mean/median reward 5.6/3.3, min/max reward -2.3/22.9, 
+
+2023-12-14 16:51:21, INFO: Updates 12080, num timesteps 4349160, FPS 210 
+ Last 100 training episodes: mean/median reward 5.7/3.5, min/max reward -3.6/22.6, 
+
+2023-12-14 16:51:54, INFO: Updates 12100, num timesteps 4356360, FPS 210 
+ Last 100 training episodes: mean/median reward 5.4/3.2, min/max reward -2.5/22.5, 
+
+2023-12-14 16:52:28, INFO: Updates 12120, num timesteps 4363560, FPS 210 
+ Last 100 training episodes: mean/median reward 5.5/3.2, min/max reward -2.2/23.0, 
+
+2023-12-14 16:53:01, INFO: Updates 12140, num timesteps 4370760, FPS 210 
+ Last 100 training episodes: mean/median reward 5.9/3.0, min/max reward -4.2/23.2, 
+
+2023-12-14 16:53:36, INFO: Updates 12160, num timesteps 4377960, FPS 210 
+ Last 100 training episodes: mean/median reward 5.2/3.4, min/max reward -2.1/22.4, 
+
+2023-12-14 16:54:10, INFO: Updates 12180, num timesteps 4385160, FPS 210 
+ Last 100 training episodes: mean/median reward 5.7/3.6, min/max reward -1.5/22.6, 
+
+2023-12-14 16:54:44, INFO: Updates 12200, num timesteps 4392360, FPS 210 
+ Last 100 training episodes: mean/median reward 6.6/4.0, min/max reward -1.4/22.4, 
+
+2023-12-14 16:55:19, INFO: Updates 12220, num timesteps 4399560, FPS 210 
+ Last 100 training episodes: mean/median reward 6.6/3.3, min/max reward -0.6/22.8, 
+
+2023-12-14 16:55:54, INFO: Updates 12240, num timesteps 4406760, FPS 210 
+ Last 100 training episodes: mean/median reward 6.3/3.8, min/max reward -2.3/22.4, 
+
+2023-12-14 16:56:27, INFO: Updates 12260, num timesteps 4413960, FPS 210 
+ Last 100 training episodes: mean/median reward 5.8/3.3, min/max reward -2.7/23.2, 
+
+2023-12-14 16:57:01, INFO: Updates 12280, num timesteps 4421160, FPS 210 
+ Last 100 training episodes: mean/median reward 6.1/3.4, min/max reward -2.9/22.1, 
+
+2023-12-14 16:57:35, INFO: Updates 12300, num timesteps 4428360, FPS 210 
+ Last 100 training episodes: mean/median reward 5.8/3.6, min/max reward -3.0/22.4, 
+
+2023-12-14 16:58:10, INFO: Updates 12320, num timesteps 4435560, FPS 210 
+ Last 100 training episodes: mean/median reward 6.3/4.2, min/max reward -0.5/23.3, 
+
+2023-12-14 16:58:44, INFO: Updates 12340, num timesteps 4442760, FPS 210 
+ Last 100 training episodes: mean/median reward 5.8/3.4, min/max reward -1.7/22.9, 
+
+2023-12-14 16:59:17, INFO: Updates 12360, num timesteps 4449960, FPS 210 
+ Last 100 training episodes: mean/median reward 4.4/2.9, min/max reward -2.4/22.8, 
+
+2023-12-14 16:59:52, INFO: Updates 12380, num timesteps 4457160, FPS 210 
+ Last 100 training episodes: mean/median reward 7.2/4.0, min/max reward -0.8/23.2, 
+
+2023-12-14 17:00:26, INFO: Updates 12400, num timesteps 4464360, FPS 210 
+ Last 100 training episodes: mean/median reward 6.5/3.1, min/max reward -3.1/22.9, 
+
+2023-12-14 17:01:01, INFO: Updates 12420, num timesteps 4471560, FPS 210 
+ Last 100 training episodes: mean/median reward 5.8/3.1, min/max reward -4.6/23.1, 
+
+2023-12-14 17:01:35, INFO: Updates 12440, num timesteps 4478760, FPS 210 
+ Last 100 training episodes: mean/median reward 5.9/3.4, min/max reward -1.6/23.2, 
+
+2023-12-14 17:02:10, INFO: Updates 12460, num timesteps 4485960, FPS 210 
+ Last 100 training episodes: mean/median reward 5.6/3.5, min/max reward -1.3/22.8, 
+
+2023-12-14 17:02:44, INFO: Updates 12480, num timesteps 4493160, FPS 210 
+ Last 100 training episodes: mean/median reward 5.0/3.0, min/max reward -2.6/23.2, 
+
+2023-12-14 17:03:19, INFO: Updates 12500, num timesteps 4500360, FPS 210 
+ Last 100 training episodes: mean/median reward 6.1/3.3, min/max reward -1.4/23.1, 
+
+2023-12-14 17:03:54, INFO: Updates 12520, num timesteps 4507560, FPS 210 
+ Last 100 training episodes: mean/median reward 5.8/3.0, min/max reward -2.1/22.9, 
+
+2023-12-14 17:04:29, INFO: Updates 12540, num timesteps 4514760, FPS 210 
+ Last 100 training episodes: mean/median reward 6.1/3.2, min/max reward -2.0/22.4, 
+
+2023-12-14 17:05:03, INFO: Updates 12560, num timesteps 4521960, FPS 210 
+ Last 100 training episodes: mean/median reward 4.9/3.4, min/max reward -5.6/22.6, 
+
+2023-12-14 17:05:36, INFO: Updates 12580, num timesteps 4529160, FPS 210 
+ Last 100 training episodes: mean/median reward 6.0/3.6, min/max reward -1.6/22.9, 
+
+2023-12-14 17:06:13, INFO: Updates 12600, num timesteps 4536360, FPS 210 
+ Last 100 training episodes: mean/median reward 5.3/3.5, min/max reward -2.4/22.8, 
+
+2023-12-14 17:06:49, INFO: Updates 12620, num timesteps 4543560, FPS 210 
+ Last 100 training episodes: mean/median reward 6.0/3.2, min/max reward -0.6/23.2, 
+
+2023-12-14 17:07:24, INFO: Updates 12640, num timesteps 4550760, FPS 210 
+ Last 100 training episodes: mean/median reward 6.0/3.5, min/max reward -0.9/23.3, 
+
+2023-12-14 17:07:58, INFO: Updates 12660, num timesteps 4557960, FPS 210 
+ Last 100 training episodes: mean/median reward 6.4/3.5, min/max reward -2.2/22.4, 
+
+2023-12-14 17:08:28, INFO: Updates 12680, num timesteps 4565160, FPS 210 
+ Last 100 training episodes: mean/median reward 6.1/3.4, min/max reward -3.6/22.6, 
+
+2023-12-14 17:08:57, INFO: Updates 12700, num timesteps 4572360, FPS 210 
+ Last 100 training episodes: mean/median reward 5.9/3.6, min/max reward -4.3/22.8, 
+
+2023-12-14 17:09:26, INFO: Updates 12720, num timesteps 4579560, FPS 210 
+ Last 100 training episodes: mean/median reward 4.6/3.0, min/max reward -1.7/22.3, 
+
+2023-12-14 17:09:58, INFO: Updates 12740, num timesteps 4586760, FPS 210 
+ Last 100 training episodes: mean/median reward 6.3/3.3, min/max reward -2.3/22.6, 
+
+2023-12-14 17:10:35, INFO: Updates 12760, num timesteps 4593960, FPS 210 
+ Last 100 training episodes: mean/median reward 5.5/3.1, min/max reward -2.5/23.1, 
+
+2023-12-14 17:11:11, INFO: Updates 12780, num timesteps 4601160, FPS 210 
+ Last 100 training episodes: mean/median reward 5.6/3.2, min/max reward -4.1/22.9, 
+
+2023-12-14 17:11:47, INFO: Updates 12800, num timesteps 4608360, FPS 210 
+ Last 100 training episodes: mean/median reward 6.9/3.8, min/max reward -3.7/22.5, 
+
+2023-12-14 17:12:22, INFO: Updates 12820, num timesteps 4615560, FPS 210 
+ Last 100 training episodes: mean/median reward 6.4/3.8, min/max reward -2.8/23.2, 
+
+2023-12-14 17:12:56, INFO: Updates 12840, num timesteps 4622760, FPS 210 
+ Last 100 training episodes: mean/median reward 6.8/3.6, min/max reward -0.9/22.6, 
+
+2023-12-14 17:13:32, INFO: Updates 12860, num timesteps 4629960, FPS 210 
+ Last 100 training episodes: mean/median reward 5.6/3.5, min/max reward -2.3/23.1, 
+
+2023-12-14 17:14:08, INFO: Updates 12880, num timesteps 4637160, FPS 210 
+ Last 100 training episodes: mean/median reward 5.4/3.4, min/max reward -1.1/22.7, 
+
+2023-12-14 17:14:43, INFO: Updates 12900, num timesteps 4644360, FPS 210 
+ Last 100 training episodes: mean/median reward 5.8/4.2, min/max reward -2.5/22.2, 
+
+2023-12-14 17:15:17, INFO: Updates 12920, num timesteps 4651560, FPS 210 
+ Last 100 training episodes: mean/median reward 5.7/3.4, min/max reward -2.4/22.9, 
+
+2023-12-14 17:15:49, INFO: Updates 12940, num timesteps 4658760, FPS 210 
+ Last 100 training episodes: mean/median reward 7.0/3.5, min/max reward -1.2/22.9, 
+
+2023-12-14 17:16:24, INFO: Updates 12960, num timesteps 4665960, FPS 210 
+ Last 100 training episodes: mean/median reward 4.8/3.3, min/max reward -2.6/23.0, 
+
+2023-12-14 17:17:00, INFO: Updates 12980, num timesteps 4673160, FPS 210 
+ Last 100 training episodes: mean/median reward 5.5/3.4, min/max reward -2.1/22.6, 
+
+2023-12-14 17:17:37, INFO: Updates 13000, num timesteps 4680360, FPS 210 
+ Last 100 training episodes: mean/median reward 5.5/3.6, min/max reward -2.7/23.0, 
+
+2023-12-14 17:18:14, INFO: Updates 13020, num timesteps 4687560, FPS 210 
+ Last 100 training episodes: mean/median reward 5.3/3.5, min/max reward -1.8/22.5, 
+
+2023-12-14 17:18:51, INFO: Updates 13040, num timesteps 4694760, FPS 210 
+ Last 100 training episodes: mean/median reward 5.7/3.1, min/max reward -3.0/22.2, 
+
+2023-12-14 17:19:29, INFO: Updates 13060, num timesteps 4701960, FPS 210 
+ Last 100 training episodes: mean/median reward 4.9/3.2, min/max reward -2.9/23.1, 
+
+2023-12-14 17:20:05, INFO: Updates 13080, num timesteps 4709160, FPS 210 
+ Last 100 training episodes: mean/median reward 5.0/3.2, min/max reward -2.7/22.5, 
+
+2023-12-14 17:20:40, INFO: Updates 13100, num timesteps 4716360, FPS 210 
+ Last 100 training episodes: mean/median reward 5.2/3.3, min/max reward -3.3/22.9, 
+
+2023-12-14 17:21:16, INFO: Updates 13120, num timesteps 4723560, FPS 210 
+ Last 100 training episodes: mean/median reward 6.6/3.7, min/max reward -1.7/22.4, 
+
+2023-12-14 17:21:40, INFO: finding looplift candidates
+2023-12-14 17:21:40, INFO: finding looplift candidates
+2023-12-14 17:21:40, INFO: finding looplift candidates
+2023-12-14 17:21:40, INFO: finding looplift candidates
+2023-12-14 17:21:40, INFO: finding looplift candidates
+2023-12-14 17:21:40, INFO: finding looplift candidates
+2023-12-14 17:21:40, INFO: finding looplift candidates
+2023-12-14 17:21:40, INFO: finding looplift candidates
+2023-12-14 17:21:40, INFO: finding looplift candidates
+2023-12-14 17:21:40, INFO: finding looplift candidates
+2023-12-14 17:21:40, INFO: finding looplift candidates
+2023-12-14 17:21:40, INFO: finding looplift candidates
+2023-12-14 17:21:50, INFO: Updates 13140, num timesteps 4730760, FPS 210 
+ Last 100 training episodes: mean/median reward 4.8/3.1, min/max reward -1.9/22.5, 
+
+2023-12-14 17:22:18, INFO: Updates 20, num timesteps 7560, FPS 208 
+ Last 39 training episodes: mean/median reward -13.8/-12.1, min/max reward -45.9/22.0, 
+
+2023-12-14 17:22:28, INFO: Updates 13160, num timesteps 4737960, FPS 210 
+ Last 100 training episodes: mean/median reward 7.5/3.8, min/max reward -1.6/23.2, 
+
+2023-12-14 17:22:52, INFO: Updates 40, num timesteps 14760, FPS 209 
+ Last 83 training episodes: mean/median reward -10.8/-8.3, min/max reward -45.9/22.0, 
+
+2023-12-14 17:23:05, INFO: Updates 13180, num timesteps 4745160, FPS 210 
+ Last 100 training episodes: mean/median reward 5.3/3.4, min/max reward -2.6/22.9, 
+
+2023-12-14 17:23:26, INFO: Updates 60, num timesteps 21960, FPS 210 
+ Last 100 training episodes: mean/median reward -5.9/-2.6, min/max reward -30.9/22.2, 
+
+2023-12-14 17:23:42, INFO: Updates 13200, num timesteps 4752360, FPS 210 
+ Last 100 training episodes: mean/median reward 6.0/3.3, min/max reward -2.8/23.2, 
+
+2023-12-14 17:24:00, INFO: Updates 80, num timesteps 29160, FPS 210 
+ Last 100 training episodes: mean/median reward -5.3/-1.7, min/max reward -34.1/22.2, 
+
+2023-12-14 17:24:18, INFO: Updates 13220, num timesteps 4759560, FPS 210 
+ Last 100 training episodes: mean/median reward 6.7/3.6, min/max reward -3.1/23.1, 
+
+2023-12-14 17:24:53, INFO: Updates 13240, num timesteps 4766760, FPS 210 
+ Last 100 training episodes: mean/median reward 6.6/3.7, min/max reward -4.7/22.9, 
+
+2023-12-14 17:24:55, INFO: finding looplift candidates
+2023-12-14 17:24:55, INFO: finding looplift candidates
+2023-12-14 17:24:55, INFO: finding looplift candidates
+2023-12-14 17:24:55, INFO: finding looplift candidates
+2023-12-14 17:24:55, INFO: finding looplift candidates
+2023-12-14 17:24:55, INFO: finding looplift candidates
+2023-12-14 17:24:55, INFO: finding looplift candidates
+2023-12-14 17:24:55, INFO: finding looplift candidates
+2023-12-14 17:24:55, INFO: finding looplift candidates
+2023-12-14 17:24:55, INFO: finding looplift candidates
+2023-12-14 17:24:55, INFO: finding looplift candidates
+2023-12-14 17:24:55, INFO: finding looplift candidates
+2023-12-14 17:25:29, INFO: Updates 13260, num timesteps 4773960, FPS 210 
+ Last 100 training episodes: mean/median reward 6.2/3.0, min/max reward -2.1/22.7, 
+
+2023-12-14 17:26:05, INFO: Updates 13280, num timesteps 4781160, FPS 210 
+ Last 100 training episodes: mean/median reward 6.3/3.7, min/max reward -1.8/22.8, 
+
+2023-12-14 17:26:40, INFO: Updates 13300, num timesteps 4788360, FPS 210 
+ Last 100 training episodes: mean/median reward 5.5/3.3, min/max reward -2.7/22.8, 
+
+2023-12-14 17:27:17, INFO: Updates 13320, num timesteps 4795560, FPS 210 
+ Last 100 training episodes: mean/median reward 5.4/2.8, min/max reward -2.7/22.4, 
+
+2023-12-14 17:27:54, INFO: Updates 13340, num timesteps 4802760, FPS 210 
+ Last 100 training episodes: mean/median reward 5.7/3.2, min/max reward -3.1/22.3, 
+
+2023-12-14 17:28:30, INFO: Updates 13360, num timesteps 4809960, FPS 210 
+ Last 100 training episodes: mean/median reward 6.0/3.2, min/max reward -3.0/23.4, 
+
+2023-12-14 17:29:07, INFO: Updates 13380, num timesteps 4817160, FPS 210 
+ Last 100 training episodes: mean/median reward 6.3/3.7, min/max reward -3.3/22.5, 
+
+2023-12-14 17:29:43, INFO: Updates 13400, num timesteps 4824360, FPS 210 
+ Last 100 training episodes: mean/median reward 5.8/3.2, min/max reward -0.8/23.1, 
+
+2023-12-14 17:30:19, INFO: Updates 13420, num timesteps 4831560, FPS 210 
+ Last 100 training episodes: mean/median reward 6.5/3.6, min/max reward -1.8/22.7, 
+
+2023-12-14 17:30:56, INFO: Updates 13440, num timesteps 4838760, FPS 210 
+ Last 100 training episodes: mean/median reward 5.3/3.2, min/max reward -1.6/22.6, 
+
+2023-12-14 17:31:32, INFO: Updates 13460, num timesteps 4845960, FPS 210 
+ Last 100 training episodes: mean/median reward 6.0/3.6, min/max reward -5.2/22.3, 
+
+2023-12-14 17:32:09, INFO: Updates 13480, num timesteps 4853160, FPS 210 
+ Last 100 training episodes: mean/median reward 5.8/3.8, min/max reward -2.4/22.8, 
+
+2023-12-14 17:32:47, INFO: Updates 13500, num timesteps 4860360, FPS 210 
+ Last 100 training episodes: mean/median reward 5.6/3.3, min/max reward -3.1/22.9, 
+
+2023-12-14 17:33:24, INFO: Updates 13520, num timesteps 4867560, FPS 210 
+ Last 100 training episodes: mean/median reward 4.6/3.2, min/max reward -3.0/22.9, 
+
+2023-12-14 17:34:00, INFO: Updates 13540, num timesteps 4874760, FPS 210 
+ Last 100 training episodes: mean/median reward 6.6/3.8, min/max reward -1.8/22.9, 
+
+2023-12-14 17:34:37, INFO: Updates 13560, num timesteps 4881960, FPS 210 
+ Last 100 training episodes: mean/median reward 6.8/3.7, min/max reward -2.4/22.9, 
+
+2023-12-14 17:35:14, INFO: Updates 13580, num timesteps 4889160, FPS 210 
+ Last 100 training episodes: mean/median reward 4.7/2.8, min/max reward -3.4/23.4, 
+
+2023-12-14 17:35:50, INFO: Updates 13600, num timesteps 4896360, FPS 210 
+ Last 100 training episodes: mean/median reward 6.0/3.6, min/max reward -3.1/22.7, 
+
+2023-12-14 17:36:28, INFO: Updates 13620, num timesteps 4903560, FPS 209 
+ Last 100 training episodes: mean/median reward 6.3/3.8, min/max reward -3.4/22.7, 
+
+2023-12-14 17:37:04, INFO: Updates 13640, num timesteps 4910760, FPS 209 
+ Last 100 training episodes: mean/median reward 7.1/4.1, min/max reward -2.0/22.4, 
+
+2023-12-14 17:37:41, INFO: Updates 13660, num timesteps 4917960, FPS 209 
+ Last 100 training episodes: mean/median reward 6.1/3.7, min/max reward -2.0/23.1, 
+
+2023-12-14 17:38:17, INFO: Updates 13680, num timesteps 4925160, FPS 209 
+ Last 100 training episodes: mean/median reward 5.1/3.6, min/max reward -2.6/22.9, 
+
+2023-12-14 17:38:54, INFO: Updates 13700, num timesteps 4932360, FPS 209 
+ Last 100 training episodes: mean/median reward 5.3/3.1, min/max reward -2.5/23.0, 
+
+2023-12-14 17:39:31, INFO: Updates 13720, num timesteps 4939560, FPS 209 
+ Last 100 training episodes: mean/median reward 5.0/3.6, min/max reward -4.1/22.9, 
+
+2023-12-14 17:40:07, INFO: Updates 13740, num timesteps 4946760, FPS 209 
+ Last 100 training episodes: mean/median reward 5.8/3.4, min/max reward -2.5/22.7, 
+
+2023-12-14 17:40:44, INFO: Updates 13760, num timesteps 4953960, FPS 209 
+ Last 100 training episodes: mean/median reward 6.1/3.8, min/max reward -3.9/22.6, 
+
+2023-12-14 17:41:21, INFO: Updates 13780, num timesteps 4961160, FPS 209 
+ Last 100 training episodes: mean/median reward 6.1/3.8, min/max reward -2.8/22.7, 
+
+2023-12-14 17:41:59, INFO: Updates 13800, num timesteps 4968360, FPS 209 
+ Last 100 training episodes: mean/median reward 6.0/3.2, min/max reward -2.8/22.8, 
+
+2023-12-14 17:42:36, INFO: Updates 13820, num timesteps 4975560, FPS 209 
+ Last 100 training episodes: mean/median reward 6.3/3.3, min/max reward -1.1/22.8, 
+
+2023-12-14 17:43:12, INFO: Updates 13840, num timesteps 4982760, FPS 209 
+ Last 100 training episodes: mean/median reward 5.7/3.3, min/max reward -3.2/22.6, 
+
+2023-12-14 17:43:48, INFO: Updates 13860, num timesteps 4989960, FPS 209 
+ Last 100 training episodes: mean/median reward 5.1/3.1, min/max reward -3.4/23.0, 
+
+2023-12-14 17:44:24, INFO: Updates 13880, num timesteps 4997160, FPS 209 
+ Last 100 training episodes: mean/median reward 5.3/3.2, min/max reward -2.8/22.9, 
+
+2023-12-14 17:45:01, INFO: Updates 13900, num timesteps 5004360, FPS 209 
+ Last 100 training episodes: mean/median reward 4.8/3.0, min/max reward -1.9/22.8, 
+
+2023-12-14 17:45:38, INFO: Updates 13920, num timesteps 5011560, FPS 209 
+ Last 100 training episodes: mean/median reward 5.2/3.3, min/max reward -2.0/22.6, 
+
+2023-12-14 17:46:14, INFO: Updates 13940, num timesteps 5018760, FPS 209 
+ Last 100 training episodes: mean/median reward 7.1/3.6, min/max reward -4.3/22.9, 
+
+2023-12-14 17:46:51, INFO: Updates 13960, num timesteps 5025960, FPS 209 
+ Last 100 training episodes: mean/median reward 5.3/3.6, min/max reward -3.6/23.1, 
+
+2023-12-14 17:47:27, INFO: Updates 13980, num timesteps 5033160, FPS 209 
+ Last 100 training episodes: mean/median reward 5.6/3.5, min/max reward -1.5/23.3, 
+
+2023-12-14 17:48:04, INFO: Updates 14000, num timesteps 5040360, FPS 209 
+ Last 100 training episodes: mean/median reward 6.4/3.5, min/max reward -1.9/23.2, 
+
+2023-12-14 17:48:41, INFO: Updates 14020, num timesteps 5047560, FPS 209 
+ Last 100 training episodes: mean/median reward 6.3/4.0, min/max reward -1.1/22.7, 
+
+2023-12-14 17:49:17, INFO: Updates 14040, num timesteps 5054760, FPS 209 
+ Last 100 training episodes: mean/median reward 5.4/2.9, min/max reward -2.1/23.2, 
+
+2023-12-14 17:49:53, INFO: Updates 14060, num timesteps 5061960, FPS 209 
+ Last 100 training episodes: mean/median reward 6.3/3.4, min/max reward -2.7/22.6, 
+
+2023-12-14 17:50:29, INFO: Updates 14080, num timesteps 5069160, FPS 209 
+ Last 100 training episodes: mean/median reward 7.0/3.9, min/max reward -2.7/22.9, 
+
