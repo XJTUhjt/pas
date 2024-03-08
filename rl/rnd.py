@@ -28,25 +28,38 @@ class RND(nn.Module):
             nn.ReLU()
         )
 
+        # 注意：目标网络的参数不需要梯度
+        for param in self.target_net.parameters():
+            param.requires_grad = False
+
         self.predictor_optimizer = torch.optim.Adam(self.predictor_net.parameters(), lr=0.0001, weight_decay=1e-6)
 
     def forward(self, state):
         target = self.target_net(state)
         prediction = self.predictor_net(state)
-
         return target, prediction
     
-    def compulate_intrinsic_reward(self, state):
-        target, prediction = self.forward(state)
-        prediction_error = torch.pow(target - prediction, 2).sum(dim=0)
+    def compute_intrinsic_reward(self, state):
+        """
+        计算内在奖励
+        Args:
+            state (torch.Tensor): 当前状态
+        Returns:
+            torch.Tensor: 预测误差作为内在奖励
+        """
+        with torch.no_grad():
+            target = self.target_net(state)
+        prediction = self.predictor_net(state)
+        prediction_error = (target - prediction).pow(2).mean(1)  # 计算每个样本的均方误差
 
+        # 计算损失并更新预测网络
         self.predictor_optimizer.zero_grad()
-        prediction_loss = nn.MSELoss(target, prediction)
+        prediction_loss = prediction_error.mean()  # 对所有样本的误差求平均，作为损失
         prediction_loss.backward()
         self.predictor_optimizer.step()
 
-        return prediction_error
+        # 返回预测误差作为内在奖励
+        return prediction_error.detach()
     
     def step(self):
-        pass        
-        
+        pass
