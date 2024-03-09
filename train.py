@@ -134,7 +134,8 @@ def main():
 		max_grad_norm=algo_args.max_grad_norm)
 	
 	#增加RND模块
-	# rnd = RND()
+	# rnd = RND(self, input_dim, hidden_dim=128, output_dim=128)共享RND模块
+	rnd = RND(input_dim=config.vector_net.env_dim)
 
 	#开始获得第一次观测
 	obs = envs.reset()
@@ -185,7 +186,9 @@ def main():
 
 			# r_intrinsic = torch.from_numpy(r_intrinsic).unsqueeze(dim=1)
 
-			obs, reward, done, infos = envs.step(action) 
+			obs, reward, done, infos = envs.step(action)
+			#RND计算内在奖励
+			reward += rnd.compute_intrinsic_reward(env_feature_vector)
 			# reward_with_intrinsic = reward + r_intrinsic
 			# reward = reward + r_intrinsic
 			

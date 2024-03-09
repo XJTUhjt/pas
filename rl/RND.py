@@ -11,7 +11,7 @@ init_ = lambda m: init(m, nn.init.orthogonal_, lambda x: nn.init.
                         constant_(x, 0), np.sqrt(2))
 
 class RND(nn.Module):
-    def __init__(self, input_dim, hidden_dim, output_dim):
+    def __init__(self, input_dim, hidden_dim=128, output_dim=128):
         super().__init__()
 
         self.target_net = nn.Sequential(
@@ -60,6 +60,3 @@ class RND(nn.Module):
 
         # 返回预测误差作为内在奖励
         return prediction_error.detach()
-    
-    def step(self):
-        pass
