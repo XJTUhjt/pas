@@ -583,7 +583,7 @@ class Vector_net(nn.Module):
         #     mu, logvar, z = self.Sensor_VAE.encode(grid)
         
         robot_vector = self.vector_linear(vector)
-        env_add_robot_state = torch.cat((robot_vector, trans_output), dim=2)
+        env_add_robot_state = torch.cat((robot_vector, trans_output, z), dim=2)
 
 
 
