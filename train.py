@@ -12,6 +12,7 @@ import pandas as pd
 import torchvision
 
 from rl.ppo import PPO
+from rl.rnd import RND
 from rl.vec_env.envs import make_vec_envs
 from rl.model import Policy
 from rl.storage import RolloutStorage
@@ -22,7 +23,6 @@ from crowd_sim import *
 import warnings
 warnings.filterwarnings("ignore")
 
-from rl import RND
 
 def main():
 
@@ -135,7 +135,7 @@ def main():
 	
 	#增加RND模块
 	# rnd = RND(self, input_dim, hidden_dim=128, output_dim=128)共享RND模块
-	rnd = RND(input_dim=config.vector_net.env_dim)
+	rnd = RND(input_dim=config.vector_net.env_dim, hidden_dim=128, output_dim=128).to(device)
 
 	#开始获得第一次观测
 	obs = envs.reset()
@@ -170,6 +170,9 @@ def main():
 				agent.optimizer.lr if algo_args.algo == "acktr" else algo_args.lr)
 
 		for step in range(algo_args.num_steps):
+			#RND
+			intrinsic_reward = torch.zeros(12, 1).to(device)
+
 			with torch.no_grad():
 				masks = rollouts.masks[step]
 				#根据策略执行act
@@ -180,7 +183,9 @@ def main():
 				elif config.robot.policy == 'vector_net':
 					value, action, action_log_prob, recurrent_hidden_states, env_feature_vector = actor_critic.act(
 						obs, recurrent_hidden_states,
-						masks)	
+						masks)
+					with torch.enable_grad():
+						intrinsic_reward = rnd.compute_intrinsic_reward(env_feature_vector)
 				else:
 					raise NotImplementedError
 
@@ -189,7 +194,8 @@ def main():
 			obs, reward, done, infos = envs.step(action)
 			#RND计算内在奖励 reward (12, 1)
 			# reward_with_intrinsic = reward + r_intrinsic,计算的同时在12个环境下更新了共享RND的target-network
-			reward += rnd.compute_intrinsic_reward(env_feature_vector)
+			intrinsic_reward = config.rnd.calscale * intrinsic_reward.to('cpu').unsqueeze(1)
+			reward = intrinsic_reward + reward
 			
 			for info in infos:
 				if 'episode' in info.keys():

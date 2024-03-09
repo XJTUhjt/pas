@@ -58,7 +58,7 @@ class Config(object):
     robot = BaseConfig()
     robot.visible = False 
     # srnn for now
-    robot.policy = 'pas_rnn'  #'vector_net'  pas_rnn
+    robot.policy = 'vector_net'  #'vector_net'  pas_rnn
     robot.radius = 0.3
     robot.v_pref = 2 # 0.5 for the turtlebot experiment
     robot.sensor = "coordinates"
@@ -102,4 +102,7 @@ class Config(object):
     vector_net = BaseConfig()
     vector_net.env_dim = 256
     # vector_net.env_dim = 384  #环境+robot+地图
+
+    rnd = BaseConfig()
+    rnd.calscale = 0.07
 
