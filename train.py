@@ -187,10 +187,9 @@ def main():
 			# r_intrinsic = torch.from_numpy(r_intrinsic).unsqueeze(dim=1)
 
 			obs, reward, done, infos = envs.step(action)
-			#RND计算内在奖励
+			#RND计算内在奖励 reward (12, 1)
+			# reward_with_intrinsic = reward + r_intrinsic,计算的同时在12个环境下更新了共享RND的target-network
 			reward += rnd.compute_intrinsic_reward(env_feature_vector)
-			# reward_with_intrinsic = reward + r_intrinsic
-			# reward = reward + r_intrinsic
 			
 			for info in infos:
 				if 'episode' in info.keys():
