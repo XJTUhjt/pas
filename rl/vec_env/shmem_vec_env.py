@@ -68,7 +68,7 @@ class ShmemVecEnv(VecEnv):
             pipe.send(('reset', None))
         return self._decode_obses([pipe.recv() for pipe in self.parent_pipes])
 
-    def step_async(self, actions, env_feature_vector):
+    def step_async(self, actions):
         assert len(actions) == len(self.parent_pipes)
         for pipe, act in zip(self.parent_pipes, actions):
             pipe.send(('step', act))

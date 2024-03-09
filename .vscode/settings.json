@@ -1,4 +1,9 @@
 {
-    "CodeGPT.Autocomplete.provider": "CodeGPT Plus - Plus",
-    "CodeGPT.apiKey": "CodeGPT Plus Beta"
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "debug.console.fontSize": 18
 }

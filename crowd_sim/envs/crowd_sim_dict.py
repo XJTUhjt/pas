@@ -311,7 +311,7 @@ class CrowdSimDict(CrowdSim):
         return ob
 
 
-    def step(self, action, env_feature_vector):
+    def step(self, action):
         """
         Compute actions for all agents, detect collision, update environment and return (ob, reward, done, info)
         """

@@ -59,7 +59,7 @@ class VecEnv(ABC):
         pass
 
     @abstractmethod
-    def step_async(self, actions, env_feature_vector):
+    def step_async(self, actions):
         """
         Tell all the environments to start taking a step
         with the given actions.
@@ -99,13 +99,13 @@ class VecEnv(ABC):
         self.close_extras()
         self.closed = True
 
-    def step(self, actions, env_feature_vector):
+    def step(self, actions):
         """
         Step the environments synchronously.
 
         This is available for backwards compatibility.
         """
-        self.step_async(actions, env_feature_vector)
+        self.step_async(actions)
         return self.step_wait()
 
     def render(self, mode='human',all_videoGrids=99., output_file='data/my_model/PleaseDefine.mp4'):
@@ -152,7 +152,7 @@ class VecEnvWrapper(VecEnv):
                         observation_space=observation_space or venv.observation_space,
                         action_space=action_space or venv.action_space)
 
-    def step_async(self, actions, env_feature_vector):
+    def step_async(self, actions):
         self.venv.step_async(actions)
 
     @abstractmethod

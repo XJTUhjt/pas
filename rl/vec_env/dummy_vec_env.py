@@ -28,7 +28,7 @@ class DummyVecEnv(VecEnv):
         self.actions = None
         self.spec = self.envs[0].spec
 
-    def step_async(self, actions, env_feature_vector):
+    def step_async(self, actions):
         listify = True
         try:
             if len(actions) == self.num_envs:

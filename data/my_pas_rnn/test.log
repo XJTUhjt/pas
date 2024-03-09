@@ -1,79 +1,11 @@
-2023-12-15 10:54:21, INFO: ----------------------------------------
-2023-12-15 10:54:21, INFO: test seed 0.000000
-2023-12-15 10:55:13, INFO: ----------------------------------------
-2023-12-15 10:55:13, INFO: test seed 0.000000
-2023-12-15 10:55:32, INFO: ----------------------------------------
-2023-12-15 10:55:32, INFO: test seed 0.000000
-2023-12-15 10:55:32, INFO: Restored from checkpoint : 41665.pt
-2023-12-15 10:55:34, INFO: finding looplift candidates
-2023-12-15 11:05:14, INFO: ----------------------------------------
-2023-12-15 11:05:14, INFO: test seed 0.000000
-2023-12-15 11:05:14, INFO: Val success rate : 0.95
-2023-12-15 11:05:14, INFO: Restored from checkpoint : 41665.pt
-2023-12-15 11:05:16, INFO: finding looplift candidates
-2023-12-15 11:05:53, INFO: ----------------------------------------
-2023-12-15 11:05:53, INFO: test seed 0.000000
-2023-12-15 11:05:53, INFO: Val success rate : 0.95
-2023-12-15 11:05:53, INFO: Restored from checkpoint : 41665.pt
-2023-12-15 11:05:55, INFO: finding looplift candidates
-2023-12-15 11:06:06, INFO: ----------------------------------------
-2023-12-15 11:06:06, INFO: test seed 0.000000
-2023-12-15 11:06:06, INFO: Val success rate : 0.95
-2023-12-15 11:06:06, INFO: Restored from checkpoint : 41665.pt
-2023-12-15 11:06:08, INFO: finding looplift candidates
-2023-12-15 11:06:40, INFO: ----------------------------------------
-2023-12-15 11:06:40, INFO: test seed 0.000000
-2023-12-15 11:06:40, INFO: Val success rate : 0.95
-2023-12-15 11:06:40, INFO: Restored from checkpoint : 30000.pt
-2023-12-15 11:06:41, INFO: finding looplift candidates
-2023-12-15 11:08:16, INFO: ----------------------------------------
-2023-12-15 11:08:16, INFO: test seed 0.000000
-2023-12-15 11:08:16, INFO: Val success rate : 0.95
-2023-12-15 11:08:16, INFO: Restored from checkpoint : 30000.pt
-2023-12-15 11:08:18, INFO: finding looplift candidates
-2023-12-15 11:13:12, INFO: ----------------------------------------
-2023-12-15 11:13:12, INFO: test seed 0.000000
-2023-12-15 11:13:12, INFO: Val success rate : 0.95
-2023-12-15 11:13:12, INFO: Restored from checkpoint : 41665.pt
-2023-12-15 11:13:14, INFO: finding looplift candidates
-2023-12-15 11:15:53, INFO: ----------------------------------------
-2023-12-15 11:15:53, INFO: test seed 0.000000
-2023-12-15 11:15:54, INFO: Val success rate : 0.95
-2023-12-15 11:15:54, INFO: Restored from checkpoint : 41665.pt
-2023-12-15 11:15:55, INFO: finding looplift candidates
-2023-12-15 11:30:05, INFO: ----------------------------------------
-2023-12-15 11:30:05, INFO: test seed 0.000000
-2023-12-15 11:30:05, INFO: Val success rate : 0.95
-2023-12-15 11:30:05, INFO: Restored from checkpoint : 41665.pt
-2023-12-15 11:30:07, INFO: finding looplift candidates
-2023-12-15 11:33:26, INFO: ----------------------------------------
-2023-12-15 11:33:26, INFO: test seed 0.000000
-2023-12-15 11:33:26, INFO: Val success rate : 0.95
-2023-12-15 11:33:26, INFO: Restored from checkpoint : 41665.pt
-2023-12-15 11:33:28, INFO: finding looplift candidates
-2023-12-15 11:33:40, INFO: Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-2023-12-15 11:33:40, INFO: MovieWriter._run: running command: /usr/bin/ffmpeg -f rawvideo -vcodec rawvideo -s 700x700 -pix_fmt rgba -r 5 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -metadata artist=Me -y 'data/my_pas_rnn/test_render/41665_eval_epi0_Reaching goal.mp4'
-2023-12-15 11:37:25, INFO: ----------------------------------------
-2023-12-15 11:37:25, INFO: test seed 0.000000
-2023-12-15 11:37:25, INFO: Val success rate : 0.95
-2023-12-15 11:37:25, INFO: Restored from checkpoint : 41665.pt
-2023-12-15 11:37:26, INFO: finding looplift candidates
-2023-12-15 11:37:45, INFO: ----------------------------------------
-2023-12-15 11:37:45, INFO: test seed 0.000000
-2023-12-15 11:37:45, INFO: Val success rate : 0.95
-2023-12-15 11:37:45, INFO: Restored from checkpoint : 41665.pt
-2023-12-15 11:37:47, INFO: finding looplift candidates
-2023-12-15 11:38:02, INFO: ----------------------------------------
-2023-12-15 11:38:02, INFO: test seed 0.000000
-2023-12-15 11:38:02, INFO: Val success rate : 0.95
-2023-12-15 11:38:02, INFO: Restored from checkpoint : 41665.pt
-2023-12-15 11:38:04, INFO: finding looplift candidates
-2023-12-15 11:38:15, INFO: Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-2023-12-15 11:38:15, INFO: MovieWriter._run: running command: /usr/bin/ffmpeg -f rawvideo -vcodec rawvideo -s 700x700 -pix_fmt rgba -r 5 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -metadata artist=Me -y 'data/my_pas_rnn/test_render/41665_eval_epi0_Reaching goal.mp4'
-2023-12-15 11:39:11, INFO: ----------------------------------------
-2023-12-15 11:39:11, INFO: test seed 0.000000
-2023-12-15 11:39:11, INFO: Val success rate : 0.95
-2023-12-15 11:39:11, INFO: Restored from checkpoint : 41665.pt
-2023-12-15 11:39:13, INFO: finding looplift candidates
-2023-12-15 11:39:25, INFO: Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
-2023-12-15 11:39:25, INFO: MovieWriter._run: running command: /usr/bin/ffmpeg -f rawvideo -vcodec rawvideo -s 700x700 -pix_fmt rgba -r 5 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -metadata artist=Me -y 'data/my_pas_rnn/test_render/41665_eval_epi0_Reaching goal.mp4'
+2023-12-15 12:36:58, INFO: ----------------------------------------
+2023-12-15 12:36:58, INFO: test seed 0.000000
+2023-12-15 12:36:58, INFO: Val success rate : 0.95
+2023-12-15 12:36:58, INFO: Restored from checkpoint : 00400.pt
+2023-12-15 12:37:02, INFO: finding looplift candidates
+2023-12-15 12:37:21, INFO: Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2023-12-15 12:37:21, INFO: MovieWriter._run: running command: /usr/bin/ffmpeg -f rawvideo -vcodec rawvideo -s 700x700 -pix_fmt rgba -r 5 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -metadata artist=Me -y data/my_pas_rnn/test_render/400_eval_epi0_Collision.mp4
+2023-12-15 12:38:00, INFO: Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2023-12-15 12:38:00, INFO: MovieWriter._run: running command: /usr/bin/ffmpeg -f rawvideo -vcodec rawvideo -s 700x700 -pix_fmt rgba -r 5 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -metadata artist=Me -y data/my_pas_rnn/test_render/400_eval_epi1_Collision.mp4
+2023-12-15 12:38:30, INFO: Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2023-12-15 12:38:30, INFO: MovieWriter._run: running command: /usr/bin/ffmpeg -f rawvideo -vcodec rawvideo -s 700x700 -pix_fmt rgba -r 5 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -metadata artist=Me -y data/my_pas_rnn/test_render/400_eval_epi2_Collision.mp4

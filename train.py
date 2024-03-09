@@ -185,7 +185,7 @@ def main():
 
 			# r_intrinsic = torch.from_numpy(r_intrinsic).unsqueeze(dim=1)
 
-			obs, reward, done, infos = envs.step(action, env_feature_vector) 
+			obs, reward, done, infos = envs.step(action) 
 			# reward_with_intrinsic = reward + r_intrinsic
 			# reward = reward + r_intrinsic
 			

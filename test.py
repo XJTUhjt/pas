@@ -157,9 +157,9 @@ def test(output_dir=None, test_ckpt=None, success_rate=None):
 if __name__ == '__main__':     
 	test_rewards = []
 	test_success = []
-  
-	output_dir = 'data/with_robot_vector_withz'
-	ckpt = [1600, 0.95]                             
+
+	output_dir = 'data/my_vector_net_5'
+	ckpt = [30400, 0.95]             
 
 	test_episode_rewards, test_success_rate = test(output_dir=output_dir, test_ckpt=ckpt[0] , success_rate=ckpt[1])
 	test_rewards.append(test_episode_rewards)

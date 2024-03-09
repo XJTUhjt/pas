@@ -6,9 +6,9 @@ def get_args():
     parser = argparse.ArgumentParser(description='RL')
     # the saving directory for train.py
     parser.add_argument(
-        '--output_dir', type=str, default= 'data/only_robot') # 'VAEdata/test'
+        '--output_dir', type=str, default= 'data/my_vector_net_5') # 'VAEdata/test'
     parser.add_argument(
-        '--lr', type=float, default=1e-4, help='learning rate (default: 7e-4)') 
+        '--lr', type=float, default=2e-4, help='learning rate (default: 7e-4)') 
     parser.add_argument(
         '--seed', type=int, default=0, help='random seed (default: 1)')
     parser.add_argument(
@@ -110,7 +110,7 @@ def get_args():
     parser.add_argument(
         '--use-linear-lr-decay',
         action='store_true',
-        default=False,
+        default=True,
         help='use a linear schedule on the learning rate')
     parser.add_argument(
         '--algo', default='ppo', help='algorithm to use: a2c | ppo | acktr')

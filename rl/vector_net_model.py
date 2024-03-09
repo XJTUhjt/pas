@@ -183,7 +183,7 @@ class EncoderLayer(nn.Module):
         x = self.mlp(x)
         x = x + h
 
-        return x   # [nenv, 1, all_head_size]
+        return x   # [nenv, sqe, feature_dim]
 
 #transformer encoder
 class Trans_encoder(nn.Module):
@@ -274,17 +274,54 @@ class Polyline_trans_encoder(nn.Module):
                                         attention_dropout)
         
 
-    def forward(self, x):
+        self.mlp1 = nn.Linear(12*64, 12*64)
+        nn.init.xavier_normal_(self.mlp1.weight)
+        nn.init.constant_(self.mlp1.bias, 0.0)
+
+        self.mlp2 = nn.Linear(12*64, 64)
+        nn.init.xavier_normal_(self.mlp2.weight)
+        nn.init.constant_(self.mlp2.bias, 0.0)
+
+        self.mlp3 = nn.Linear(8*64, 8*64)
+        nn.init.xavier_normal_(self.mlp3.weight)
+        nn.init.constant_(self.mlp1.bias, 0.0)
+
+        self.mlp4 = nn.Linear(8*64, 64)
+        nn.init.xavier_normal_(self.mlp4.weight)
+        nn.init.constant_(self.mlp2.bias, 0.0)
+
+        # self.mlp5 = nn.Linear(5*64, 12*64)
+        # nn.init.xavier_normal_(self.mlp5.weight)
+        # nn.init.constant_(self.mlp1.bias, 0.0)
+
+        # self.mlp6 = nn.Linear(5*64, 64)
+        # nn.init.xavier_normal_(self.mlp6.weight)
+        # nn.init.constant_(self.mlp2.bias, 0.0)
+        
+
+
+    def forward(self, x, type):
         #每次传入的数据格式均为(batch_size(nenv), seq_len(saved_len), feature_dim)
         # batch_size, seq_len, feature_dim = x.shape
 
-        state = self.polyline_encoder(x)   # [nenv, seq_len, all_head_size]
+        if type == 'robot&humans':
+            state = self.polyline_encoder(x)   # [nenv, seq_len, all_head_size]
+            nenv = state.shape[0]
+            state = state.view(nenv, 8*64)
+            # state = self.mlp3(state)
+            state = self.mlp4(state)
+        elif type == 'FOV':
+            state = self.polyline_encoder(x)   # [nenv, seq_len, all_head_size]
+            nenv = state.shape[0]
+            state = state.view(nenv, 12*64)
+            # state = self.mlp1(state)
+            state = self.mlp2(state)
 
         # state = torch.mean(state, dim=1, keepdim=True)  #池化seq_len
 
-        state = state[:, 0, :].unsqueeze(1)  #只取第一个（时间为t的)
+        # state = state[:, 0, :].unsqueeze(1)  #只取第一个（时间为t的)
 
-        return state            # [nenv, 1, feature_dim]
+        return state.unsqueeze(1)            # [nenv, 1, feature_dim]
 
 #interaction_transformer_encoder
 class Interaction_trans_encoder(nn.Module):
@@ -305,16 +342,35 @@ class Interaction_trans_encoder(nn.Module):
                                         dropout,
                                         attention_dropout)
         
+        self.mlp1 = nn.Linear(7*128, 7*128)      #(num_humans + robot_num + 1(fov) + num_occ,feature_dim)
+        nn.init.xavier_normal_(self.mlp1.weight)
+        nn.init.constant_(self.mlp1.bias, 0.0)
+
+        self.mlp2 = nn.Linear(7*128, 128)
+        nn.init.xavier_normal_(self.mlp2.weight)
+        nn.init.constant_(self.mlp2.bias, 0.0)
+
+        # self.avgpool = nn.AdaptiveAvgPool1d(1)
+        
     def forward(self, x):
 
         state = self.interaction_encoder(x)   # [nenv, seq_len, all_head_size]
 
-        state = torch.mean(state, dim=1, keepdim=True)  #池化seq_len
+        # state = torch.mean(state, dim=1, keepdim=True)  #池化seq_len
 
         # state = state[:, 0, :].unsqueeze(1)  #只取第一个（时间为t的)
+        nenv = state.shape[0]
 
-        return state            # [nenv, 1, feature_dim]
+        state = state.view(nenv, 7*128)
+
+        # state = self.mlp1(state)
+
         # state = self.avgpool(state).flatten(1)
+
+        state = self.mlp2(state)
+
+
+        return state.unsqueeze(1)            # [nenv, 1, feature_dim]
 
 
 #total_pipeline_class
@@ -464,16 +520,16 @@ class Vector_net(nn.Module):
 
 
         #polyline transformer encoder，把输入映射到(batch_size, seq_len, feature_dim)维度, 获得(batch_size(nenv), 1, feature_dim)
-        poly_encoded_FOV_vector = self.polyline_encoder(embemdded_FOV_points.squeeze(1))
+        poly_encoded_FOV_vector = self.polyline_encoder(embemdded_FOV_points.squeeze(1),'FOV')
 
         # print(poly_encoded_FOV_vector[:, :, -10:])
 
-        poly_encoded_robot_states_vector = self.polyline_encoder(embemdded_rotated_robot_all_states.squeeze(1))
+        poly_encoded_robot_states_vector = self.polyline_encoder(embemdded_rotated_robot_all_states.squeeze(1), 'robot&humans')
 
         #对每一个行人状态进行编码
         poly_encoded_humans_states_list = []
         for item in embemdded_rotated_humans_all_states_list:
-            poly_encoded_humans_states_list.append(self.polyline_encoder(item.squeeze(1)))
+            poly_encoded_humans_states_list.append(self.polyline_encoder(item.squeeze(1), 'robot&humans'))
             
         #对每一个遮挡区域进行编码 
         # poly_encoded_occ_list = []
@@ -527,17 +583,16 @@ class Vector_net(nn.Module):
         #     mu, logvar, z = self.Sensor_VAE.encode(grid)
         
         robot_vector = self.vector_linear(vector)
-        # env_add_robot_state = torch.cat((robot_vector, trans_output), dim=2)
+        env_add_robot_state = torch.cat((robot_vector, trans_output), dim=2)
 
 
 
         #mlp  get the vector for total env (nenv, 1, env_dim)   (12,1,256)
-        env_feature_vector = self.env_feature_mlp(robot_vector)
+        env_feature_vector = self.env_feature_mlp(env_add_robot_state)
 
         #rl
         hidden_critic = self.critic(env_feature_vector)  
         hidden_actor = self.actor(env_feature_vector)
-
 
 
         return self.critic_linear(hidden_critic).squeeze(1), hidden_actor.squeeze(1), rnn_hxs, env_feature_vector.squeeze() #(12,1)  (12, 128)  (12,256)
