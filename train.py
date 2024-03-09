@@ -22,7 +22,7 @@ from crowd_sim import *
 import warnings
 warnings.filterwarnings("ignore")
 
-from rl import rnd
+from rl import RND
 
 def main():
 
