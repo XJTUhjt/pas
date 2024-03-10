@@ -184,6 +184,23 @@ class EncoderLayer(nn.Module):
         x = x + h
 
         return x   # [nenv, sqe, feature_dim]
+    
+class PositionalEncoding(nn.Module):
+    def __init__(self, embed_dim, max_len=5000):
+        super().__init__()
+        # Compute the positional encodings once in log space.
+        pe = torch.zeros(max_len, embed_dim)
+        position = torch.arange(0, max_len, dtype=torch.float).unsqueeze(1)
+        div_term = torch.exp(torch.arange(0, embed_dim, 2).float() * -(math.log(10000.0) / embed_dim))
+        pe[:, 0::2] = torch.sin(position * div_term)
+        pe[:, 1::2] = torch.cos(position * div_term)
+        pe = pe.unsqueeze(0).transpose(0, 1)
+        self.register_buffer('pe', pe)
+
+    def forward(self, x):
+        x = x + self.pe[:x.size(0), :]
+        return x
+
 
 #transformer encoder
 class Trans_encoder(nn.Module):
@@ -207,6 +224,34 @@ class Trans_encoder(nn.Module):
         self.encoder_norm = nn.LayerNorm(embed_dim)
 
     def forward(self, x):
+        for layer in self.layers:
+            x = layer(x)
+        out = self.encoder_norm(x)
+        return out
+    
+class Trans_encoder_withposition(nn.Module):
+    def __init__(self,
+                 embed_dim,
+                 num_heads,
+                 depth,
+                 mlp_ratio=4.0,
+                 dropout=0.,
+                 attention_dropout=0.):
+        super().__init__()
+        self.pos_encoder = PositionalEncoding(embed_dim)
+        layer_list = []
+        for i in range(depth):
+            encoder_layer = EncoderLayer(embed_dim,
+                                         num_heads,
+                                         mlp_ratio=mlp_ratio,
+                                         dropout=dropout,
+                                         attention_dropout=attention_dropout,)
+            layer_list.append(copy.deepcopy(encoder_layer))
+        self.layers = nn.ModuleList(layer_list)
+        self.encoder_norm = nn.LayerNorm(embed_dim)
+
+    def forward(self, x):
+        x = self.pos_encoder(x)
         for layer in self.layers:
             x = layer(x)
         out = self.encoder_norm(x)
@@ -273,7 +318,14 @@ class Polyline_trans_encoder(nn.Module):
                                         dropout,
                                         attention_dropout)
         
+        self.polyline_encoder_with_position = Trans_encoder_withposition(embed_dim,
+                                        num_heads,
+                                        temporal_depth,
+                                        mlp_ratio,
+                                        dropout,
+                                        attention_dropout)
 
+        
         self.mlp1 = nn.Linear(12*64, 12*64)
         nn.init.xavier_normal_(self.mlp1.weight)
         nn.init.constant_(self.mlp1.bias, 0.0)
@@ -305,7 +357,7 @@ class Polyline_trans_encoder(nn.Module):
         # batch_size, seq_len, feature_dim = x.shape
 
         if type == 'robot&humans':
-            state = self.polyline_encoder(x)   # [nenv, seq_len, all_head_size]
+            state = self.polyline_encoder_with_position(x)   # [nenv, seq_len, all_head_size]
             nenv = state.shape[0]
             state = state.view(nenv, 8*64)
             # state = self.mlp3(state)
