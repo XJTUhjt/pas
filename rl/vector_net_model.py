@@ -378,12 +378,15 @@ class Polyline_trans_encoder(nn.Module):
 #interaction_transformer_encoder
 class Interaction_trans_encoder(nn.Module):
     def __init__(self,
+                 view_dim,
                  embed_dim=128,
                  interaction_depth=1,
                  num_heads=8,
                  mlp_ratio=4,
                  dropout=0.1,
-                 attention_dropout=0.1):
+                 attention_dropout=0.1,
+                 ):
+        self.view_dim = view_dim
         super().__init__()
 
         # create multi head self-attention layers
@@ -398,7 +401,7 @@ class Interaction_trans_encoder(nn.Module):
         nn.init.xavier_normal_(self.mlp1.weight)
         nn.init.constant_(self.mlp1.bias, 0.0)
 
-        self.mlp2 = nn.Linear(7*128, 128)
+        self.mlp2 = nn.Linear(view_dim*128, 128)     #view_dim = (num_humans + robot_num + 1(fov) + num_occ,feature_dim)所有元素的个数
         nn.init.xavier_normal_(self.mlp2.weight)
         nn.init.constant_(self.mlp2.bias, 0.0)
 
@@ -413,7 +416,7 @@ class Interaction_trans_encoder(nn.Module):
         # state = state[:, 0, :].unsqueeze(1)  #只取第一个（时间为t的)
         nenv = state.shape[0]
 
-        state = state.view(nenv, 7*128)
+        state = state.view(nenv, self.view_dim*128)
 
         # state = self.mlp1(state)
 
@@ -448,6 +451,9 @@ class Vector_net(nn.Module):
 
         self.env_ebedding_dim = config.vector_net.env_dim
         self.output_size = 128
+        self.human_num = config.sim.human_num
+        self.is_occ = config.vector_net.is_occ
+        self.is_fov = config.vector_net.is_fov
 
         # Store required sizes
         # self.rnn_input_size = args.rnn_input_size
@@ -469,7 +475,7 @@ class Vector_net(nn.Module):
         self.env_feature_mlp = Mlp(self.env_ebedding_dim, 2)
 
         self.polyline_encoder = Polyline_trans_encoder()
-        self.interaction_encoder = Interaction_trans_encoder()
+        self.interaction_encoder = Interaction_trans_encoder(view_dim=(self.human_num+self.is_fov+self.is_occ+1))
 
         
         init_ = lambda m: init(m, nn.init.orthogonal_, lambda x: nn.init.
@@ -625,7 +631,7 @@ class Vector_net(nn.Module):
 
 
         #interaction transformer
-        trans_output = self.interaction_encoder(env_element_vector_seq_tensor) #(12,1,128)
+        trans_output = self.interaction_encoder(env_element_vector_seq_tensor) #（nenv, humans_num + robot_num + 1(fov) + 1(occ), 128) -> (12,1,128)
 
         if self.config.pas.encoder_type == 'vae':
             mu, logvar, z = self.Sensor_VAE.encode(grid)
