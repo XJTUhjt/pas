@@ -104,5 +104,5 @@ class Config(object):
     vector_net.env_dim = 384  #环境+robot+地图
 
     rnd = BaseConfig()
-    rnd.calscale = 0.07
+    rnd.calscale = 0.005
 
