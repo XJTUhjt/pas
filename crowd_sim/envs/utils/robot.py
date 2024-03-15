@@ -11,6 +11,7 @@ class Robot(Agent):
 
         #每个human都要保存自己的历史状态,len可作为参数传入
         self.history_visible_states = Queue(maxsize=config.robot.max_saved_states_length)
+        self.maxsize = config.robot.max_saved_states_length
 
     def act(self, ob):
         if self.policy is None:

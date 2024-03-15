@@ -16,6 +16,7 @@ class Human(Agent):
             self.isObstacle = False # whether the human is a static obstacle (part of wall) or a moving agent
 
         #每个human都要保存自己的历史状态,len可作为参数传入
+        self.maxsize = config.humans.max_saved_states_length
         self.history_visible_states = Queue(maxsize=config.humans.max_saved_states_length)
 
     def act(self, ob):
@@ -59,9 +60,9 @@ class Human(Agent):
             #     result_history_matrix = np.vstack(elements_matrix, np.array([elements_matrix[0][0], 0, 0, 0, 0, 0, 0, -1]))
 
         else:
-            lack_id_col = np.full((8,1), 999)
-            lack_data_matrix = np.full((8, 6), 0)
-            lack_timestamp = np.full((8,1), -1)
+            lack_id_col = np.full((self.maxsize,1), 999)
+            lack_data_matrix = np.full((self.maxsize, 6), 0)
+            lack_timestamp = np.full((self.maxsize,1), -1)
 
             result_history_matrix = np.concatenate((lack_id_col, lack_data_matrix, lack_timestamp), axis=1)
                 

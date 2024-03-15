@@ -302,6 +302,8 @@ class With_type_embedding(Embedding):
 #polyline_transformer_encoder
 class Polyline_trans_encoder(nn.Module):
     def __init__(self,
+                 humans_max_save_num,
+                 robot_max_save_num,
                  embed_dim=64,
                  temporal_depth=1,
                  num_heads=8,
@@ -309,6 +311,9 @@ class Polyline_trans_encoder(nn.Module):
                  dropout=0.1,
                  attention_dropout=0.1):
         super().__init__()
+
+        self.humans_max_save_num = humans_max_save_num
+        self.robot_max_save_num = robot_max_save_num
 
         # create multi head self-attention layers
         self.polyline_encoder = Trans_encoder(embed_dim,
@@ -334,13 +339,13 @@ class Polyline_trans_encoder(nn.Module):
         nn.init.xavier_normal_(self.mlp2.weight)
         nn.init.constant_(self.mlp2.bias, 0.0)
 
-        self.mlp3 = nn.Linear(8*64, 8*64)
+        self.mlp3 = nn.Linear(self.humans_max_save_num*64, 64)
         nn.init.xavier_normal_(self.mlp3.weight)
-        nn.init.constant_(self.mlp1.bias, 0.0)
+        nn.init.constant_(self.mlp3.bias, 0.0)
 
-        self.mlp4 = nn.Linear(8*64, 64)
+        self.mlp4 = nn.Linear(self.robot_max_save_num*64, 64)
         nn.init.xavier_normal_(self.mlp4.weight)
-        nn.init.constant_(self.mlp2.bias, 0.0)
+        nn.init.constant_(self.mlp4.bias, 0.0)
 
         # self.mlp5 = nn.Linear(5*64, 12*64)
         # nn.init.xavier_normal_(self.mlp5.weight)
@@ -356,12 +361,18 @@ class Polyline_trans_encoder(nn.Module):
         #每次传入的数据格式均为(batch_size(nenv), seq_len(saved_len), feature_dim)
         # batch_size, seq_len, feature_dim = x.shape
 
-        if type == 'robot&humans':
+        if type == 'robot':
             state = self.polyline_encoder_with_position(x)   # [nenv, seq_len, all_head_size]
             nenv = state.shape[0]
-            state = state.view(nenv, 8*64)
+            state = state.view(nenv, self.robot_max_save_num*64)
             # state = self.mlp3(state)
             state = self.mlp4(state)
+        elif type == 'humans':
+            state = self.polyline_encoder_with_position(x)   # [nenv, seq_len, all_head_size]
+            nenv = state.shape[0]
+            state = state.view(nenv, self.humans_max_save_num*64)
+            # state = self.mlp3(state)
+            state = self.mlp3(state)
         elif type == 'FOV':
             state = self.polyline_encoder(x)   # [nenv, seq_len, all_head_size]
             nenv = state.shape[0]
@@ -455,6 +466,10 @@ class Vector_net(nn.Module):
         self.is_occ = config.vector_net.is_occ
         self.is_fov = config.vector_net.is_fov
 
+        self.humans_max_save_size = config.humans.max_saved_states_length
+        self.robot_max_save_size = config.robot.max_saved_states_length
+
+
         # Store required sizes
         # self.rnn_input_size = args.rnn_input_size
         # self.rnn_hidden_size = args.rnn_hidden_size
@@ -474,7 +489,7 @@ class Vector_net(nn.Module):
 
         self.env_feature_mlp = Mlp(self.env_ebedding_dim, 2)
 
-        self.polyline_encoder = Polyline_trans_encoder()
+        self.polyline_encoder = Polyline_trans_encoder(humans_max_save_num=self.humans_max_save_size , robot_max_save_num=self.robot_max_save_size)
         self.interaction_encoder = Interaction_trans_encoder(view_dim=(self.human_num+self.is_fov+self.is_occ+1))
 
         
@@ -582,12 +597,12 @@ class Vector_net(nn.Module):
 
         # print(poly_encoded_FOV_vector[:, :, -10:])
 
-        poly_encoded_robot_states_vector = self.polyline_encoder(embemdded_rotated_robot_all_states.squeeze(1), 'robot&humans')
+        poly_encoded_robot_states_vector = self.polyline_encoder(embemdded_rotated_robot_all_states.squeeze(1), 'robot')
 
         #对每一个行人状态进行编码
         poly_encoded_humans_states_list = []
         for item in embemdded_rotated_humans_all_states_list:
-            poly_encoded_humans_states_list.append(self.polyline_encoder(item.squeeze(1), 'robot&humans'))
+            poly_encoded_humans_states_list.append(self.polyline_encoder(item.squeeze(1), 'humans'))
             
         #对每一个遮挡区域进行编码 
         # poly_encoded_occ_list = []
