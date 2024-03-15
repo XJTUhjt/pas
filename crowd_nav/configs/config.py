@@ -100,9 +100,9 @@ class Config(object):
     pas.seq_flag = True
 
     vector_net = BaseConfig()
-    # vector_net.env_dim = 256
+    # vector_net.env_dim = 256 # env + robot
     vector_net.env_dim = 384  #环境+robot+地图
-    vector_net.is_occ = 0
+    vector_net.is_occ = 1
     vector_net.is_fov = 1
     
     rnd = BaseConfig()

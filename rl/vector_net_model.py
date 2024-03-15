@@ -302,8 +302,7 @@ class With_type_embedding(Embedding):
 #polyline_transformer_encoder
 class Polyline_trans_encoder(nn.Module):
     def __init__(self,
-                 humans_max_save_num,
-                 robot_max_save_num,
+                 human_num,
                  embed_dim=64,
                  temporal_depth=1,
                  num_heads=8,
@@ -311,9 +310,7 @@ class Polyline_trans_encoder(nn.Module):
                  dropout=0.1,
                  attention_dropout=0.1):
         super().__init__()
-
-        self.humans_max_save_num = humans_max_save_num
-        self.robot_max_save_num = robot_max_save_num
+        self.human_num = human_num
 
         # create multi head self-attention layers
         self.polyline_encoder = Trans_encoder(embed_dim,
@@ -331,54 +328,38 @@ class Polyline_trans_encoder(nn.Module):
                                         attention_dropout)
 
         
-        self.mlp1 = nn.Linear(12*64, 12*64)
+        self.mlp1 = nn.Linear(12*64, 64)
         nn.init.xavier_normal_(self.mlp1.weight)
         nn.init.constant_(self.mlp1.bias, 0.0)
 
-        self.mlp2 = nn.Linear(12*64, 64)
+        self.mlp2 = nn.Linear(8*64, 64)
         nn.init.xavier_normal_(self.mlp2.weight)
         nn.init.constant_(self.mlp2.bias, 0.0)
 
-        self.mlp3 = nn.Linear(self.humans_max_save_num*64, 64)
+        self.mlp3 = nn.Linear(self.human_num*64, 64)
         nn.init.xavier_normal_(self.mlp3.weight)
         nn.init.constant_(self.mlp3.bias, 0.0)
-
-        self.mlp4 = nn.Linear(self.robot_max_save_num*64, 64)
-        nn.init.xavier_normal_(self.mlp4.weight)
-        nn.init.constant_(self.mlp4.bias, 0.0)
-
-        # self.mlp5 = nn.Linear(5*64, 12*64)
-        # nn.init.xavier_normal_(self.mlp5.weight)
-        # nn.init.constant_(self.mlp1.bias, 0.0)
-
-        # self.mlp6 = nn.Linear(5*64, 64)
-        # nn.init.xavier_normal_(self.mlp6.weight)
-        # nn.init.constant_(self.mlp2.bias, 0.0)
-        
 
 
     def forward(self, x, type):
         #每次传入的数据格式均为(batch_size(nenv), seq_len(saved_len), feature_dim)
         # batch_size, seq_len, feature_dim = x.shape
 
-        if type == 'robot':
+        if type == 'robot&humans':
             state = self.polyline_encoder_with_position(x)   # [nenv, seq_len, all_head_size]
             nenv = state.shape[0]
-            state = state.view(nenv, self.robot_max_save_num*64)
-            # state = self.mlp3(state)
-            state = self.mlp4(state)
-        elif type == 'humans':
-            state = self.polyline_encoder_with_position(x)   # [nenv, seq_len, all_head_size]
-            nenv = state.shape[0]
-            state = state.view(nenv, self.humans_max_save_num*64)
-            # state = self.mlp3(state)
-            state = self.mlp3(state)
+            state = state.view(nenv, 8*64)
+            state = self.mlp2(state)
         elif type == 'FOV':
             state = self.polyline_encoder(x)   # [nenv, seq_len, all_head_size]
             nenv = state.shape[0]
             state = state.view(nenv, 12*64)
-            # state = self.mlp1(state)
-            state = self.mlp2(state)
+            state = self.mlp1(state)
+        elif type == 'Occ':
+            state = self.polyline_encoder_with_position(x)
+            nenv = state.shape[0]
+            state = state.view(nenv, 1, -1)
+            state = self.mlp3(state)
 
         # state = torch.mean(state, dim=1, keepdim=True)  #池化seq_len
 
@@ -466,17 +447,6 @@ class Vector_net(nn.Module):
         self.is_occ = config.vector_net.is_occ
         self.is_fov = config.vector_net.is_fov
 
-        self.humans_max_save_size = config.humans.max_saved_states_length
-        self.robot_max_save_size = config.robot.max_saved_states_length
-
-
-        # Store required sizes
-        # self.rnn_input_size = args.rnn_input_size
-        # self.rnn_hidden_size = args.rnn_hidden_size
-        # self.output_size = args.rnn_output_size
-        # self.latent_size = args.rnn_output_size
-        # num_inputs = output_size = self.output_size
-
         self.Occ_vector_embedding = Occ_vector_embedding()
         self.FOV_vector_embedding = FOV_vector_embedding()
         self.Humans_state_vector_embedding = Humans_state_vector_embedding()
@@ -489,8 +459,8 @@ class Vector_net(nn.Module):
 
         self.env_feature_mlp = Mlp(self.env_ebedding_dim, 2)
 
-        self.polyline_encoder = Polyline_trans_encoder(humans_max_save_num=self.humans_max_save_size , robot_max_save_num=self.robot_max_save_size)
-        self.interaction_encoder = Interaction_trans_encoder(view_dim=(self.human_num+self.is_fov+self.is_occ+1))
+        self.polyline_encoder = Polyline_trans_encoder(human_num=self.human_num)
+        self.interaction_encoder = Interaction_trans_encoder(view_dim=(self.human_num + self.is_fov + self.is_occ + 1))
 
         
         init_ = lambda m: init(m, nn.init.orthogonal_, lambda x: nn.init.
@@ -564,13 +534,13 @@ class Vector_net(nn.Module):
         grid = inputs['grid'] 
         
         FOV_points = inputs['FOV_points']
-        # poly_occ_points = inputs['poly_occ_points']
+        poly_occ_points = inputs['poly_occ_points']  #(nenv, 1, human_num, 11)
         rotated_humans_all_states = inputs['rotated_humans_all_states']
         rotated_robot_all_states = inputs['rotated_robot_all_states']
         visible_id = inputs['visible_id']
         
         assert not torch.isnan(FOV_points).any(), "NaN values found in FOV_points!"
-        # assert not torch.isnan(poly_occ_points).any(), "NaN values found in poly_occ_points!"
+        assert not torch.isnan(poly_occ_points).any(), "NaN values found in poly_occ_points!"
         assert not torch.isnan(rotated_humans_all_states).any(), "NaN values found in rotated_humans_all_states!"
         assert not torch.isnan(rotated_robot_all_states).any(), "NaN values found in rotated_robot_all_states!"
 
@@ -583,7 +553,7 @@ class Vector_net(nn.Module):
         #mlp embedding
         embemdded_FOV_points = self.FOV_vector_embedding(FOV_points)                                                            #(nenv, saved_len(1), 12poly ,64)
 
-        # embemdded_poly_occ_points = self.Occ_vector_embedding(poly_occ_points)                                                  #(nenv, saved_len(1), human_num, 64)
+        embemdded_poly_occ_points = self.Occ_vector_embedding(poly_occ_points)                                                  #(nenv, 1, human_num, 11)->(nenv, 1, human_num, 64)                 
         # embemdded_poly_occ_points_list = embemdded_poly_occ_points.chunk(self.config.sim.human_num, dim=2)                      #human_num * (nenv, 1 , 1, 64)
 
         embemdded_rotated_humans_all_states = self.Humans_state_vector_embedding(rotated_humans_all_states)                     #(nenv, 1, human_num*saved_len, 64)
@@ -597,17 +567,19 @@ class Vector_net(nn.Module):
 
         # print(poly_encoded_FOV_vector[:, :, -10:])
 
-        poly_encoded_robot_states_vector = self.polyline_encoder(embemdded_rotated_robot_all_states.squeeze(1), 'robot')
+        poly_encoded_robot_states_vector = self.polyline_encoder(embemdded_rotated_robot_all_states.squeeze(1), 'robot&humans')
 
         #对每一个行人状态进行编码
         poly_encoded_humans_states_list = []
         for item in embemdded_rotated_humans_all_states_list:
-            poly_encoded_humans_states_list.append(self.polyline_encoder(item.squeeze(1), 'humans'))
+            poly_encoded_humans_states_list.append(self.polyline_encoder(item.squeeze(1), 'robot&humans'))
             
         #对每一个遮挡区域进行编码 
         # poly_encoded_occ_list = []
         # for item in embemdded_poly_occ_points_list:
-        #     poly_encoded_occ_list.append(self.polyline_encoder(item.squeeze(1)))
+        #     poly_encoded_occ_list.append(self.polyline_encoder(item.squeeze(1), 'Occ'))
+
+        poly_encoded_occ_vector = self.polyline_encoder(embemdded_poly_occ_points.squeeze(1), 'Occ')                   #(12, 1, 1, 64)
         
         #polyline type encoder  把64维度拼接成70维度 机器人：0 行人：1 fov：2 遮挡区域：3  拼接长度为手动设置，会影响下面的mlp参数
         type_encodeed_poly_encoded_robot_states_vector = torch.cat((poly_encoded_robot_states_vector, torch.zeros(poly_encoded_robot_states_vector.shape[0], 1, 6).to('cuda')), dim=-1)
@@ -621,7 +593,8 @@ class Vector_net(nn.Module):
 
         # for i in range(len(poly_encoded_occ_list)):
         #     poly_encoded_occ_list[i] = torch.cat((poly_encoded_occ_list[i], 3*torch.ones(poly_encoded_occ_list[i].shape[0], 1, 6).to('cuda')), dim=-1)
-
+        
+        poly_encoded_occ_vector_with_type = torch.cat((poly_encoded_occ_vector, 3*torch.ones(poly_encoded_occ_vector.shape[0], 1, 1, 6).to('cuda')), dim=-1)
         
         #把所有向量元素映射到128维
         Robot_states_vector = self.Robot_state_vector_embedding_with_type(type_encodeed_poly_encoded_robot_states_vector)
@@ -634,15 +607,16 @@ class Vector_net(nn.Module):
         # Occ_list = []
         # for item in poly_encoded_occ_list:
         #     Occ_list.append(self.Occ_vector_embedding_with_type(item))
+        poly_encoded_occ_vector_with_typeembeding = self.Occ_vector_embedding_with_type(poly_encoded_occ_vector_with_type)
 
         
         #interaction transformer encoder  对于每个环境里的agent，输入的均是(nenv, 1，feature_dim_with_type)
         #做成seq,每个环境有自己的agent，每个agent应该只跟自己环境中的agent做trans，把tensor变换成(batch_size(nenv), seq_len(每个环境中所有元素的数量), feature_dim), 最后输出为(nenv,env_feature_dim)
         humans_seq_tensor = torch.cat(Humans_states_list,dim=1)
-        # Occ_seq_tensor = torch.cat(Occ_list, dim=1)
+        Occ_seq_tensor = torch.squeeze(poly_encoded_occ_vector_with_typeembeding, dim=1)
         # env_element_vector_seq_tensor = torch.cat([Robot_states_vector, humans_seq_tensor, Occ_seq_tensor, FOV_vector],dim=1)
         # env_element_vector_seq_tensor = torch.cat([Robot_states_vector, humans_seq_tensor, FOV_vector],dim=1)
-        env_element_vector_seq_tensor = torch.cat([humans_seq_tensor, FOV_vector, Robot_states_vector],dim=1)
+        env_element_vector_seq_tensor = torch.cat([humans_seq_tensor, FOV_vector, Robot_states_vector, Occ_seq_tensor],dim=1)
 
 
         #interaction transformer

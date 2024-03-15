@@ -6,7 +6,7 @@ def get_args():
     parser = argparse.ArgumentParser(description='RL')
     # the saving directory for train.py
     parser.add_argument(
-        '--output_dir', type=str, default= 'data/my_vector_net_5_pos_z_rnd0.005') # 'VAEdata/test'
+        '--output_dir', type=str, default= 'data/my_vector_net_5_pos_z_rnd0.005_withocc') # 'VAEdata/test'
     parser.add_argument(
         '--lr', type=float, default=2e-4, help='learning rate (default: 7e-4)') 
     parser.add_argument(
