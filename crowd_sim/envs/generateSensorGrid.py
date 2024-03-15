@@ -64,7 +64,9 @@ def generateSensorGrid(label_grid, ego_dict, ref_dict, map_xy, FOV_radius, res=0
 			sensor_grid[hmask] = 1.
 
 			alpha = math.atan2(center[1]-center_ego[1], center[0]-center_ego[0])
+
 			theta = math.asin(np.clip(human_radius/np.sqrt((center[1]-center_ego[1])**2 + (center[0]-center_ego[0])**2), -1., 1.))
+
 			
 			# 4 or 5 polygon points
 			# 2 points from human
@@ -74,19 +76,41 @@ def generateSensorGrid(label_grid, ego_dict, ref_dict, map_xy, FOV_radius, res=0
 			x2 = center_ego[0] + human_radius/np.tan(theta)*np.cos(alpha+theta)
 			y2 = center_ego[1] + human_radius/np.tan(theta)*np.sin(alpha+theta)
 
+
 			# Choose points big/small enough to cover the region of interest in the grid
 			if x1 <= center_ego[0]:
 				x3 = -12. 
 			else:
 				x3 = 12. 
-			y3 = linefunction(center_ego[0], center_ego[1], x1, y1, x3)
+
+			if center_ego[0] == x1:
+				# print(center_ego[0], center_ego[1], x1, y1, x3, alpha, theta)
+				if center_ego[1] < center[1]: 
+					y3 = 12
+				else:
+					y3 = -12
+			else:
+				y3 = np.clip(linefunction(center_ego[0], center_ego[1], x1, y1, x3), -12., 12.)
+
+			# assert not np.isnan(y3), 'y3 is nan'
+
 			if x2 <= center_ego[0]:
 				x4 = -12. 
 			else:
 				x4 = 12. 
-			y4 = linefunction(center_ego[0],center_ego[1],x2,y2,x4)
 
-			polygon_points = np.array([[x1, y1], [x2, y2], [x4, y4],[x3, y3]])
+			if center_ego[0] == x2:
+				# print(center_ego[0], center_ego[1], x1, y1, x3, alpha, theta)
+				if center_ego[1] < center[1]: 
+					y4 = 12
+				else:
+					y4 = -12
+			else:
+				y4 = np.clip(linefunction(center_ego[0],center_ego[1],x2,y2,x4), -12., 12.)
+
+			# assert not np.isnan(y3), 'y4 is nan'
+
+			polygon_points = np.array([[x1, y1], [x2, y2], [x4, y4],[x3, y3]], dtype=np.float32)
 
 			#判断是否是五边形并给出中间点
 			def if_5_poly(points):
@@ -168,6 +192,9 @@ def generateSensorGrid(label_grid, ego_dict, ref_dict, map_xy, FOV_radius, res=0
 			polygon_points_humans_np = np.vstack([polygon_points_humans_np, [999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
 
 		result_polygon_points_humans_np = polygon_points_humans_np
+
+	# print(result_polygon_points_humans_np)
+	# assert not np.isnan(result_polygon_points_humans_np).any(), "NaN values found in result_polygon_points_humans_np!"
 		
 	return visible_id, sensor_grid, result_polygon_points_humans_np
 
