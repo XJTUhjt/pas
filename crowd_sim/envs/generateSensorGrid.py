@@ -135,7 +135,11 @@ def generateSensorGrid(label_grid, ego_dict, ref_dict, map_xy, FOV_radius, res=0
 				return x, y
 			
 			x5, y5 = if_5_poly(polygon_points)
-			polygon_points_humanid_list.append([h_id, x1, y1, x3, y3, x5, y5, x4, y4, x2, y2])
+			if x5 == y5 == 0:
+				polygon_points_humanid_list.append([h_id, x1, y1, x3-x1, y3-y1, x3, y3, 0, 0, x5, y5, x4-x3, y4-y3, x4, y4, x2-x4, y2-y4, x2, y2])
+			else:
+				polygon_points_humanid_list.append([h_id, x1, y1, x3-x1, y3-y1, x3, y3, x5-x3, y5-y3, x5, y5, x4-x3, y4-y3, x4, y4, x2-x4, y2-y4, x2, y2])
+
 
 			grid_points = np.array([x_local.flatten(), y_local.flatten()])	
 			#occupied mask，通过平行四边形算出遮挡的区域
@@ -173,28 +177,28 @@ def generateSensorGrid(label_grid, ego_dict, ref_dict, map_xy, FOV_radius, res=0
 			polygon_points_humans_np = np.vstack(filtered_polygon_points)
 			#补全矩阵维度：
 			for lack_num in range(len(ref_dict['id']) - polygon_points_humans_np.shape[0]):
-				polygon_points_humans_np = np.vstack([polygon_points_humans_np, [999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
+				polygon_points_humans_np = np.vstack([polygon_points_humans_np, [999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
 			result_polygon_points_humans_np = polygon_points_humans_np
 		else:
 		#有数据但是不在FOV内，创建0矩阵
-			polygon_points_humans_np = np.array([[999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
+			polygon_points_humans_np = np.array([[999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
 			#补全矩阵维度
 			for lack_num in range(len(ref_dict['id']) - 1):
-				polygon_points_humans_np = np.vstack([polygon_points_humans_np, [999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
+				polygon_points_humans_np = np.vstack([polygon_points_humans_np, [999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
 
 			result_polygon_points_humans_np = polygon_points_humans_np
 	#等于零的话也要输出结果np矩阵，形状为human_num * 11
 	else:
 		#初始化矩阵
-		polygon_points_humans_np = np.array([[999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
+		polygon_points_humans_np = np.array([[999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
 		#补全矩阵维度
 		for lack_num in range(len(ref_dict['id']) - 1):
-			polygon_points_humans_np = np.vstack([polygon_points_humans_np, [999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
+			polygon_points_humans_np = np.vstack([polygon_points_humans_np, [999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
 
 		result_polygon_points_humans_np = polygon_points_humans_np
 
 	# print(result_polygon_points_humans_np)
-	# assert not np.isnan(result_polygon_points_humans_np).any(), "NaN values found in result_polygon_points_humans_np!"
+	assert not np.isnan(result_polygon_points_humans_np).any(), "NaN values found in result_polygon_points_humans_np!"
 		
 	return visible_id, sensor_grid, result_polygon_points_humans_np
 
