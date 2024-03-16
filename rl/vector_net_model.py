@@ -260,7 +260,7 @@ class Trans_encoder_withposition(nn.Module):
 # polyline_encoder
 #三种不同向量维度的维度映射到64，便于polyline encoder处理
 class Occ_vector_embedding(Embedding):
-    def __init__(self, initial_dim=11, embed_dim=64, dropout=0.1):
+    def __init__(self, initial_dim=19, embed_dim=64, dropout=0.1):
         super().__init__(initial_dim, embed_dim, dropout)
     
     def forward(self, x):
@@ -553,7 +553,7 @@ class Vector_net(nn.Module):
         #mlp embedding
         embemdded_FOV_points = self.FOV_vector_embedding(FOV_points)                                                            #(nenv, saved_len(1), 12poly ,64)
 
-        embemdded_poly_occ_points = self.Occ_vector_embedding(poly_occ_points)                                                  #(nenv, 1, human_num, 11)->(nenv, 1, human_num, 64)                 
+        embemdded_poly_occ_points = self.Occ_vector_embedding(poly_occ_points)                                                  #(nenv, 1, human_num, 19)->(nenv, 1, human_num, 64)                 
         # embemdded_poly_occ_points_list = embemdded_poly_occ_points.chunk(self.config.sim.human_num, dim=2)                      #human_num * (nenv, 1 , 1, 64)
 
         embemdded_rotated_humans_all_states = self.Humans_state_vector_embedding(rotated_humans_all_states)                     #(nenv, 1, human_num*saved_len, 64)

@@ -19,9 +19,9 @@ def test(output_dir=None, test_ckpt=None, success_rate=None):
 	parser = argparse.ArgumentParser('Parse configuration file')
 	# the model directory that we are testing
 	parser.add_argument('--output_dir', type=str, default=output_dir)
-	parser.add_argument('--visualize', default=True, action='store_true')
+	parser.add_argument('--visualize', default=False, action='store_true')
 	# model weight file you want to test
-	parser.add_argument('--test_ckpt', type=str, default=format(test_ckpt, '05d')+'.pt')
+	parser.add_argument('--test_ckpt', type=str, default= format(test_ckpt, '05d')+'.pt')
 	test_args = parser.parse_args()
 
 
@@ -158,9 +158,9 @@ if __name__ == '__main__':
 	test_rewards = []
 	test_success = []
 
-	output_dir = 'data/my_vector_net_5'
-	ckpt = [30400, 0.95]             
+	output_dir = 'data/v5occvector'  #路径中不能有.
+	ckpt = [37200, 1]                             
 
-	test_episode_rewards, test_success_rate = test(output_dir=output_dir, test_ckpt=ckpt[0] , success_rate=ckpt[1])
+	test_episode_rewards, test_success_rate = test(output_dir=output_dir, test_ckpt= ckpt[0] , success_rate=ckpt[1])
 	test_rewards.append(test_episode_rewards)
 	test_success.append(test_success_rate)
