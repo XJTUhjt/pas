@@ -55,7 +55,7 @@ class CrowdSimDict(CrowdSim):
         
         d['visible_id'] = gym.spaces.Box(low=-np.inf, high=np.inf, shape=(1, self.human_num), dtype = np.float32)
         d['FOV_points'] = gym.spaces.Box(low=-np.inf, high=np.inf, shape=(1, 12, 2), dtype = np.float32)
-        d['poly_occ_points'] = gym.spaces.Box(low=-np.inf, high=np.inf, shape=(1, self.human_num, 19), dtype = np.float32)
+        d['poly_occ_points'] = gym.spaces.Box(low=-np.inf, high=np.inf, shape=(1, self.human_num, 11), dtype = np.float32)
         d['rotated_humans_all_states'] = gym.spaces.Box(low=-np.inf, high=np.inf, shape=(1, self.human_num*self.humans_max_save_states_length, 8), dtype = np.float32)
         d['rotated_robot_all_states'] = gym.spaces.Box(low=-np.inf, high=np.inf, shape=(1, self.robot_max_save_states_length, 10), dtype = np.float32)
 
