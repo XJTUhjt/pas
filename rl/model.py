@@ -4,7 +4,6 @@ import numpy as np
 
 from rl.distributions import Bernoulli, Categorical, DiagGaussian
 from rl.pas_rnn_model import PASRNN
-from rl.vector_net_model import Vector_net
 
 
 class Flatten(nn.Module):
@@ -30,22 +29,7 @@ class Policy(nn.Module):
                     vae_weight_file = 'data/Turtlebot_LabelVAE_CircleFOV30/label_vae_ckpt/label_vae_weight_60.pth'
                 elif config.sim.train_val_sim == "circle_crossing":
                     vae_weight_file = 'data/LabelVAE_CircleFOV30/label_vae_ckpt/label_vae_weight_300.pth'
-                
-                self.base.Label_VAE.load_state_dict(torch.load(vae_weight_file), strict=False)
-                #多卡并行，strict=flase
-        #vector-occ-rl
-        elif config.robot.policy == 'vector_net':
-            base=Vector_net
-            self.base = base(base_kwargs, config)
-
-            if config.pas.encoder_type == 'vae':
-                if config.sim.train_val_sim == "turtlebot":
-                    vae_weight_file = 'data/Turtlebot_LabelVAE_CircleFOV30/label_vae_ckpt/label_vae_weight_60.pth'
-                elif config.sim.train_val_sim == "circle_crossing":
-                    vae_weight_file = 'data/LabelVAE_CircleFOV30/label_vae_ckpt/label_vae_weight_300.pth'
-                
-                self.base.Label_VAE.load_state_dict(torch.load(vae_weight_file), strict=False)
-                #多卡并行，strict=flase
+                self.base.Label_VAE.load_state_dict(torch.load(vae_weight_file), strict=True)
         else:
             raise NotImplementedError
 
@@ -91,8 +75,6 @@ class Policy(nn.Module):
     def act(self, inputs, rnn_hxs, masks, deterministic=False, visualize=False):
         if self.name == 'pas_rnn':
             value, actor_features, rnn_hxs, decoded = self.base(inputs, rnn_hxs, masks, infer=True)
-        elif self.name == 'vector_net':
-            value, actor_features, rnn_hxs, env_decoded = self.base(inputs, rnn_hxs, masks, infer=True)
         else:
             raise NotImplementedError
 
@@ -103,38 +85,33 @@ class Policy(nn.Module):
         else:
             action = dist.sample()
 
+        
         action_log_probs = dist.log_probs(action)
         if self.name == 'pas_rnn':
             return value, action, action_log_probs, rnn_hxs, decoded
-        elif self.name == 'vector_net':
-            return value, action, action_log_probs, rnn_hxs, env_decoded
         else:
             return value, action, action_log_probs, rnn_hxs
 
 
 
     def get_value(self, inputs, rnn_hxs, masks):
-        if self.name == 'vector_net':
-            value, _, _, _ = self.base(inputs, rnn_hxs, masks, infer=True)
-        else:
-            value, _, _, _= self.base(inputs, rnn_hxs, masks, infer=True)
+        value, _, _, _ = self.base(inputs, rnn_hxs, masks, infer=True)
         return value
+
+        
 
     def evaluate_actions(self, inputs, rnn_hxs, masks, action):
         if self.name == 'pas_rnn':
             value, actor_features, rnn_hxs, z_l, z, decoded, mu, logvar = self.base(inputs, rnn_hxs, masks, infer=False) 
-        elif self.name == 'vector_net':
-            value, actor_features, rnn_hxs, env_decoded = self.base(inputs, rnn_hxs, masks, infer=True)
         else:
             value, actor_features, rnn_hxs = self.base(inputs, rnn_hxs, masks, infer=False) 
         dist = self.dist(actor_features)
 
         action_log_probs = dist.log_probs(action)
         dist_entropy = dist.entropy().mean()
-
         if self.name == 'pas_rnn':
             return value, action_log_probs, dist_entropy, rnn_hxs, z_l, z, decoded, mu, logvar
-        elif self.name == 'vector_net':
-            return value, action_log_probs, dist_entropy, rnn_hxs, env_decoded
         else:
             return value, action_log_probs, dist_entropy, rnn_hxs
+
+

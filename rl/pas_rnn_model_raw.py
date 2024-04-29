@@ -9,7 +9,6 @@ model_names = sorted(name for name in models.__dict__
     and callable(models.__dict__[name]))
 
 from rl.utils import init
-from rl.trans_vae import OcclusionQueries
 
 
 
@@ -194,58 +193,30 @@ class Label_VAE(nn.Module):
             init_(nn.Linear(32*3*3, args.rnn_output_size*2))           
         )
         
-         #原始的decoder
         self.decoder = nn.Sequential(
-             init_(nn.Linear(128, 32*3*3)),   #args.rnn_output_siz            
-             View((-1, 32, 3, 3)),              
-             nn.ReLU(), 
-             nn.BatchNorm2d(32),
-             init_(nn.ConvTranspose2d(32, 64, 4, 2, 1)),      
-             nn.ReLU(), 
-             nn.BatchNorm2d(64),
-             init_(nn.ConvTranspose2d(64, 128, 4, 2, 1)),    
-             nn.ReLU(),
-             nn.BatchNorm2d(128),
-             init_(nn.ConvTranspose2d(128, 64, 4, 2, 1,1)),
-             nn.ReLU(), 
-             nn.BatchNorm2d(64),
-             init_(nn.ConvTranspose2d(64, 32, 4, 2, 1)), 
-             nn.ReLU(), 
-             nn.BatchNorm2d(32),
-             init_(nn.ConvTranspose2d(32, 1, 4, 2, 1)), 
-             nn.Sigmoid()
-         )
-
-        #修改的decoder
-        #self.decoder = nn.Sequential(
-        #    init_(nn.Linear(200, 32*5*10)),  # 这里手动修改输出为200【200*1600】，原始值为args.rnn_output_size 【128，1600】
-        #    View((-1, 32, 5, 10)),
-        #    nn.ReLU(), 
-        #    nn.BatchNorm2d(32),
-        #    init_(nn.ConvTranspose2d(32, 64, 4, 2, 1)),      
-        #    nn.ReLU(), 
-        #    nn.BatchNorm2d(64),
-        #    init_(nn.ConvTranspose2d(64, 128, 4, 2, 1)),    
-        #    nn.ReLU(),
-        #    nn.BatchNorm2d(128),
-        #    init_(nn.ConvTranspose2d(128, 64, 4, 2, 1, 1)),
-        #    nn.ReLU(), 
-        #    nn.BatchNorm2d(64),
-        #    init_(nn.ConvTranspose2d(64, 32, 4, 2, 1)), 
-        #    nn.ReLU(), 
-        #    nn.BatchNorm2d(32),
-        #    init_(nn.ConvTranspose2d(32, 1, 4, 2, 1)), 
-        #    nn.Sigmoid()
-        #)
-        
+            init_(nn.Linear(args.rnn_output_size, 32*3*3)),               
+            View((-1, 32, 3, 3)),              
+            nn.ReLU(), 
+            nn.BatchNorm2d(32),
+            init_(nn.ConvTranspose2d(32, 64, 4, 2, 1)),      
+            nn.ReLU(), 
+            nn.BatchNorm2d(64),
+            init_(nn.ConvTranspose2d(64, 128, 4, 2, 1)),    
+            nn.ReLU(),
+            nn.BatchNorm2d(128),
+            init_(nn.ConvTranspose2d(128, 64, 4, 2, 1,1)),
+            nn.ReLU(), 
+            nn.BatchNorm2d(64),
+            init_(nn.ConvTranspose2d(64, 32, 4, 2, 1)), 
+            nn.ReLU(), 
+            nn.BatchNorm2d(32),
+            init_(nn.ConvTranspose2d(32, 1, 4, 2, 1)), 
+            nn.Sigmoid()
+        )
 
         self.linear_mu = nn.Linear(args.rnn_output_size*2, args.rnn_output_size)
         self.linear_var = nn.Linear(args.rnn_output_size*2, args.rnn_output_size)
         self.softplus = nn.Softplus()
-
-        self.second_linear_mu = nn.Linear(args.rnn_output_size, args.rnn_output_size)
-        self.second_linear_var = nn.Linear(args.rnn_output_size, args.rnn_output_size)
-
 
     def reparameterize(self, mu, logvar):
         std = logvar.div(2).exp()
@@ -264,7 +235,7 @@ class Label_VAE(nn.Module):
         return decoded
 
 
-    def forward(self, grid, mask_grid):
+    def forward(self, grid):
         """
         Args:
             grid:(seq_len*nenv, 1, *grid_shape)
@@ -272,41 +243,10 @@ class Label_VAE(nn.Module):
             z : (seq_len*nenv, 1, args.rnn_output_size)
             decoded : (seq_len*nenv, 1, *grid_shape)
         """
-        # print("grid shape",grid.shape)
-        # print("gridmask shape",mask_grid.shape)
         z_mu, z_log_variance, z = self.encode(grid) # z:(1, 1, args.rnn_output_size)
-        
-        k_mu, k_log_variance, k = self.encode(mask_grid)
-        # print("after encoder z: ",z.shape)
-        # print("after encoder k: ",k.shape)
-        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        query_model = OcclusionQueries(
-            image_size=(100, 100),
-            patch_size=(10, 10),
-            dim=128,
-            depth=12,
-            heads=8,
-            mlp_dim=2048,
-            channels=1,
-            dim_head=64
-        ).to(device)
+        decoded = self.decode(z) 
 
-        # print("$$$$$$$$$$$$$",mask_grid.shape,z.shape)
-        z_new = query_model(k,z)
-        # Add temp vector
-        second_mu = self.second_linear_mu(z_new)
-        second_log_variance = torch.log(self.softplus(self.second_linear_var(z_new)))
-
-        # print("z_new",z_new.shape)
-        z_new = z_new.view(z_new.shape[0],1,-1)
-        # print("z_new_new: ",z_new.shape)
-        #print("Encoder part is OK!!")
-        # decoded = self.decode(z) 
-        # print("&&&&&&",z_new.shape)
-        decoded = self.decode(z_new)
-        # print("Decoder part is OK!!",decoded.shape) 
-
-        return second_mu.squeeze(1), second_log_variance.squeeze(1), z_new, decoded 
+        return z_mu.squeeze(1), z_log_variance.squeeze(1), z, decoded 
     
 
 class Sensor_VAE(nn.Module):

@@ -108,11 +108,9 @@ class RolloutStorage(object):
         self.masks[self.step + 1].copy_(masks)
         self.step = (self.step + 1) % self.num_steps
 
-    #把最后一个放到第一个去
     def after_update(self):
         for key in self.obs:
             self.obs[key][0].copy_(self.obs[key][-1])
-
         for key in self.recurrent_hidden_states:
             self.recurrent_hidden_states[key][0].copy_(self.recurrent_hidden_states[key][-1])
 

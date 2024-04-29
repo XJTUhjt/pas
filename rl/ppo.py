@@ -60,17 +60,10 @@ class PPO():
                    value_preds_batch, return_batch, masks_batch, old_action_log_probs_batch, \
                         adv_targ = sample
 
-                if self.actor_critic.config.robot.policy == 'pas_rnn':
-                    values, action_log_probs, dist_entropy, _, z_l, z, decoded, mu, logvar = self.actor_critic.evaluate_actions(
-                        obs_batch, recurrent_hidden_states_batch, masks_batch,
-                        actions_batch)
-                elif self.actor_critic.config.robot.policy == 'vector_net':
-                    values, action_log_probs, dist_entropy, _, env_decoded = self.actor_critic.evaluate_actions(
-                        obs_batch, recurrent_hidden_states_batch, masks_batch,
-                        actions_batch)
-                else:
-                    raise NotImplementedError
 
+                values, action_log_probs, dist_entropy, _, z_l, z, decoded, mu, logvar = self.actor_critic.evaluate_actions(
+                    obs_batch, recurrent_hidden_states_batch, masks_batch,
+                    actions_batch)
                 
 
                 ratio = torch.exp(action_log_probs -
@@ -93,8 +86,7 @@ class PPO():
 
                 self.optimizer.zero_grad()
                 
-                #PASRNN中的vae训练
-                if self.actor_critic.config.pas.encoder_type =='vae' and self.actor_critic.config.robot.policy == 'pas_rnn':
+                if self.actor_critic.config.pas.encoder_type =='vae':
                     PaS_loss = MSE(z_l, z)
                     k_loss = KL_loss(mu, logvar)          
                         
@@ -106,7 +98,7 @@ class PPO():
                 total_loss.backward()
                 
                 nn.utils.clip_grad_norm_(self.actor_critic.parameters(),
-                                        self.max_grad_norm)
+                                         self.max_grad_norm)
 
                 self.optimizer.step()
 
@@ -114,7 +106,7 @@ class PPO():
                 action_loss_epoch += action_loss.item()
                 dist_entropy_epoch += dist_entropy.item()  
 
-                if self.actor_critic.config.pas.encoder_type =='vae' and self.actor_critic.config.robot.policy == 'pas_rnn': 
+                if self.actor_critic.config.pas.encoder_type =='vae': 
                     PaS_loss_epoch += PaS_loss.item()    
 
         num_updates = self.ppo_epoch * self.num_mini_batch
@@ -123,7 +115,7 @@ class PPO():
         action_loss_epoch /= num_updates
         dist_entropy_epoch /= num_updates
 
-        if self.actor_critic.config.pas.encoder_type =='vae' and self.actor_critic.config.robot.policy == 'pas_rnn': 
+        if self.actor_critic.config.pas.encoder_type =='vae' : 
             PaS_loss_epoch /= num_updates
             return value_loss_epoch, action_loss_epoch, dist_entropy_epoch, PaS_loss_epoch
 

@@ -9,7 +9,7 @@ model_names = sorted(name for name in models.__dict__
     and callable(models.__dict__[name]))
 
 from rl.utils import init
-from rl.trans_vae import OcclusionQueries
+from rl.trans import OcclusionQueries
 
 
 
@@ -196,7 +196,7 @@ class Label_VAE(nn.Module):
         
          #原始的decoder
         self.decoder = nn.Sequential(
-             init_(nn.Linear(128, 32*3*3)),   #args.rnn_output_siz            
+             init_(nn.Linear(20000, 32*3*3)),   #args.rnn_output_siz            
              View((-1, 32, 3, 3)),              
              nn.ReLU(), 
              nn.BatchNorm2d(32),
@@ -243,10 +243,6 @@ class Label_VAE(nn.Module):
         self.linear_var = nn.Linear(args.rnn_output_size*2, args.rnn_output_size)
         self.softplus = nn.Softplus()
 
-        self.second_linear_mu = nn.Linear(args.rnn_output_size, args.rnn_output_size)
-        self.second_linear_var = nn.Linear(args.rnn_output_size, args.rnn_output_size)
-
-
     def reparameterize(self, mu, logvar):
         std = logvar.div(2).exp()
         eps = Variable(std.data.new(std.size()).normal_()).cuda()
@@ -272,18 +268,15 @@ class Label_VAE(nn.Module):
             z : (seq_len*nenv, 1, args.rnn_output_size)
             decoded : (seq_len*nenv, 1, *grid_shape)
         """
-        # print("grid shape",grid.shape)
-        # print("gridmask shape",mask_grid.shape)
+        #print("grid shape",grid.shape)
+        #print("gridmask shape",mask_grid.shape)
         z_mu, z_log_variance, z = self.encode(grid) # z:(1, 1, args.rnn_output_size)
-        
-        k_mu, k_log_variance, k = self.encode(mask_grid)
-        # print("after encoder z: ",z.shape)
-        # print("after encoder k: ",k.shape)
+        #print("after encoder",z.shape)
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         query_model = OcclusionQueries(
             image_size=(100, 100),
             patch_size=(10, 10),
-            dim=128,
+            dim=200,
             depth=12,
             heads=8,
             mlp_dim=2048,
@@ -292,21 +285,15 @@ class Label_VAE(nn.Module):
         ).to(device)
 
         # print("$$$$$$$$$$$$$",mask_grid.shape,z.shape)
-        z_new = query_model(k,z)
-        # Add temp vector
-        second_mu = self.second_linear_mu(z_new)
-        second_log_variance = torch.log(self.softplus(self.second_linear_var(z_new)))
-
-        # print("z_new",z_new.shape)
+        z_new = query_model(mask_grid,z)
         z_new = z_new.view(z_new.shape[0],1,-1)
-        # print("z_new_new: ",z_new.shape)
         #print("Encoder part is OK!!")
         # decoded = self.decode(z) 
-        # print("&&&&&&",z_new.shape)
+        #print("&&&&&&",z_new.shape)
         decoded = self.decode(z_new)
-        # print("Decoder part is OK!!",decoded.shape) 
+        #print("Decoder part is OK!!") 
 
-        return second_mu.squeeze(1), second_log_variance.squeeze(1), z_new, decoded 
+        return z_mu.squeeze(1), z_log_variance.squeeze(1), z, decoded 
     
 
 class Sensor_VAE(nn.Module):

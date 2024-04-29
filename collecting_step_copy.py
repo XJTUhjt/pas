@@ -11,7 +11,7 @@ def CollectingStep(args, config, model_dir, data_envs, device, test_size, loggin
     video_dir = model_dir+"/data_video/"
 
     for k in range(test_size):
-        ego_data = [['episode', 'timestamp', 'obs', 'label_grid', 'sensor_grid', 'id_grid', 'mask']]
+        ego_data = [['episode', 'timestamp', 'obs', 'label_grid', 'sensor_grid', 'mask_grid', 'id_grid', 'mask']]
         done = False
         all_videoGrids = []
         stepCounter = 0
@@ -22,7 +22,7 @@ def CollectingStep(args, config, model_dir, data_envs, device, test_size, loggin
         total_timesteps = int(config.env.time_limit/config.env.time_step)
 
         
-        ego_step_data = [k, global_time, obs['vector'].cpu().numpy(), obs['label_grid'][:,[0]].cpu().numpy(), obs['sensor_grid'].cpu().numpy(),\
+        ego_step_data = [k, global_time, obs['vector'].cpu().numpy(), obs['label_grid'][:,[0]].cpu().numpy(), obs['sensor_grid'].cpu().numpy(),obs['mask_grid'].cpu().numpy(),\
             obs['label_grid'][:,[1]].cpu().numpy(), masks.cpu().numpy()] 
         ego_data.append(ego_step_data)
         data_total_timesteps += 1
@@ -56,7 +56,7 @@ def CollectingStep(args, config, model_dir, data_envs, device, test_size, loggin
                         os.makedirs(video_dir) 
                     data_envs.render(mode='video', all_videoGrids=all_videoGrids, output_file=video_dir+'data_epi_'+str(k))
                         
-                ego_step_data = [k, global_time, obs['vector'].cpu().numpy(), obs['label_grid'][:,[0]].cpu().numpy(), obs['sensor_grid'].cpu().numpy(), \
+                ego_step_data = [k, global_time, obs['vector'].cpu().numpy(), obs['label_grid'][:,[0]].cpu().numpy(), obs['sensor_grid'].cpu().numpy(), obs['mask_grid'].cpu().numpy(),\
                     obs['label_grid'][:,[1]].cpu().numpy(), masks.cpu().numpy()]
                 ego_data.append(ego_step_data)
                 data_total_timesteps += 1
@@ -69,10 +69,12 @@ def CollectingStep(args, config, model_dir, data_envs, device, test_size, loggin
                 
             
         ego_data = np.array(ego_data, dtype=object)
+        print("Start!!")
         np.save(model_dir+'/epi_'+format(k, '05d')+'_vector', np.array(np.vstack(ego_data[1:,2]), dtype=np.float32))
         np.save(model_dir+'/epi_'+format(k, '05d')+'_label_grid', np.array(np.vstack(ego_data[1:,3]), dtype=np.float32))
         np.save(model_dir+'/epi_'+format(k, '05d')+'_sensor_grid', np.array(np.vstack(ego_data[1:,4]), dtype=np.float32))
-        np.save(model_dir+'/epi_'+format(k, '05d')+'_id_grid', np.array(np.vstack(ego_data[1:,5]), dtype=np.float32))
+        np.save(model_dir+'/epi_'+format(k, '05d')+'_mask_grid', np.array(np.vstack(ego_data[1:,5]), dtype=np.float32))
+        np.save(model_dir+'/epi_'+format(k, '05d')+'_id_grid', np.array(np.vstack(ego_data[1:,6]), dtype=np.float32))
         np.save(model_dir+'/epi_'+format(k, '05d')+'_mask', np.array(np.vstack(ego_data[1:,-1]), dtype=np.float32))
 
         print('Episode', k, 'ends in', stepCounter)    

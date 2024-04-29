@@ -136,11 +136,8 @@ class FeatureRNN(RNNBase):
         # Encode the input position
         encoded_input = self.encoder_linear(pos) # (seq_len, nenv,1, args.rnn_embedding_size)
         encoded_input = self.relu(encoded_input)
-
         x, h_new = self._forward_gru(encoded_input, h, masks) # x : (seq_len, nenv, 1, 256)
-
         outputs = self.output_linear(x)
-
         return outputs, h_new
 
 def mlp(input_dim, mlp_dims, last_relu=False):
@@ -193,10 +190,9 @@ class Label_VAE(nn.Module):
             Flatten(),
             init_(nn.Linear(32*3*3, args.rnn_output_size*2))           
         )
-        
-         #原始的decoder
+
         self.decoder = nn.Sequential(
-             init_(nn.Linear(128, 32*3*3)),   #args.rnn_output_siz            
+             init_(nn.Linear(args.rnn_output_size, 32*3*3)),   #args.rnn_output_siz            
              View((-1, 32, 3, 3)),              
              nn.ReLU(), 
              nn.BatchNorm2d(32),
@@ -216,35 +212,9 @@ class Label_VAE(nn.Module):
              nn.Sigmoid()
          )
 
-        #修改的decoder
-        #self.decoder = nn.Sequential(
-        #    init_(nn.Linear(200, 32*5*10)),  # 这里手动修改输出为200【200*1600】，原始值为args.rnn_output_size 【128，1600】
-        #    View((-1, 32, 5, 10)),
-        #    nn.ReLU(), 
-        #    nn.BatchNorm2d(32),
-        #    init_(nn.ConvTranspose2d(32, 64, 4, 2, 1)),      
-        #    nn.ReLU(), 
-        #    nn.BatchNorm2d(64),
-        #    init_(nn.ConvTranspose2d(64, 128, 4, 2, 1)),    
-        #    nn.ReLU(),
-        #    nn.BatchNorm2d(128),
-        #    init_(nn.ConvTranspose2d(128, 64, 4, 2, 1, 1)),
-        #    nn.ReLU(), 
-        #    nn.BatchNorm2d(64),
-        #    init_(nn.ConvTranspose2d(64, 32, 4, 2, 1)), 
-        #    nn.ReLU(), 
-        #    nn.BatchNorm2d(32),
-        #    init_(nn.ConvTranspose2d(32, 1, 4, 2, 1)), 
-        #    nn.Sigmoid()
-        #)
-        
-
         self.linear_mu = nn.Linear(args.rnn_output_size*2, args.rnn_output_size)
         self.linear_var = nn.Linear(args.rnn_output_size*2, args.rnn_output_size)
         self.softplus = nn.Softplus()
-
-        self.second_linear_mu = nn.Linear(args.rnn_output_size, args.rnn_output_size)
-        self.second_linear_var = nn.Linear(args.rnn_output_size, args.rnn_output_size)
 
 
     def reparameterize(self, mu, logvar):
@@ -272,41 +242,24 @@ class Label_VAE(nn.Module):
             z : (seq_len*nenv, 1, args.rnn_output_size)
             decoded : (seq_len*nenv, 1, *grid_shape)
         """
-        # print("grid shape",grid.shape)
-        # print("gridmask shape",mask_grid.shape)
-        z_mu, z_log_variance, z = self.encode(grid) # z:(1, 1, args.rnn_output_size)
-        
+        z_mu, z_log_variance, z = self.encode(grid) # z:(1, 1, args.rnn_output_size)  
         k_mu, k_log_variance, k = self.encode(mask_grid)
-        # print("after encoder z: ",z.shape)
-        # print("after encoder k: ",k.shape)
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        query_model = OcclusionQueries(
-            image_size=(100, 100),
-            patch_size=(10, 10),
-            dim=128,
-            depth=12,
-            heads=8,
-            mlp_dim=2048,
-            channels=1,
-            dim_head=64
-        ).to(device)
-
-        # print("$$$$$$$$$$$$$",mask_grid.shape,z.shape)
-        z_new = query_model(k,z)
+        # query_model = OcclusionQueries(
+        #     image_size=(100, 100),
+        #     patch_size=(10, 10),
+        #     dim=128,
+        #     depth=1,
+        #     heads=8,
+        #     mlp_dim=2048,
+        #     channels=1,
+        #     dim_head=64
+        # ).to(device)
+        # z_new = query_model(k,z)
         # Add temp vector
-        second_mu = self.second_linear_mu(z_new)
-        second_log_variance = torch.log(self.softplus(self.second_linear_var(z_new)))
-
-        # print("z_new",z_new.shape)
-        z_new = z_new.view(z_new.shape[0],1,-1)
-        # print("z_new_new: ",z_new.shape)
-        #print("Encoder part is OK!!")
-        # decoded = self.decode(z) 
-        # print("&&&&&&",z_new.shape)
-        decoded = self.decode(z_new)
-        # print("Decoder part is OK!!",decoded.shape) 
-
-        return second_mu.squeeze(1), second_log_variance.squeeze(1), z_new, decoded 
+        # z_new = z.view(z_new.shape[0],1,-1)
+        decoded = self.decode(z)
+        return z_mu.squeeze(1), z_log_variance.squeeze(1), z, decoded 
     
 
 class Sensor_VAE(nn.Module):
@@ -439,7 +392,6 @@ class Sensor_CNN_seq(nn.Module):
             z : (seq_len*nenv, 1, args.rnn_output_size)
         """
         z = self.encoder(grid) 
-
         return z
     
 
@@ -514,8 +466,6 @@ class PASRNN(nn.Module):
         self.FeatureRNN = FeatureRNN(args, embed_input_size)
 
 
-
-
     def forward(self, inputs, rnn_hxs, masks, infer=False):
         """[summary]
         Args:
@@ -570,7 +520,6 @@ class PASRNN(nn.Module):
             outputs, h_nodes = self.FeatureRNN(feat, hidden_states_vector_RNNs, masks)
             x = outputs[:, :, 0, :] # x: (seq_len, nenv, args.rnn_output_size)
             rnn_hxs['policy'] = h_nodes
-
 
 
         hidden_critic = self.critic(x)  
